@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+      http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd 
+      http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+
+	<!-- Needed for Autowiring -->
+	<context:annotation-config />
+	<context:component-scan base-package="de" />
+	<context:property-placeholder location="classpath:bot.properties" ignore-unresolvable="true"/>
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="org.postgresql.Driver"/>
+		<property name="url" value="jdbc:postgresql://localhost:5432/bot"/>
+		<property name="username" value="${db.user}"/>
+		<property name="password" value="${db.password}"/>
+		<property name="maxIdle" value="1200" />
+		<property name="initialSize" value="15" />
+		<property name="maxTotal" value="100" />
+	</bean>
+	
+	<!-- Hibernate SessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>de.solidsearch.bot.data.User</value>
+				<value>de.solidsearch.bot.data.UserGroup</value>
+				<value>de.solidsearch.bot.data.Project</value>
+				<value>de.solidsearch.bot.data.ProjectSummary</value>
+				<value>de.solidsearch.bot.data.HostnameStatistic</value>
+				<value>de.solidsearch.bot.data.URLSegmentStatistic</value>
+				<value>de.solidsearch.bot.data.Alarm</value>
+				<value>de.solidsearch.bot.data.AlarmList</value>
+				
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<!--<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>				
+				<!--<prop key="hibernate.hbm2ddl.auto">create-drop</prop> -->
+			</props>
+
+		</property>
+	</bean>
+
+	<!-- server config -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${email.server}" />
+		<property name="port" value="${email.server.port}" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.debug">false</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<bean id="taskExecutor"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor"
+		scope="prototype">
+		<property name="corePoolSize" value="6" />
+		<property name="maxPoolSize" value="6" />
+		<property name="queueCapacity" value="30" />
+	</bean>
+
+	<task:annotation-driven executor="executor"
+		scheduler="scheduler" />
+	<task:executor id="executor" pool-size="${application.maxparallelcrawlings}" />
+	<task:scheduler id="scheduler" pool-size="${application.maxparallelcrawlings}" />
+
+</beans>

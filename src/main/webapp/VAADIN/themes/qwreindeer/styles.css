@@ -1,0 +1,6933 @@
+.v-assistive-device-only {
+	position: absolute;
+	top: -2000px;
+	left: -2000px;
+	width: 10px;
+	overflow: hidden;
+}
+
+.v-radiobutton {
+	-webkit-user-select: none;
+}
+
+@-webkit-keyframes v-notification-animate-out {
+		100% {
+		opacity: 0;
+	}
+	}
+
+@-moz-keyframes v-notification-animate-out {
+		100% {
+		opacity: 0;
+	}
+	}
+
+@keyframes v-notification-animate-out {
+		100% {
+		opacity: 0;
+	}
+	}
+
+.v-vaadin-version:after {
+	content: "7.3.3";
+}
+
+.v-generated-body {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-modal-window-open {
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url(../base/fonts/fontawesome-webfont.eot);
+	src: url(../base/fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(../base/fonts/fontawesome-webfont.woff) format("woff"), url(../base/fonts/fontawesome-webfont.ttf) format("truetype"), url(../base/fonts/fontawesome-webfont.svg) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FontAwesome {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+}
+
+/** sprite: verticals; sprite-image: url(common/img/vertical-sprites.png); sprite-layout: vertical */
+
+/** sprite: horizontals; sprite-image: url(common/img/horizontal-sprites.png); sprite-layout: horizontal */
+
+/** sprite: black-verticals; sprite-image: url(common/img/black-vertical-sprites.png); sprite-layout: vertical; sprite-matte-color: #1e2022 */
+
+/** sprite: black-horizontals; sprite-image: url(common/img/black-horizontal-sprites.png); sprite-layout: horizontal; sprite-matte-color: #1e2022 */
+
+/** sprite: buttons; sprite-image: url(button/img/button-sprites.png); sprite-layout: vertical */
+
+/** sprite: black-buttons; sprite-image: url(button/img/black-button-sprites.png); sprite-layout: vertical */
+
+.v-generated-body {
+	background: #f5f5f5;
+}
+
+.qwreindeer .v-widget {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: bottom;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.qwreindeer .v-absolutelayout-wrapper {
+	position: absolute;
+	overflow: hidden;
+}
+
+.qwreindeer .v-absolutelayout-margin, .qwreindeer .v-absolutelayout-canvas {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-absolutelayout.v-has-height > div, .qwreindeer .v-absolutelayout.v-has-height > div > div {
+	height: 100%;
+}
+
+.qwreindeer .v-absolutelayout.v-has-width > div, .qwreindeer .v-absolutelayout.v-has-width > div > div {
+	width: 100%;
+}
+
+.qwreindeer .v-accordion {
+	position: relative;
+	outline: none;
+	overflow: visible;
+	text-align: left;
+	font-size: 0;
+}
+
+.qwreindeer .v-accordion-item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.qwreindeer .v-accordion-item-caption {
+	overflow: visible;
+	white-space: nowrap;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+}
+
+.qwreindeer .v-accordion-item-caption .v-caption {
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.qwreindeer .v-accordion-item-open .v-accordion-item-caption .v-caption {
+	cursor: default;
+}
+
+.qwreindeer .v-accordion-item-content {
+	position: absolute;
+	width: 100%;
+}
+
+.qwreindeer .v-browserframe {
+	font-size: 0;
+}
+
+.v-webkit.v-ios .qwreindeer .v-browserframe {
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+}
+
+.qwreindeer .v-browserframe > span {
+	font-size: 12px;
+}
+
+.qwreindeer .v-button {
+	display: inline-block;
+	zoom: 1;
+	text-align: center !important;
+	text-decoration: none;
+	border: 2px outset #ddd;
+	background: #eee;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0.2em 1em;
+	color: inherit;
+	font: inherit;
+	font-size: 12px;
+	line-height: normal;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-button.v-disabled {
+	cursor: default;
+}
+
+.qwreindeer .v-button-wrap, .qwreindeer .v-button-caption {
+	vertical-align: baseline;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+	line-height: normal;
+}
+
+.qwreindeer .v-button .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.qwreindeer .v-button .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.qwreindeer .v-button-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.v-sa .qwreindeer .v-button-link:focus {
+	outline-offset: -3px;
+}
+
+.qwreindeer .v-button-link .v-button-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.qwreindeer .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.qwreindeer .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.qwreindeer .v-nativebutton-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.qwreindeer .v-nativebutton-link .v-nativebutton-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.qwreindeer .v-nativebutton {
+	text-align: center !important;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+}
+
+.qwreindeer .v-nativebutton .v-nativebutton-caption {
+	vertical-align: middle;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+}
+
+.qwreindeer .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.qwreindeer .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	float: none;
+}
+
+.v-ie .qwreindeer .v-nativebutton {
+	overflow: visible;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.v-ie .qwreindeer .v-nativebutton-link {
+	padding: 0;
+}
+
+.qwreindeer .v-checkbox {
+	display: block;
+}
+
+.qwreindeer .v-checkbox, .qwreindeer .v-checkbox label, .qwreindeer .v-checkbox input, .qwreindeer .v-checkbox .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-checkbox .v-icon {
+	margin: 0 2px;
+}
+
+.qwreindeer .v-checkbox .v-errorindicator {
+	float: none;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.qwreindeer .v-captionwrapper {
+	text-align: left;
+}
+
+.qwreindeer .v-caption {
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.qwreindeer .v-errorindicator {
+	display: inline-block;
+}
+
+.qwreindeer .v-caption .v-icon {
+	display: inline-block;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-caption .v-captiontext {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-caption .v-required-field-indicator {
+	display: inline-block;
+}
+
+.qwreindeer .v-colorpicker {
+	text-align: center;
+}
+
+.qwreindeer .v-colorpicker-button-color {
+	border: 1px solid silver;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.qwreindeer .v-colorpicker-area {
+	border: 1px solid silver;
+	margin: 1px auto;
+}
+
+.qwreindeer .v-colorpicker-history {
+	margin: 5px;
+}
+
+.qwreindeer .v-colorpicker-history td {
+	border: 1px solid silver !important;
+}
+
+.qwreindeer .v-colorpicker-history td {
+	line-height: 15px;
+}
+
+.qwreindeer .v-colorpicker-popup {
+	width: 244px;
+}
+
+.qwreindeer .v-colorpicker-popup .v-scrollable {
+	background-color: #dddddd;
+}
+
+.qwreindeer .v-colorpicker-popup .v-tabsheet-content .v-scrollable {
+	background-color: #eaeaea;
+}
+
+.qwreindeer .v-colorpicker-popup .v-tabsheet-content .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.qwreindeer .v-colorpicker-popup .resize-button {
+	border: 0px solid silver;
+	background: url(../base/colorpicker/images/resizebg.png);
+	margin-top: 5px;
+}
+
+.qwreindeer .v-colorpicker-popup .resize-button-caption {
+	display: none;
+}
+
+.qwreindeer .v-colorpicker-popup .resize-button:hover {
+	background: url(../base/colorpicker/images/resizebg-selected.png);
+}
+
+.qwreindeer .v-colorpicker-popup .resize-button:focus {
+	outline: none;
+}
+
+.qwreindeer .v-colorpicker-gradient {
+	width: 220px;
+	height: 220px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+.qwreindeer .v-colorpicker-gradient .v-colorpicker-gradient-clicklayer {
+	background-color: white;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.qwreindeer .v-colorpicker-popup .rgb-gradient .v-colorpicker-gradient-background {
+	width: 220px;
+	height: 220px;
+	background: url(../base/colorpicker/images/gradient2.png);
+}
+
+.qwreindeer .v-colorpicker-popup .hsv-gradient .v-colorpicker-gradient-foreground {
+	background: url(../base/colorpicker/images/gradient.png);
+}
+
+.qwreindeer .v-colorpicker-popup .v-colorpicker-gradient-lowerbox {
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.qwreindeer .v-colorpicker-popup .v-colorpicker-gradient-higherbox {
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.qwreindeer .v-colorpicker-popup .rgb-sliders {
+	width: 227px;
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.qwreindeer .v-colorpicker-popup .rgb-sliders .red .v-slider-base {
+	background-color: red;
+}
+
+.qwreindeer .v-colorpicker-popup .rgb-sliders .green .v-slider-base {
+	background-color: green;
+}
+
+.qwreindeer .v-colorpicker-popup .rgb-sliders .blue .v-slider-base {
+	background-color: blue;
+}
+
+.qwreindeer .v-colorpicker-popup .hsv-sliders {
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.qwreindeer .v-colorpicker-popup .hue-slider {
+	height: 10px;
+	border: 0px solid silver;
+	background-image: url(../base/colorpicker/images/slider_hue_bg.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin-top: 0px;
+}
+
+.qwreindeer .v-colorpicker-popup .hue-slider .v-slider-handle {
+	margin-top: -2px;
+}
+
+.qwreindeer .v-colorpicker-popup .hue-slider .v-slider-base {
+	border: 0px none;
+	height: 0px;
+	background-color: transparent;
+}
+
+.qwreindeer .v-colorpicker-popup .v-colorpicker-preview {
+	margin-top: 5px;
+	padding-left: 11px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+
+.qwreindeer .v-colorpicker-popup .v-absolutelayout-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.qwreindeer .v-colorpicker-popup .v-colorpicker-preview-textfield {
+	background: none;
+	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.qwreindeer .v-colorpicker-popup .v-textfield-dark {
+	color: #FFFFFF;
+}
+
+.qwreindeer .v-colorpicker-popup .v-textfield-light {
+	color: #000000;
+}
+
+.qwreindeer .v-colorpicker-popup .colorselect {
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.qwreindeer .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 319px;
+}
+
+.qwreindeer .v-colorpicker-popup .colorselect td {
+	line-height: 15px;
+}
+
+.qwreindeer .v-colorpicker-popup .v-filterselect {
+	padding-right: 16px;
+}
+
+.qwreindeer .v-calendar-nresize DIV DIV {
+	cursor: n-resize !important;
+}
+
+.qwreindeer .v-calendar-sresize DIV DIV {
+	cursor: s-resize !important;
+}
+
+.qwreindeer .v-calendar {
+	background-color: #fff;
+}
+
+.qwreindeer .v-calendar-header-month, .qwreindeer .v-calendar-header-week {
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.qwreindeer .v-calendar-header-day {
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.qwreindeer .v-calendar-header-week .v-calendar-header-day:hover {
+	cursor: pointer;
+	color: #222;
+}
+
+.qwreindeer .v-calendar-header-day-today {
+	font-weight: bold;
+	color: #444;
+}
+
+.qwreindeer .v-calendar-header-month td:first-child {
+	padding-left: 19px;
+}
+
+.qwreindeer .v-calendar-header-week .v-calendar-back, .qwreindeer .v-calendar-header-week .v-calendar-next {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 12px;
+	width: 12px;
+	overflow: hidden;
+	background: transparent url(../base/calendar/img/arrows.png) no-repeat 50% 0;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	cursor: default;
+}
+
+.qwreindeer .v-calendar-header-week .v-calendar-back:hover, .qwreindeer .v-calendar-header-week .v-calendar-next:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.qwreindeer .v-calendar-header-week .v-calendar-back:active, .qwreindeer .v-calendar-header-week .v-calendar-next:active {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.qwreindeer .v-calendar-header-week .v-calendar-next {
+	background-position: 50% -12px;
+}
+
+.qwreindeer .v-calendar-month {
+	outline: none;
+}
+
+.qwreindeer .v-calendar-week-numbers {
+	width: 20px;
+	border-right: 1px solid #ccc;
+}
+
+.qwreindeer .v-calendar-week-number {
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	opacity: 0.5;
+	width: 20px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.qwreindeer .v-calendar-week-number:hover {
+	opacity: 1;
+}
+
+.qwreindeer .v-calendar-month-day {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.qwreindeer .v-calendar-month-day-today {
+	background-color: #e7f0f5;
+}
+
+.qwreindeer .v-calendar-month-day-selected {
+	background-color: #fffee7;
+}
+
+.qwreindeer .v-calendar-month-day-dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.qwreindeer .v-calendar-month-day-scrollable {
+	overflow-y: scroll;
+}
+
+.qwreindeer .v-calendar-day-number {
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-calendar-day-number:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.qwreindeer .v-calendar-month .v-calendar-spacer, .qwreindeer .v-calendar-month .v-calendar-bottom-spacer, .qwreindeer .v-calendar-month .v-calendar-bottom-spacer-empty {
+	height: 15px;
+	font-size: 11px;
+}
+
+.qwreindeer .v-calendar-month .v-calendar-bottom-spacer:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.qwreindeer .v-calendar-event {
+	line-height: 14px;
+	font-size: 11px;
+	padding: 0 0 0 4px;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline: none;
+}
+
+.qwreindeer .v-calendar-event-month {
+	margin-bottom: 1px;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-calendar-event-month:hover {
+	text-decoration: underline;
+}
+
+.qwreindeer .v-calendar-event-all-day {
+	background: #999;
+	display: block;
+	margin-left: -2px;
+}
+
+.qwreindeer div.v-calendar-event-all-day {
+	color: #fff;
+	height: 14px;
+}
+
+.qwreindeer .v-calendar-event-continued-from {
+	margin-left: 0;
+}
+
+.qwreindeer .v-calendar-event-start {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-left: 0;
+}
+
+.qwreindeer .v-calendar-event-end {
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.qwreindeer .v-calendar-week-wrapper {
+	position: relative;
+}
+
+.qwreindeer .v-calendar-times {
+	width: 51px;
+}
+
+.qwreindeer .v-calendar-time {
+	padding: 0 8px 7px 0;
+	margin-top: -7px;
+	text-align: right;
+	font-size: 11px;
+	color: #666;
+	border-right: 1px solid #ccc;
+}
+
+.qwreindeer .v-calendar-weekly-longevents {
+	border-left: 1px solid #ccc;
+	border-bottom: 2px solid #bbb;
+	margin-left: 50px;
+}
+
+.qwreindeer .v-calendar-weekly-longevents .v-calendar-datecell {
+	border-right: 1px solid #ccc;
+	padding: 1px 0 0;
+}
+
+.qwreindeer .v-calendar-weekly-longevents .v-calendar-event {
+	height: 14px;
+	margin-bottom: 1px;
+}
+
+.qwreindeer .v-calendar-weekly-longevents .v-calendar-event:hover {
+	text-decoration: underline;
+}
+
+.qwreindeer .v-calendar-day-times {
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.qwreindeer .v-calendar-day-times .v-datecellslot, .qwreindeer .v-calendar-day-times .v-datecellslot-even {
+	border-bottom: 1px solid #ccc;
+}
+
+.qwreindeer .v-calendar-day-times .v-datecellslot-even {
+	border-bottom-color: #eee;
+}
+
+.qwreindeer .v-calendar-day-times .v-daterange {
+	background-color: #a8a8a8;
+}
+
+.qwreindeer .v-calendar-day-times .v-reserved {
+	background-color: #FF3333;
+}
+
+.qwreindeer .v-calendar-day-times .dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.qwreindeer .v-calendar-week-wrapper .v-calendar-event {
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: -1px;
+}
+
+.qwreindeer .v-calendar-event-caption {
+	position: absolute;
+	z-index: 1;
+	top: 2px;
+	left: 4px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: normal;
+}
+
+.qwreindeer .v-calendar-event-content {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #777;
+	background: #eee;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+	height: 14px;
+}
+
+.qwreindeer .v-calendar-current-time {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	background: #5a6c86;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	z-index: 2;
+}
+
+.qwreindeer .v-calendar-event-resizetop {
+	position: absolute;
+	cursor: n-resize;
+	height: 5%;
+	min-height: 3px;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.qwreindeer .v-calendar-event-resizebottom {
+	position: absolute;
+	cursor: s-resize;
+	height: 5%;
+	min-height: 3px;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.qwreindeer .v-calendar-month-sizedheight .v-calendar-month-day {
+	height: 100px;
+}
+
+.qwreindeer .v-calendar-month-sizedwidth .v-calendar-month-day {
+	width: 100px;
+}
+
+.qwreindeer .v-calendar-header-month-Hsized .v-calendar-header-day {
+	width: 101px;
+}
+
+.qwreindeer .v-calendar-header-month-Hsized td:first-child {
+	padding-left: 21px;
+}
+
+.qwreindeer .v-calendar-header-day-Hsized {
+	width: 200px;
+}
+
+.qwreindeer .v-calendar-week-numbers-Vsized .v-calendar-week-number {
+	height: 100px;
+	line-height: 100px;
+}
+
+.qwreindeer .v-calendar-week-wrapper-Vsized {
+	height: 400px;
+	overflow-x: hidden !important;
+}
+
+.qwreindeer .v-calendar-times-Vsized .v-calendar-time {
+	height: 38px;
+}
+
+.qwreindeer .v-calendar-times-Hsized .v-calendar-time {
+	width: 42px;
+}
+
+.qwreindeer .v-calendar-day-times-Vsized .v-datecellslot, .qwreindeer .v-calendar-day-times-Vsized .v-datecellslot-even {
+	height: 18px;
+}
+
+.qwreindeer .v-calendar-day-times-Hsized, .qwreindeer .v-calendar-day-times-Hsized .v-datecellslot, .qwreindeer .v-calendar-day-times-Hsized .v-datecellslot-even {
+	width: 200px;
+}
+
+.qwreindeer.v-app {
+	height: 100%;
+}
+
+.qwreindeer.v-app, .qwreindeer .v-window, .qwreindeer .v-popupview-popup, .qwreindeer .v-label, .qwreindeer .v-caption {
+	cursor: default;
+}
+
+.qwreindeer .v-window {
+	box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+.qwreindeer .v-datefield-popup, .qwreindeer .v-filterselect-suggestpopup, .qwreindeer .v-menubar-popup, .qwreindeer .v-slider-feedback, .qwreindeer .v-popupview-popup, .qwreindeer .v-contextmenu {
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+body .qwreindeer.v-app .v-app-loading {
+	background-image: url(../base/common/img/loading-indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.qwreindeer .v-ui {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	position: relative;
+}
+
+.qwreindeer .v-ui.v-ui-embedded {
+	margin-top: -1px;
+	border-top: 1px solid transparent;
+}
+
+.qwreindeer .v-ui:active, .qwreindeer .v-ui:focus {
+	outline: none;
+}
+
+.qwreindeer.v-app select, .qwreindeer .v-window select {
+	margin: 0;
+}
+
+.qwreindeer .v-disabled {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	cursor: default;
+}
+
+.qwreindeer .v-disabled * {
+	cursor: default;
+}
+
+* html .qwreindeer .v-disabled {
+	zoom: 1;
+}
+
+* + html .qwreindeer .v-disabled {
+	zoom: 1;
+}
+
+.qwreindeer .v-disabled .v-disabled {
+	opacity: 1;
+}
+
+.qwreindeer .v-required-field-indicator {
+	padding-left: 2px;
+	color: red;
+}
+
+.qwreindeer .v-form fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.qwreindeer .v-form-content {
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-tooltip {
+	cursor: default;
+	background: #fff;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.qwreindeer .v-tooltip-text {
+	overflow: auto;
+}
+
+.qwreindeer .v-tooltip .v-errormessage {
+	overflow: auto;
+}
+
+.qwreindeer .v-contextmenu {
+	background: #fff;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem {
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuBar {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem div {
+	cursor: pointer;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem-selected div {
+	background: #aaa;
+	color: #fff;
+}
+
+.qwreindeer .v-contextmenu table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem img {
+	margin-right: 1em;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-label pre {
+	margin: 0;
+}
+
+.qwreindeer .v-label-undef-w {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-label h1, .qwreindeer .v-label h2, .qwreindeer .v-label h3, .qwreindeer .v-label h4, .qwreindeer .v-label h5, .qwreindeer .v-label h6 {
+	line-height: normal;
+}
+
+.qwreindeer .v-loading-indicator, .qwreindeer .v-loading-indicator-delay, .qwreindeer .v-loading-indicator-wait {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 30000;
+	width: 31px;
+	height: 31px;
+	background: transparent url(../base/common/img/loading-indicator.gif);
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.qwreindeer .v-loading-indicator-delay {
+	background-image: url(../base/common/img/loading-indicator-delay.gif);
+}
+
+.qwreindeer .v-loading-indicator-wait {
+	background-image: url(../base/common/img/loading-indicator-wait.gif);
+}
+
+.qwreindeer.v-app input[type="text"], .qwreindeer.v-app input[type="password"], .qwreindeer.v-app input[type="reset"], .qwreindeer.v-app select, .qwreindeer.v-app textarea, .qwreindeer .v-window input[type="text"], .qwreindeer .v-window input[type="password"], .qwreindeer .v-window input[type="reset"], .qwreindeer .v-window select, .qwreindeer .v-window textarea {
+	padding: 2px;
+}
+
+.qwreindeer input::-ms-clear {
+	display: none;
+}
+
+.qwreindeer .v-drag-element {
+	z-index: 60000;
+	position: absolute !important;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.qwreindeer .v-clip {
+	overflow: hidden;
+}
+
+.qwreindeer .v-scrollable {
+	overflow: auto;
+	font-size: 0;
+	line-height: normal;
+}
+
+.v-ff .qwreindeer .v-scrollable {
+	font-size: 12px;
+}
+
+.v-ios.v-webkit .qwreindeer .v-scrollable {
+	-webkit-overflow-scrolling: touch;
+}
+
+.v-ios5.v-webkit .qwreindeer .v-scrollable {
+	-webkit-overflow-scrolling: none;
+}
+
+.qwreindeer .v-scrollable.v-panel-content > .v-widget {
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.qwreindeer.v-overlay-container {
+	width: 0;
+	height: 0;
+}
+
+.qwreindeer .v-vertical.v-margin-top, .qwreindeer .v-horizontal.v-margin-top {
+	padding-top: 12px;
+}
+
+.qwreindeer .v-vertical.v-margin-right, .qwreindeer .v-horizontal.v-margin-right {
+	padding-right: 12px;
+}
+
+.qwreindeer .v-vertical.v-margin-bottom, .qwreindeer .v-horizontal.v-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.qwreindeer .v-vertical.v-margin-left, .qwreindeer .v-horizontal.v-margin-left {
+	padding-left: 12px;
+}
+
+.qwreindeer .v-gridlayout.v-layout-margin-top {
+	padding-top: 24px;
+}
+
+.qwreindeer .v-gridlayout, .qwreindeer .v-verticallayout, .qwreindeer .v-horizontallayout {
+	font-size: 0;
+	line-height: normal;
+}
+
+.qwreindeer .v-gridlayout.v-layout-margin-bottom {
+	padding-bottom: 24px;
+}
+
+.qwreindeer .v-gridlayout.v-layout-margin-left {
+	padding-left: 24px;
+}
+
+.qwreindeer .v-gridlayout.v-layout-margin-right {
+	padding-right: 24px;
+}
+
+.qwreindeer .v-gridlayout .v-layout-spacing-on {
+	padding-left: 12px;
+	padding-top: 12px;
+}
+
+.qwreindeer .v-spacing {
+	width: 6px;
+	height: 6px;
+}
+
+.qwreindeer .v-vertical, .qwreindeer .v-horizontal {
+	display: inline-block;
+}
+
+.qwreindeer div.v-layout.v-horizontal.v-widget {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-layout.v-vertical > .v-expand, .qwreindeer .v-layout.v-horizontal > .v-expand {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.qwreindeer .v-slot, .qwreindeer .v-spacing {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+}
+
+.qwreindeer .v-vertical > .v-slot:after {
+	display: inline-block;
+	clear: both;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.qwreindeer .v-vertical > .v-slot, .qwreindeer .v-vertical > .v-expand > .v-slot {
+	display: block;
+	clear: both;
+}
+
+.qwreindeer .v-horizontal > .v-slot, .qwreindeer .v-horizontal > .v-expand > .v-slot {
+	height: 100%;
+}
+
+.qwreindeer .v-horizontal > .v-expand > .v-slot {
+	position: relative;
+}
+
+.qwreindeer .v-vertical > .v-spacing, .qwreindeer .v-vertical > .v-expand > .v-spacing {
+	width: 0;
+	display: block;
+	clear: both;
+}
+
+.qwreindeer .v-horizontal > .v-spacing, .qwreindeer .v-horizontal > .v-expand > .v-spacing {
+	height: 0;
+}
+
+.qwreindeer .v-align-middle:before, .qwreindeer .v-align-bottom:before, .qwreindeer .v-expand > .v-align-middle:before, .qwreindeer .v-expand > .v-align-bottom:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0;
+}
+
+.qwreindeer .v-align-middle, .qwreindeer .v-align-bottom {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-align-middle > .v-widget, .qwreindeer .v-align-bottom > .v-widget {
+	display: inline-block;
+}
+
+.qwreindeer .v-align-middle, .qwreindeer .v-align-middle > .v-widget {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-align-bottom, .qwreindeer .v-align-bottom > .v-widget {
+	vertical-align: bottom;
+}
+
+.qwreindeer .v-align-center {
+	text-align: center;
+}
+
+.qwreindeer .v-align-center > .v-widget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.qwreindeer .v-align-right {
+	text-align: right;
+}
+
+.qwreindeer .v-align-right > .v-widget {
+	margin-left: auto;
+}
+
+.qwreindeer .v-has-caption, .qwreindeer .v-has-caption > .v-caption {
+	display: inline-block;
+}
+
+.qwreindeer .v-caption {
+	overflow: visible;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-caption-on-left, .qwreindeer .v-caption-on-right {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-caption-on-top > .v-caption, .qwreindeer .v-caption-on-bottom > .v-caption {
+	display: block;
+}
+
+.qwreindeer .v-caption-on-left > .v-caption {
+	padding-right: 0.5em;
+}
+
+.qwreindeer .v-caption-on-right > .v-caption {
+	vertical-align: top;
+}
+
+.qwreindeer .v-caption-on-left > .v-widget, .qwreindeer .v-caption-on-right > .v-widget {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-has-caption.v-has-width > .v-widget {
+	width: 100% !important;
+}
+
+.qwreindeer .v-has-caption.v-has-height > .v-widget {
+	height: 100% !important;
+}
+
+.qwreindeer .v-errorindicator {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-csslayout {
+	overflow: hidden;
+}
+
+.qwreindeer div.v-csslayout {
+	display: block;
+}
+
+.qwreindeer .v-csslayout-margin, .qwreindeer .v-csslayout-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-has-width > .v-csslayout-margin, .qwreindeer .v-has-width > .v-csslayout-margin > .v-csslayout-container {
+	width: 100%;
+}
+
+.qwreindeer .v-has-height > .v-csslayout-margin, .qwreindeer .v-has-height > .v-csslayout-margin > .v-csslayout-container {
+	height: 100%;
+}
+
+.qwreindeer .v-csslayout-margin-top {
+	padding-top: 12px;
+}
+
+.qwreindeer .v-csslayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.qwreindeer .v-csslayout-margin-left {
+	padding-left: 12px;
+}
+
+.qwreindeer .v-csslayout-margin-right {
+	padding-right: 12px;
+}
+
+.qwreindeer .v-customlayout {
+	overflow: hidden;
+}
+
+.qwreindeer .v-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.qwreindeer .v-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .qwreindeer .v-datefield-button:after {
+	content: "\200B";
+}
+
+.qwreindeer .v-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.qwreindeer .v-has-width > input.v-datefield-textfield {
+	width: 100%;
+}
+
+.qwreindeer .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.qwreindeer .v-datefield .v-datefield-button-readonly {
+	display: none;
+}
+
+.qwreindeer .v-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.qwreindeer .v-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.qwreindeer .v-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.qwreindeer .v-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.qwreindeer .v-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day, .qwreindeer .v-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.qwreindeer .v-disabled .v-datefield-calendarpanel-day, .qwreindeer .v-disabled .v-datefield-calendarpanel-day-today, .qwreindeer .v-disabled.v-datefield-popupcalendar .v-datefield-button {
+	cursor: default;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-disabled, .qwreindeer .v-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.qwreindeer .v-datefield-calendarpanel-prevyear button.outside-range, .qwreindeer .v-datefield-calendarpanel-nextyear button.outside-range, .qwreindeer .v-datefield-calendarpanel-prevmonth button.outside-range, .qwreindeer .v-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.qwreindeer .v-datefield-time {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-datefield-time .v-label {
+	display: inline;
+}
+
+.qwreindeer .v-datefield-popup {
+	background: #fff;
+}
+
+.v-ie9 .qwreindeer .v-datefield-popup, .v-ie10 .qwreindeer .v-datefield-popup, .v-ie11 .qwreindeer .v-datefield-popup {
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.qwreindeer .v-datefield-popupcalendar input.v-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-inline-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.qwreindeer .v-inline-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .qwreindeer .v-inline-datefield-button:after {
+	content: "\200B";
+}
+
+.qwreindeer .v-inline-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.qwreindeer .v-has-width > input.v-inline-datefield-textfield {
+	width: 100%;
+}
+
+.qwreindeer .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.qwreindeer .v-inline-datefield .v-inline-datefield-button-readonly {
+	display: none;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day, .qwreindeer .v-inline-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.qwreindeer .v-disabled .v-inline-datefield-calendarpanel-day, .qwreindeer .v-disabled .v-inline-datefield-calendarpanel-day-today, .qwreindeer .v-disabled.v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	cursor: default;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-disabled, .qwreindeer .v-inline-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-prevyear button.outside-range, .qwreindeer .v-inline-datefield-calendarpanel-nextyear button.outside-range, .qwreindeer .v-inline-datefield-calendarpanel-prevmonth button.outside-range, .qwreindeer .v-inline-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.qwreindeer .v-inline-datefield-time {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-inline-datefield-time .v-label {
+	display: inline;
+}
+
+.qwreindeer .v-inline-datefield-popup {
+	background: #fff;
+}
+
+.v-ie9 .qwreindeer .v-inline-datefield-popup, .v-ie10 .qwreindeer .v-inline-datefield-popup, .v-ie11 .qwreindeer .v-inline-datefield-popup {
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.qwreindeer .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-ddwrapper {
+	padding: 2px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.qwreindeer [draggable=true] {
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .qwreindeer .v-ddwrapper a.drag-start {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: cyan;
+	filter: alpha(opacity=0);
+}
+
+.qwreindeer .v-ddwrapper-over {
+	border: 2px solid #1d9dff;
+	background-color: #bcdcff;
+	padding: 0;
+}
+
+.qwreindeer .v-ddwrapper-over {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.qwreindeer .no-box-drag-hints .v-ddwrapper-over {
+	border: none;
+	background-color: transparent;
+	padding: 2px;
+}
+
+.qwreindeer.v-app .v-ddwrapper-over-top, .qwreindeer .v-window .v-ddwrapper-over-top, .qwreindeer .v-popupview-popup .v-ddwrapper-over-top {
+	border: none;
+	border-top: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-top: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.qwreindeer.v-app .v-ddwrapper-over-bottom, .qwreindeer .v-window .v-ddwrapper-over-bottom, .qwreindeer .v-popupview-popup .v-ddwrapper-over-bottom {
+	border: none;
+	border-bottom: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-bottom: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.qwreindeer.v-app .v-ddwrapper-over-left, .qwreindeer .v-window .v-ddwrapper-over-left, .qwreindeer .v-popupview-popup .v-ddwrapper-over-left {
+	border: none;
+	border-left: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-left: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.qwreindeer.v-app .v-ddwrapper-over-right, .qwreindeer .v-window .v-ddwrapper-over-right, .qwreindeer .v-popupview-popup .v-ddwrapper-over-right {
+	border: none;
+	border-right: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-right: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.qwreindeer .v-ddwrapper, .qwreindeer .v-ddwrapper-over, .qwreindeer.v-app .v-ddwrapper-over-top, .qwreindeer .v-window .v-ddwrapper-over-top, .qwreindeer .v-popupview-popup .v-ddwrapper-over-top, .qwreindeer.v-app .v-ddwrapper-over-bottom, .qwreindeer .v-window .v-ddwrapper-over-bottom, .qwreindeer .v-popupview-popup .v-ddwrapper-over-bottom, .qwreindeer.v-app .v-ddwrapper-over-left, .qwreindeer .v-window .v-ddwrapper-over-left, .qwreindeer .v-popupview-popup .v-ddwrapper-over-left, .qwreindeer.v-app .v-ddwrapper-over-right, .qwreindeer .v-window .v-ddwrapper-over-right, .qwreindeer .v-popupview-popup .v-ddwrapper-over-right {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.qwreindeer .v-ddwrapper-over-top:before, .qwreindeer .v-ddwrapper-over-bottom:after, .qwreindeer .v-ddwrapper-over-left:before, .qwreindeer .v-ddwrapper-over-right:before {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -2px;
+	background: transparent url(../base/common/img/drag-slot-dot.png) no-repeat;
+}
+
+.qwreindeer .v-ddwrapper-over-bottom:after {
+	margin-top: -2px;
+}
+
+.qwreindeer .v-ddwrapper-over-left:before, .qwreindeer .v-ddwrapper-over-right:before {
+	background-position: 0 -6px;
+	margin-top: -2px;
+	margin-left: -4px;
+}
+
+.qwreindeer .v-ddwrapper-over-right:before {
+	position: relative;
+	margin-bottom: -4px;
+	margin-right: -4px;
+	margin-left: 0;
+	width: auto;
+	background-position: 100% -6px;
+}
+
+.qwreindeer .no-horizontal-drag-hints .v-ddwrapper-over-left {
+	padding-left: 2px;
+	border-left: none;
+}
+
+.qwreindeer .no-horizontal-drag-hints .v-ddwrapper-over-right {
+	padding-right: 2px;
+	border-right: none;
+}
+
+.qwreindeer .no-vertical-drag-hints .v-ddwrapper-over-top {
+	padding-top: 2px;
+	border-top: none;
+}
+
+.qwreindeer .no-vertical-drag-hints .v-ddwrapper-over-bottom {
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+.qwreindeer .no-horizontal-drag-hints .v-ddwrapper-over-left:before, .qwreindeer .no-horizontal-drag-hints .v-ddwrapper-over-right:before, .qwreindeer .no-vertical-drag-hints .v-ddwrapper-over-top:before, .qwreindeer .no-vertical-drag-hints .v-ddwrapper-over-bottom:after {
+	display: none;
+}
+
+.qwreindeer .v-table .v-embedded-image {
+	display: inline-block;
+}
+
+.qwreindeer .v-formlayout.v-has-width > table {
+	width: 100%;
+}
+
+.qwreindeer .v-formlayout.v-has-height > table {
+	height: 100%;
+}
+
+.qwreindeer .v-formlayout-cell .v-errorindicator {
+	display: block;
+}
+
+.qwreindeer .v-formlayout-error-indicator {
+	width: 12px;
+}
+
+.qwreindeer .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-formlayout-errorcell, .qwreindeer .v-formlayout-captioncell {
+	width: 1px;
+}
+
+.qwreindeer .v-formlayout-captioncell .v-caption {
+	overflow: visible;
+}
+
+.qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 6px;
+}
+
+.qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 0;
+}
+
+.qwreindeer .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .qwreindeer .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .qwreindeer .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 12px;
+}
+
+.qwreindeer .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .qwreindeer .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .qwreindeer .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 12px;
+}
+
+.qwreindeer .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 12px;
+}
+
+.qwreindeer .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 12px;
+}
+
+.qwreindeer .v-formlayout-captioncell .v-caption .v-required-field-indicator {
+	float: none;
+}
+
+.qwreindeer .v-gridlayout {
+	position: relative;
+}
+
+.qwreindeer .v-gridlayout-slot {
+	position: absolute;
+}
+
+.qwreindeer .v-gridlayout-margin-top {
+	padding-top: 12px;
+}
+
+.qwreindeer .v-gridlayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.qwreindeer .v-gridlayout-margin-left {
+	padding-left: 12px;
+}
+
+.qwreindeer .v-gridlayout-margin-right {
+	padding-right: 12px;
+}
+
+.qwreindeer .v-gridlayout-spacing-on {
+	padding-left: 6px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-gridlayout-spacing, .qwreindeer .v-gridlayout-spacing-off {
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.qwreindeer .v-gridlayout-spacing-off {
+	overflow: hidden;
+}
+
+.qwreindeer .v-label {
+	overflow: hidden;
+}
+
+.qwreindeer .v-label.v-has-width {
+	white-space: normal;
+}
+
+.qwreindeer .v-link {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-link a {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.qwreindeer .v-link span {
+	text-decoration: underline;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-disabled a {
+	cursor: default;
+}
+
+.qwreindeer .v-link img {
+	vertical-align: middle;
+	border: none;
+}
+
+.qwreindeer .v-loginform {
+	height: 140px;
+	width: 200px;
+}
+
+.qwreindeer .v-app-loginpage .v-button {
+	float: left;
+}
+
+.qwreindeer .v-menubar {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.qwreindeer .v-menubar .v-menubar-menuitem {
+	cursor: default;
+	vertical-align: middle;
+	white-space: nowrap;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.qwreindeer .v-menubar .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-menubar-submenu {
+	background: #fff;
+}
+
+.qwreindeer .v-menubar-menuitem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem {
+	cursor: default;
+	display: block;
+	position: relative;
+	padding-right: 1.5em;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-caption {
+	display: block;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem *, .qwreindeer .v-menubar-submenu .v-menubar-menuitem-caption * {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-menubar-submenu-indicator {
+	display: none;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-submenu-indicator {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	font-size: 11.7px;
+}
+
+.qwreindeer .v-menubar-menuitem-disabled, .qwreindeer .v-menubar span.v-menubar-menuitem-disabled:hover, .qwreindeer .v-menubar span.v-menubar-menuitem-disabled:focus, .qwreindeer .v-menubar span.v-menubar-menuitem-disabled:active {
+	color: #999;
+}
+
+.qwreindeer .v-menubar-more-menuitem {
+	font-family: arial, helvetica, sans-serif;
+}
+
+.qwreindeer .v-menubar-separator {
+	overflow: hidden;
+}
+
+.qwreindeer .v-menubar-separator span {
+	display: block;
+	text-indent: -9999px;
+	font-size: 1px;
+	line-height: 1px;
+	border-top: 1px solid #ddd;
+	margin: 3px 0 2px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-menubar .v-icon, .qwreindeer .v-menubar-submenu .v-icon {
+	margin-right: 3px;
+}
+
+.qwreindeer .v-menubar:focus, .qwreindeer .v-menubar-popup:focus, .qwreindeer .v-menubar-popup .popupContent:focus, .qwreindeer .v-menubar-popup .popupContent .v-menubar-submenu:focus {
+	outline: none;
+}
+
+.qwreindeer .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.qwreindeer .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../base/menubar/img/check.gif) no-repeat left;
+}
+
+.qwreindeer .v-Notification {
+	background: #999;
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 1em;
+	max-width: 85%;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.qwreindeer .v-Notification h1, .qwreindeer .v-Notification p, .qwreindeer .v-Notification-error h1, .qwreindeer .v-Notification-error p, .qwreindeer .v-Notification-warning h1, .qwreindeer .v-Notification-warning p {
+	display: inline;
+	margin: 0 0.5em 0 0;
+}
+
+.qwreindeer .v-Notification-warning {
+	background: orange;
+}
+
+.qwreindeer .v-Notification-error {
+	background: red;
+}
+
+.qwreindeer .v-Notification-tray h1 {
+	display: block;
+}
+
+.qwreindeer .v-Notification-tray p {
+	display: block;
+}
+
+.qwreindeer .v-Notification-system {
+	background-color: red;
+}
+
+.qwreindeer .v-Notification-system h1 {
+	display: block;
+	margin: 0;
+}
+
+.qwreindeer .v-Notification-animate-out {
+	-webkit-animation: v-notification-animate-out 400ms;
+	-moz-animation: v-notification-animate-out 400ms;
+	animation: v-notification-animate-out 400ms;
+}
+
+.qwreindeer .v-Notification.v-position-top {
+	top: 0;
+}
+
+.qwreindeer .v-Notification.v-position-right {
+	right: 0;
+}
+
+.qwreindeer .v-Notification.v-position-bottom {
+	bottom: 0;
+}
+
+.qwreindeer .v-Notification.v-position-left {
+	left: 0;
+}
+
+.qwreindeer .v-Notification.v-position-assistive {
+	top: -9999px;
+	left: -9999px;
+}
+
+.qwreindeer .v-orderedlayout, .qwreindeer .v-horizontallayout, .qwreindeer .v-verticallayout {
+	position: relative;
+}
+
+.qwreindeer .v-orderedlayout-margin-top, .qwreindeer .v-horizontallayout-margin-top, .qwreindeer .v-verticallayout-margin-top {
+	padding-top: 12px;
+}
+
+.qwreindeer .v-orderedlayout-margin-right, .qwreindeer .v-horizontallayout-margin-right, .qwreindeer .v-verticallayout-margin-right {
+	padding-right: 12px;
+}
+
+.qwreindeer .v-orderedlayout-margin-bottom, .qwreindeer .v-horizontallayout-margin-bottom, .qwreindeer .v-verticallayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.qwreindeer .v-orderedlayout-margin-left, .qwreindeer .v-horizontallayout-margin-left, .qwreindeer .v-verticallayout-margin-left {
+	padding-left: 12px;
+}
+
+.qwreindeer .v-orderedlayout-spacing-on, .qwreindeer .v-horizontallayout-spacing-on, .qwreindeer .v-verticallayout-spacing-on {
+	padding-top: 6px;
+	padding-left: 6px;
+}
+
+.qwreindeer .v-orderedlayout-spacing-off, .qwreindeer .v-horizontallayout-spacing-off, .qwreindeer .v-verticallayout-spacing-off {
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.qwreindeer .v-horizontallayout-slot, .qwreindeer .v-verticallayout-slot {
+	position: absolute;
+}
+
+.qwreindeer .v-panel, .qwreindeer .v-panel-caption, .qwreindeer .v-panel-content, .qwreindeer .v-panel-deco, .qwreindeer .v-panel-light, .qwreindeer .v-panel-caption-light, .qwreindeer .v-panel-content-light, .qwreindeer .v-panel-deco-light {
+	outline: none;
+	text-align: left;
+}
+
+.qwreindeer .v-panel-caption .v-errorindicator {
+	float: none;
+	display: inline;
+}
+
+.qwreindeer .v-panel-caption .v-icon {
+	display: inline;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-panel-caption span {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-panel-caption {
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.qwreindeer .v-panel-nocaption {
+	overflow: hidden;
+}
+
+.qwreindeer .v-panel-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-panel.v-has-width > .v-panel-content {
+	width: 100%;
+}
+
+.qwreindeer .v-panel.v-has-height > .v-panel-content {
+	height: 100%;
+}
+
+.qwreindeer .v-popupview {
+	cursor: pointer;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-popupview-popup {
+	overflow: auto;
+}
+
+.qwreindeer .v-popupview-loading {
+	width: 30px;
+	height: 30px;
+	background: transparent url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+}
+
+.qwreindeer .v-progressbar {
+	width: 150px;
+}
+
+.qwreindeer .v-progressbar-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.qwreindeer .v-progressbar-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.qwreindeer div.v-progressbar-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.qwreindeer .v-progressbar-indeterminate .v-progressbar-wrapper, .qwreindeer .v-progressbar-indeterminate .v-progressbar-indicator, .qwreindeer .v-progressbar-indeterminate-disabled .v-progressbar-wrapper, .qwreindeer .v-progressbar-indeterminate-disabled .v-progressbar-indicator {
+	display: none;
+}
+
+.qwreindeer div.v-progressbar-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.qwreindeer .v-progressindicator {
+	width: 150px;
+}
+
+.qwreindeer .v-progressindicator-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.qwreindeer .v-progressindicator-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.qwreindeer div.v-progressindicator-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.qwreindeer .v-progressindicator-indeterminate .v-progressindicator-wrapper, .qwreindeer .v-progressindicator-indeterminate .v-progressindicator-indicator, .qwreindeer .v-progressindicator-indeterminate-disabled .v-progressindicator-wrapper, .qwreindeer .v-progressindicator-indeterminate-disabled .v-progressindicator-indicator {
+	display: none;
+}
+
+.qwreindeer div.v-progressindicator-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.qwreindeer .v-select {
+	text-align: left;
+}
+
+.qwreindeer .v-select-optiongroup .v-select-option {
+	display: block;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-select-optiongroup .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+	margin: 0 2px;
+}
+
+.v-ie .qwreindeer .v-select-optiongroup .v-select-option {
+	zoom: 1;
+}
+
+.qwreindeer .v-select-select {
+	display: block;
+}
+
+.qwreindeer .v-select-twincol {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-select-twincol-options {
+	float: left;
+}
+
+.qwreindeer .v-select-twincol-caption-left {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.qwreindeer .v-select-twincol-selections {
+	font-weight: bold;
+}
+
+.qwreindeer .v-select-twincol-caption-right {
+	float: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.qwreindeer .v-select-twincol-buttons {
+	float: left;
+	text-align: center;
+}
+
+.qwreindeer .v-select-twincol-buttons .v-select-twincol-deco {
+	clear: both;
+}
+
+.qwreindeer .v-select-twincol .v-textfield {
+	display: block;
+	float: left;
+	clear: left;
+}
+
+.qwreindeer .v-select-twincol .v-button {
+	float: left;
+}
+
+.qwreindeer .v-select-twincol-buttons .v-button {
+	float: none;
+}
+
+.qwreindeer .v-filterselect {
+	white-space: nowrap;
+	text-align: left;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.qwreindeer .v-filterselect .v-icon {
+	float: left;
+}
+
+.qwreindeer.v-app .v-filterselect-input, .qwreindeer .v-window .v-filterselect-input, .qwreindeer .v-popupview-popup .v-filterselect-input {
+	margin: 0;
+	float: left;
+	-webkit-border-radius: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-filterselect-prompt .v-filterselect-input {
+	color: #999;
+	font-style: italic;
+}
+
+.qwreindeer .v-filterselect-button {
+	display: inline-block;
+	cursor: pointer;
+	width: 1em;
+	margin-right: -1em;
+	height: 1em;
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -8px;
+}
+
+.qwreindeer .v-filterselect.v-readonly .v-filterselect-button {
+	display: none;
+}
+
+.qwreindeer .v-filterselect.v-readonly, .qwreindeer .v-filterselect.v-readonly .v-filterselect-input {
+	background: transparent;
+}
+
+.qwreindeer .v-filterselect-suggestpopup {
+	background: #fff;
+	border: 1px solid #eee;
+}
+
+.qwreindeer .v-filterselect-suggestmenu table {
+	border-collapse: collapse;
+	border: none;
+	vertical-align: top;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem span {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.qwreindeer .v-filterselect-nextpage, .qwreindeer .v-filterselect-nextpage-off, .qwreindeer .v-filterselect-prevpage-off, .qwreindeer .v-filterselect-prevpage {
+	width: 100%;
+	background: #aaa;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.qwreindeer .v-filterselect-nextpage-off, .qwreindeer .v-filterselect-prevpage-off {
+	color: #666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.qwreindeer .v-filterselect-nextpage-off span, .qwreindeer .v-filterselect-prevpage-off span {
+	cursor: default;
+}
+
+.qwreindeer .v-filterselect-status {
+	white-space: nowrap;
+	text-align: center;
+}
+
+.qwreindeer .v-filterselect-no-input .v-filterselect-input {
+	cursor: default;
+}
+
+.qwreindeer .v-shadow {
+	position: absolute;
+	display: none;
+	pointer-events: none;
+}
+
+.v-ie8 .qwreindeer .v-shadow {
+	display: block;
+}
+
+.qwreindeer .v-shadow .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-left.png);
+}
+
+.qwreindeer .v-shadow .top {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: 5px;
+	height: 10px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/top.png);
+}
+
+.qwreindeer .v-shadow .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-right.png);
+}
+
+.qwreindeer .v-shadow .left {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/left.png);
+}
+
+.qwreindeer .v-shadow .center {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: 5px;
+	bottom: 3px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/center.png);
+}
+
+.qwreindeer .v-shadow .right {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	right: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/right.png);
+}
+
+.qwreindeer .v-shadow .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-left.png);
+}
+
+.qwreindeer .v-shadow .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: 5px;
+	right: 5px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom.png);
+}
+
+.qwreindeer .v-shadow .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-right.png);
+}
+
+.qwreindeer .v-slider {
+	margin: 5px 0;
+}
+
+.qwreindeer .v-slider-base {
+	height: 2px;
+	border-top: 1px solid #ddd;
+	background: #eee;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #eee;
+}
+
+.qwreindeer .v-slider-handle {
+	background: #aaa;
+	width: 12px;
+	height: 12px;
+	margin-top: -5px;
+	font-size: 0;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.qwreindeer .v-slider-vertical {
+	width: 2px;
+	height: auto;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #cccfd0;
+	border-right: 1px solid #cccfd0;
+}
+
+.qwreindeer .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-bottom: 1px solid #eee;
+	border-right: none;
+}
+
+.qwreindeer .v-slider-vertical .v-slider-handle {
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	margin-left: -5px;
+}
+
+.qwreindeer .v-slider-feedback {
+	padding: 2px 5px;
+	background: #444;
+	color: #fff;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: -2px 0 0 2px;
+	text-shadow: 0 1px 0 #000;
+}
+
+.qwreindeer .v-splitpanel-horizontal, .qwreindeer .v-splitpanel-vertical {
+	overflow: hidden;
+}
+
+.qwreindeer .v-splitpanel-hsplitter {
+	width: 6px;
+}
+
+.qwreindeer .v-splitpanel-hsplitter div {
+	width: 6px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #ddd;
+	cursor: e-resize;
+	cursor: col-resize;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.qwreindeer .v-disabled .v-splitpanel-hsplitter div {
+	cursor: default;
+}
+
+.qwreindeer .v-splitpanel-vsplitter {
+	height: 6px;
+}
+
+.qwreindeer .v-splitpanel-vsplitter div {
+	height: 6px;
+	background: #ddd;
+	cursor: s-resize;
+	cursor: row-resize;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.qwreindeer .v-disabled .v-splitpanel-vsplitter div {
+	cursor: default;
+}
+
+.qwreindeer .v-table {
+	overflow: hidden;
+	text-align: left;
+}
+
+.qwreindeer .v-table-header-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background: #efefef;
+}
+
+.qwreindeer .v-table-header table, .qwreindeer .v-table-table {
+	border-spacing: 0;
+	border-collapse: separate;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.qwreindeer .v-table-table {
+	font-size: 12px;
+}
+
+.qwreindeer .v-table-header td {
+	padding: 0;
+}
+
+.qwreindeer .v-table-header-cell, .qwreindeer .v-table-header-cell-asc, .qwreindeer .v-table-header-cell-desc {
+	cursor: pointer;
+}
+
+.qwreindeer .v-table.v-disabled .v-table-header-cell, .qwreindeer .v-table.v-disabled .v-table-header-cell-asc, .qwreindeer .v-table.v-disabled .v-table-header-cell-desc {
+	cursor: default;
+}
+
+.qwreindeer .v-table-footer-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-top: none;
+	background: #efefef;
+}
+
+.qwreindeer .v-table-footer table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.qwreindeer .v-table-footer td {
+	padding: 0;
+	border-right: 1px solid #aaa;
+}
+
+.qwreindeer .v-table-footer-cell {
+	cursor: pointer;
+}
+
+.qwreindeer .v-table-footer-container {
+	float: right;
+	padding-right: 6px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-table-resizer {
+	display: block;
+	height: 1.2em;
+	float: right;
+	background: #aaa;
+	cursor: e-resize;
+	cursor: col-resize;
+	width: 1px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-table.v-disabled .v-table-resizer {
+	cursor: default;
+}
+
+.qwreindeer .v-table-caption-container {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 6px;
+}
+
+.qwreindeer .v-table-caption-container-align-right {
+	float: right;
+}
+
+.qwreindeer .v-table-sort-indicator {
+	width: 0px;
+	height: 1.2em;
+	float: right;
+}
+
+.qwreindeer .v-table-header-cell-asc .v-table-sort-indicator, .qwreindeer .v-table-header-cell-desc .v-table-sort-indicator {
+	width: 16px;
+	height: 1.2em;
+	float: right;
+}
+
+.qwreindeer .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right 6px;
+}
+
+.qwreindeer .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right -10px;
+}
+
+.qwreindeer .v-table-caption-container-align-center {
+	text-align: center;
+}
+
+.qwreindeer .v-table-caption-container-align-right {
+	text-align: right;
+}
+
+.qwreindeer .v-table-caption-container .v-icon, .qwreindeer .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-table-body {
+	border: 1px solid #aaa;
+}
+
+.qwreindeer .v-table-row-spacer {
+	height: 10px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-table-row, .qwreindeer .v-table-row-odd {
+	background: #fff;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.qwreindeer .v-table-generated-row {
+	background: #efefef;
+}
+
+.qwreindeer .v-table-body-noselection .v-table-row, .qwreindeer .v-table-body-noselection .v-table-row-odd {
+	cursor: default;
+}
+
+.qwreindeer .v-table .v-selected {
+	background: #999;
+	color: #fff;
+}
+
+.qwreindeer .v-table-cell-content {
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 6px;
+	border-right: 1px solid #aaa;
+}
+
+.qwreindeer .v-table-cell-wrapper {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.qwreindeer .v-table-cell-wrapper-align-center {
+	text-align: center;
+}
+
+.qwreindeer .v-table-cell-wrapper-align-right {
+	text-align: right;
+}
+
+.qwreindeer .v-table-column-selector {
+	float: right;
+	background: transparent url(../base/common/img/sprites.png) no-repeat 4px -37px;
+	margin: -1.2em 0 0 0;
+	height: 1.2em;
+	width: 14px;
+	position: relative;
+	cursor: pointer;
+}
+
+.qwreindeer .v-table.v-disabled .v-table-column-selector {
+	cursor: default;
+}
+
+.qwreindeer .v-table-focus-slot-left {
+	border-left: 2px solid #999;
+	float: none;
+	margin-bottom: -1.2em;
+	width: auto;
+	background: transparent;
+	border-right: 1px solid #aaa;
+}
+
+.qwreindeer .v-table-focus-slot-right {
+	border-right: 2px solid #999;
+	margin-left: -2px;
+}
+
+.qwreindeer .v-table-header-drag {
+	position: absolute;
+	background: #efefef;
+	border: 1px solid #eee;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	margin-top: 20px;
+	z-index: 30000;
+}
+
+.qwreindeer .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-table-scrollposition {
+	width: 160px;
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+.qwreindeer .v-table-scrollposition span {
+	display: block;
+	text-align: center;
+}
+
+.qwreindeer .v-table-body:focus, .qwreindeer .v-table-body-wrapper:focus {
+	outline: none;
+}
+
+.qwreindeer .v-table-body.focused {
+	border-color: #388ddd;
+}
+
+.qwreindeer .v-table-focus .v-table-cell-content {
+	border-top: 1px dotted #0066bd;
+	border-bottom: 1px dotted #0066bd;
+}
+
+.qwreindeer .v-table-focus .v-table-cell-wrapper {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.qwreindeer .v-off {
+	color: #ddd;
+}
+
+.qwreindeer .v-table-drag .v-table-body {
+	border-color: #1d9dff;
+}
+
+.qwreindeer .v-table-row-drag-middle .v-table-cell-content {
+	background-color: #bcdcff;
+}
+
+.qwreindeer .v-table-row-drag-top .v-table-cell-content {
+	border-top: 2px solid #1d9dff;
+}
+
+.qwreindeer .v-table-row-drag-top .v-table-cell-wrapper {
+	margin-top: -2px;
+}
+
+.qwreindeer .v-table-row-drag-bottom .v-table-cell-content {
+	border-bottom: 2px solid #1d9dff;
+}
+
+.qwreindeer .v-table-row-drag-bottom .v-table-cell-wrapper {
+	margin-bottom: -2px;
+}
+
+.qwreindeer .v-table-row-drag-top .v-table-cell-content:first-child:before, .qwreindeer .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -6px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.v-ff .qwreindeer .v-table-row-drag-bottom .v-table-cell-content:first-child:after, .v-ie .qwreindeer .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	margin-top: -2px;
+}
+
+.qwreindeer .v-tabsheet, .qwreindeer .v-tabsheet-content, .qwreindeer .v-tabsheet-deco {
+	outline: none;
+	text-align: left;
+}
+
+.qwreindeer .v-tabsheet-tabs {
+	empty-cells: hide;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.qwreindeer .v-tabsheet-tabitemcell:focus {
+	outline: none;
+}
+
+.qwreindeer .v-tabsheet-tabitemcell, .qwreindeer .v-tabsheet-spacertd {
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+.qwreindeer .v-tabsheet-spacertd {
+	width: 100%;
+}
+
+.qwreindeer .v-tabsheet-spacertd div {
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	height: 1em;
+	padding: 0.2em 0;
+}
+
+.qwreindeer .v-tabsheet-hidetabs > .v-tabsheet-tabcontainer {
+	display: none;
+}
+
+.qwreindeer .v-tabsheet-scroller {
+	white-space: nowrap;
+	text-align: right;
+	margin-top: -1em;
+}
+
+.qwreindeer .v-disabled .v-tabsheet-scroller {
+	display: none;
+}
+
+.qwreindeer .v-tabsheet-scrollerPrev, .qwreindeer .v-tabsheet-scrollerNext, .qwreindeer .v-tabsheet-scrollerPrev-disabled, .qwreindeer .v-tabsheet-scrollerNext-disabled {
+	border: 1px solid #aaa;
+	background: #fff;
+	width: 12px;
+	height: 1em;
+	cursor: pointer;
+}
+
+.qwreindeer .v-tabsheet-scrollerPrev-disabled, .qwreindeer .v-tabsheet-scrollerNext-disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.qwreindeer .v-tabsheet-tabs .v-caption, .qwreindeer .v-tabsheet-tabs .v-caption span {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-tabsheet-caption-close {
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.qwreindeer .v-tabsheet .v-disabled .v-tabsheet-caption-close {
+	cursor: default;
+	visibility: hidden;
+}
+
+.qwreindeer .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.qwreindeer .v-tabsheet-tabitem {
+	border: 1px solid #aaa;
+	border-right: none;
+	cursor: pointer;
+	padding: 0.2em 0.5em;
+}
+
+.qwreindeer .v-tabsheet-tabitem .v-caption {
+	cursor: inherit;
+}
+
+.qwreindeer .v-tabsheet.v-disabled .v-tabsheet-tabitem, .qwreindeer .v-tabsheet-tabitemcell-disabled .v-tabsheet-tabitem {
+	cursor: default;
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected {
+	cursor: default;
+	border-bottom-color: #fff;
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected .v-caption {
+	cursor: default;
+}
+
+.qwreindeer .v-tabsheet-tabitem-focus .v-captiontext {
+	text-decoration: underline;
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected.v-tabsheet-tabitem-focus .v-captiontext {
+	text-decoration: inherit;
+}
+
+.qwreindeer .v-tabsheet-content {
+	border: 1px solid #aaa;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+}
+
+.qwreindeer .v-tabsheet-deco {
+	height: 1px;
+	background: #aaa;
+	overflow: hidden;
+}
+
+.qwreindeer .v-tabsheet-hidetabs .v-tabsheet-content {
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-hidetabs .v-tabsheet-deco {
+	height: 0;
+}
+
+.qwreindeer .v-textfield {
+	text-align: left;
+}
+
+.qwreindeer .v-textarea {
+	resize: none;
+	white-space: pre-wrap;
+}
+
+.qwreindeer input.v-textfield-prompt, .qwreindeer textarea.v-textarea-prompt {
+	color: #999;
+	font-style: italic;
+}
+
+.qwreindeer input.v-textfield-readonly, .qwreindeer textarea.v-textarea-readonly {
+	background: transparent;
+	border: none;
+	resize: none;
+}
+
+.qwreindeer input.v-disabled, .qwreindeer textarea.v-disabled {
+	resize: none;
+}
+
+.qwreindeer input.v-textfield-readonly:focus, .qwreindeer textarea.v-textarea-readonly:focus {
+	outline: none;
+}
+
+.v-sa .qwreindeer input:focus, .v-sa .qwreindeer textarea:focus {
+	outline-width: medium;
+}
+
+.qwreindeer .v-richtextarea {
+	border: 1px solid #aaa;
+	overflow: hidden;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextArea {
+	background: #fff;
+	border: none;
+}
+
+.qwreindeer .v-richtextarea .gwt-HTML {
+	height: 100%;
+	font-size: 12px;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextToolbar {
+	white-space: nowrap;
+	background: #959595 url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x 0 -42px;
+	border-bottom: 1px solid #7d7d7d;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextToolbar-top {
+	padding-bottom: 1px;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextToolbar-bottom {
+	clear: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton, .qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton {
+	float: left;
+	display: inline;
+	width: 22px;
+	height: 21px;
+	overflow: hidden;
+	background: transparent url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x;
+	cursor: pointer;
+	margin-right: 2px;
+	text-align: center;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down, .qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down, .qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down-hovering, .qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	background-position: 0 -21px;
+}
+
+.qwreindeer .v-richtextarea .gwt-RichTextToolbar .gwt-ListBox {
+	width: 24.5%;
+	margin-right: 2px;
+}
+
+.qwreindeer .v-richtextarea-readonly {
+	border: none;
+}
+
+.qwreindeer .v-tree {
+	text-align: left;
+	padding: 1px 0;
+	outline: none;
+}
+
+.qwreindeer .v-tree-node {
+	background: transparent url(../base/common/img/sprites.png) no-repeat 5px -37px;
+	padding: 1px 0;
+}
+
+.qwreindeer .v-tree-node-caption:focus {
+	outline: none;
+}
+
+.qwreindeer div.v-tree-node-leaf {
+	background: transparent;
+}
+
+.qwreindeer .v-tree-node-expanded {
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -10px;
+}
+
+.qwreindeer .v-tree-node-caption {
+	margin-left: 1em;
+}
+
+.qwreindeer .v-tree-node span {
+	cursor: pointer;
+}
+
+.qwreindeer .v-tree-node-caption div {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-tree-node-caption span, .qwreindeer .v-tree-node-caption .v-icon {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-tree-node-selected span {
+	background: #999;
+	color: #fff;
+}
+
+.qwreindeer .v-tree-node-children {
+	padding-left: 1em;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-top {
+	border-top: 2px solid #1d9dff;
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-bottom {
+	border-bottom: 2px solid #1d9dff;
+	margin-bottom: -1px;
+	padding-bottom: 0;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-top:before, .qwreindeer .v-tree .v-tree-node-drag-bottom:after, .qwreindeer .v-tree .v-tree-node-caption-drag-center:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-bottom:after {
+	margin-top: -2px;
+}
+
+.qwreindeer .v-tree .v-tree-node-caption-drag-center:after {
+	margin-left: 14px;
+}
+
+.v-ff .qwreindeer .v-tree .v-tree-node-caption-drag-center:after, .v-ie .qwreindeer .v-tree .v-tree-node-caption-drag-center:after {
+	margin-top: -2px;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-top {
+	background-position: 5px -38px;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -5px -11px;
+}
+
+.qwreindeer .v-tree .v-tree-node-caption-drag-center div {
+	border: 2px solid #1d9dff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: -2px 2px -2px -2px;
+	background-color: #bcdcff;
+}
+
+.qwreindeer .v-tree .v-tree-node-caption-drag-center div {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.qwreindeer .v-tree .v-tree-node-caption-drag-center div, .qwreindeer .v-tree .v-tree-node-drag-top, .qwreindeer .v-tree .v-tree-node-drag-bottom {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-caption {
+	padding-top: 1px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node {
+	background: transparent url(../base/tree/img/connector-expand.png) no-repeat 2px -52px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-expanded {
+	background: transparent url(../base/tree/img/connector-collapse.png) no-repeat 2px -52px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-expand-last.png) no-repeat 2px -52px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-expanded.v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-collapse-last.png) no-repeat 2px -52px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-leaf {
+	background: transparent url(../base/tree/img/connector-leaf.png) repeat-y 2px 50%;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-leaf-last {
+	background: transparent url(../base/tree/img/connector-leaf-last.png) repeat-y 2px 50%;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-children {
+	background: transparent url(../base/tree/img/connector.png) repeat-y 2px 0;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-children-last {
+	background: transparent;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-drag-top, .qwreindeer .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.qwreindeer .v-treetable-treespacer {
+	display: inline-block;
+	background: transparent;
+	height: 10px;
+	width: 18px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+
+.qwreindeer .v-treetable-node-closed {
+	background: url(../base/treetable/img/arrow-right.png) right top no-repeat;
+}
+
+.qwreindeer .v-treetable-node-open {
+	background: url(../base/treetable/img/arrow-down.png) right top no-repeat;
+}
+
+.qwreindeer .v-treetable .v-checkbox {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.qwreindeer .v-treetable .v-table-row .v-table-cell-content, .qwreindeer .v-treetable .v-table-row-odd .v-table-cell-content {
+	z-index: 10;
+}
+
+.qwreindeer .v-treetable .v-table-cell-wrapper {
+	position: relative;
+}
+
+.qwreindeer .v-treetable .v-table-body .v-table-table .v-table-row-animating {
+	zoom: 1;
+	z-index: 1;
+}
+
+.qwreindeer .v-treetable .v-table-body .v-table-table .v-table-row-animating, .qwreindeer .v-treetable .v-table-body .v-table-table .v-table-row-animating .v-table-cell-content {
+	background: transparent;
+}
+
+.qwreindeer .v-treetable-animation-clone {
+	border-spacing: 0;
+	zoom: 1;
+}
+
+.qwreindeer div.v-treetable-animation-clone-wrapper {
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.qwreindeer div.v-treetable-animation-clone-wrapper table.v-treetable-animation-clone {
+	background-color: #fff;
+}
+
+.qwreindeer div table.v-treetable-animation-clone tr.v-table-row, .qwreindeer div table.v-treetable-animation-clone tr.v-table-row-odd, .qwreindeer div table.v-treetable-animation-clone tr.v-table-row td.v-table-cell-content, .qwreindeer div table.v-treetable-animation-clone tr.v-table-row-odd td.v-table-cell-content {
+	visibility: visible;
+}
+
+.qwreindeer .v-upload {
+	white-space: nowrap;
+}
+
+.qwreindeer .v-upload-immediate {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-ff .qwreindeer .v-upload-immediate, .v-op .qwreindeer .v-upload-immediate {
+	display: inline-block;
+}
+
+.qwreindeer .v-upload-immediate input {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	height: 21px;
+	text-align: right;
+	border: none;
+	background: transparent;
+}
+
+.qwreindeer .v-upload-immediate button {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.qwreindeer .v-window {
+	background: #fff;
+}
+
+.qwreindeer .v-window-contents {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-window.v-has-width > div.popupContent, .qwreindeer .v-window.v-has-width .v-window-wrap, .qwreindeer .v-window.v-has-width .v-window-contents, .qwreindeer .v-window.v-has-width .v-window-contents > div {
+	width: 100%;
+}
+
+.qwreindeer .v-window.v-has-height > div.popupContent, .qwreindeer .v-window.v-has-height .v-window-wrap, .qwreindeer .v-window.v-has-height .v-window-contents, .qwreindeer .v-window.v-has-height .v-window-contents > div {
+	height: 100%;
+}
+
+.qwreindeer .v-window-outerheader {
+	padding: 0.3em 1em;
+	height: 1.6em;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-window-outerheader, .qwreindeer .v-window-draggingCurtain {
+	cursor: move;
+}
+
+.qwreindeer .v-window-header {
+	font-weight: bold;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ie-user-select: none;
+	user-select: none;
+}
+
+.qwreindeer div.v-window-header {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 0;
+}
+
+.qwreindeer .v-window-header .v-icon {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-window-contents > div {
+	outline: none;
+}
+
+.qwreindeer .v-window-footer {
+	overflow: hidden;
+	zoom: 1;
+	height: 10px;
+	position: relative;
+	cursor: move;
+}
+
+.qwreindeer .v-window-resizebox {
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.qwreindeer .v-window-resizebox, .qwreindeer .v-window-resizingCurtain {
+	cursor: se-resize;
+}
+
+.qwreindeer .v-window div.v-window-footer-noresize {
+	height: 0;
+}
+
+.qwreindeer .v-window-resizebox-disabled, .qwreindeer .v-window-restorebox-disabled, .qwreindeer .v-window-maximizebox-disabled {
+	cursor: default;
+	display: none;
+}
+
+.qwreindeer .v-window-closebox, .qwreindeer .v-window-restorebox, .qwreindeer .v-window-maximizebox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.qwreindeer .v-window-maximizebox, .qwreindeer .v-window-restorebox {
+	right: 1.1em;
+}
+
+.qwreindeer .v-window-closebox {
+	background: red;
+}
+
+.qwreindeer .v-window-maximizebox {
+	background: blue;
+}
+
+.qwreindeer .v-window-restorebox {
+	background: yellow;
+}
+
+.qwreindeer .v-window-modalitycurtain {
+	top: 0;
+	left: 0;
+	background: #999;
+	opacity: 0.5;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=50);
+}
+
+.qwreindeer .v-shadow-window {
+	position: absolute;
+	display: none;
+	pointer-events: none;
+}
+
+.v-ie8 .qwreindeer .v-shadow-window {
+	display: block;
+}
+
+.qwreindeer .v-shadow-window .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-left.png);
+}
+
+.qwreindeer .v-shadow-window .top {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: 13px;
+	height: 28px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/top.png);
+}
+
+.qwreindeer .v-shadow-window .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-right.png);
+}
+
+.qwreindeer .v-shadow-window .left {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/left.png);
+}
+
+.qwreindeer .v-shadow-window .center {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: 13px;
+	bottom: 10px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/center.png);
+}
+
+.qwreindeer .v-shadow-window .right {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	right: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/right.png);
+}
+
+.qwreindeer .v-shadow-window .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-left.png);
+}
+
+.qwreindeer .v-shadow-window .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: 13px;
+	right: 13px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom.png);
+}
+
+.qwreindeer .v-shadow-window .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-right.png);
+}
+
+.qwreindeer .v-accordion {
+	border: 1px solid #bebebe;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.qwreindeer .v-accordion-item {
+	background-color: #fff;
+}
+
+.qwreindeer .v-accordion-item-caption {
+	height: 19px;
+	background: #e4e4e4 repeat-x;
+	background-image: url(../reindeer/tabsheet/img/tabbar-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	font-size: 11px;
+	line-height: normal;
+	border-top: 1px solid #bebebe;
+	text-shadow: #fff 0 1px 0;
+}
+
+.qwreindeer .v-accordion-item-caption .v-caption {
+	font-size: 11px;
+}
+
+.qwreindeer .v-accordion-item-caption .v-captiontext {
+	vertical-align: baseline;
+}
+
+.qwreindeer .v-accordion-item-first .v-accordion-item-caption {
+	border-top: none;
+}
+
+.qwreindeer .v-accordion-item-caption .v-caption {
+	padding: 3px 0 0 10px;
+}
+
+.qwreindeer .v-accordion-item-open .v-accordion-item-caption {
+	background-image: url(../reindeer/tabsheet/img/tabbar-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	border-bottom: 1px solid #bbb;
+}
+
+.qwreindeer .v-accordion-item-caption .v-icon {
+	margin-top: -3px;
+}
+
+.v-ie .qwreindeer .v-accordion-item-caption .v-icon, .v-ff .qwreindeer .v-accordion-item-caption .v-icon {
+	margin-top: -6px;
+}
+
+.qwreindeer .v-accordion-borderless {
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.qwreindeer .v-button:focus {
+	background-image: url(../reindeer/button/img/left-focus.png);/** sprite-ref: buttons */
+	outline: none;
+}
+
+.qwreindeer .v-button:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+	outline: none;
+}
+
+.qwreindeer .v-button:active, .qwreindeer .v-button.v-pressed {
+	background-image: url(../reindeer/button/img/left-pressed.png);/** sprite-ref: buttons */
+	outline: none;
+}
+
+.qwreindeer .v-button:active .v-button-wrap, .qwreindeer .v-button.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+	outline: none;
+}
+
+.qwreindeer .v-button, .qwreindeer .v-disabled.v-button {
+	height: 26px;
+	padding: 0 0 0 6px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/button/img/left.png);/** sprite-ref: buttons */
+	border: none;
+	cursor: default;
+}
+
+.qwreindeer .v-button-wrap, .qwreindeer .v-disabled.v-button .v-button-wrap {
+	display: block;
+	height: 22px;
+	padding: 4px 15px 0 9px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/button/img/right.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button-caption {
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+.qwreindeer .black .v-button:focus {
+	background-image: url(../reindeer/button/img/black/left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button:active, .qwreindeer .black .v-button.v-pressed {
+	background-image: url(../reindeer/button/img/black/left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button:active .v-button-wrap, .qwreindeer .black .v-button.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button, .qwreindeer .black .v-disabled.v-button {
+	background-image: url(../reindeer/button/img/black/left.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-wrap, .qwreindeer .black .v-disabled.v-button .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button-caption {
+	color: #c9ccce;
+	text-shadow: #121314 0 -1px 0;
+}
+
+.qwreindeer .v-button-primary:focus {
+	background-image: url(../reindeer/button/img/primary-left-focus.png);/** sprite-ref: buttons */
+}
+
+.qwreindeer .v-button-primary:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button-primary:active, .qwreindeer .v-button-primary.v-pressed {
+	background-image: url(../reindeer/button/img/primary-left-pressed.png);/** sprite-ref: buttons */
+}
+
+.qwreindeer .v-button-primary:active .v-button-wrap, .qwreindeer .v-button-primary.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button-primary, .qwreindeer .v-disabled.v-button-primary {
+	background-image: url(../reindeer/button/img/primary-left.png);/** sprite-ref: buttons */
+}
+
+.qwreindeer .v-button-primary .v-button-wrap, .qwreindeer .v-disabled.v-button-primary .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button-primary:focus {
+	background-image: url(../reindeer/button/img/black/primary-left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-primary:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+	color: #eaf4fb;
+}
+
+.qwreindeer .black .v-button-primary:active, .qwreindeer .black .v-button-primary.v-pressed {
+	background-image: url(../reindeer/button/img/black/primary-left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-primary:active .v-button-wrap, .qwreindeer .black .v-button-primary.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button-primary, .qwreindeer .black .v-disabled.v-button-primary {
+	background-image: url(../reindeer/button/img/black/primary-left.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-primary .v-button-wrap, .qwreindeer .black .v-disabled.v-button-primary .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button-small:focus {
+	background-image: url(../reindeer/button/img/small-left-focus.png);/** sprite-ref: buttons */
+}
+
+.qwreindeer .v-button-small:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button-small:active, .qwreindeer .v-button-small.v-pressed {
+	background-image: url(../reindeer/button/img/small-left-pressed.png);/** sprite-ref: buttons */
+}
+
+.qwreindeer .v-button-small:active .v-button-wrap, .qwreindeer .v-button-small.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button-small, .qwreindeer .v-disabled.v-button-small {
+	background-image: url(../reindeer/button/img/small-left.png);/** sprite-ref: buttons */
+	height: 20px;
+}
+
+.qwreindeer .v-button-small .v-button-wrap, .qwreindeer .v-disabled.v-button-small .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right.png);/** sprite-ref: buttons; sprite-alignment: right */
+	height: 19px;
+	padding: 1px 14px 0 8px;
+}
+
+.qwreindeer .v-button-small .v-button-caption {
+	font-weight: normal;
+}
+
+.qwreindeer .black .v-button-small:focus {
+	background-image: url(../reindeer/button/img/black/small-left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-small:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button-small:active, .qwreindeer .black .v-button-small.v-pressed {
+	background-image: url(../reindeer/button/img/black/small-left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-small:active .v-button-wrap, .qwreindeer .black .v-button-small.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-button-small, .qwreindeer .black .v-disabled.v-button-small {
+	background-image: url(../reindeer/button/img/black/small-left.png);/** sprite-ref: black-buttons */
+}
+
+.qwreindeer .black .v-button-small .v-button-wrap, .qwreindeer .black .v-disabled.v-button-small .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.qwreindeer .v-button.v-button-link, .qwreindeer .v-button.v-button-link:focus, .qwreindeer .v-button.v-button-link:active, .qwreindeer .v-button-link.v-pressed, .qwreindeer .v-disabled.v-button.v-button-link, .qwreindeer .v-button.v-button-link .v-button-wrap, .qwreindeer .v-button.v-button-link:focus .v-button-wrap, .qwreindeer .v-button.v-button-link:active .v-button-wrap, .qwreindeer .v-button-link.v-pressed .v-button-wrap, .qwreindeer .v-disabled.v-button.v-button-link .v-button-wrap {
+	background: transparent;
+	height: auto;
+	padding: 0;
+	cursor: pointer;
+	line-height: inherit;
+}
+
+.qwreindeer .v-button.v-button-link.v-disabled, .qwreindeer .v-button.v-button-link.v-disabled .v-button-wrap {
+	cursor: default;
+}
+
+.qwreindeer .v-button-link .v-button-caption {
+	line-height: inherit;
+	font-weight: normal;
+	color: #1b699f;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.qwreindeer .v-button-link:focus .v-button-caption {
+	outline: 1px dotted #1b699f;
+}
+
+.qwreindeer .v-nativebutton-link .v-nativebutton-caption {
+	line-height: inherit;
+	font-weight: normal;
+	color: #1b699f;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.qwreindeer .v-nativebutton-link:focus .v-nativebutton-caption {
+	outline: 1px dotted #1b699f;
+}
+
+.v-ie8 .qwreindeer .v-nativebutton-link {
+	padding: 0;
+	text-align: left;
+}
+
+.qwreindeer .v-colorpicker-popup {
+	width: 246px;
+}
+
+.qwreindeer .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 284px;
+}
+
+.qwreindeer .v-colorpicker-popup .v-filterselect {
+	padding-right: 25px;
+}
+
+.qwreindeer.v-app {
+	background: #f5f5f5;
+}
+
+.qwreindeer.v-app, .qwreindeer .v-window, .qwreindeer .v-popupview-popup, .qwreindeer .v-tooltip, .qwreindeer.v-app input, .qwreindeer.v-app select, .qwreindeer.v-app button, .qwreindeer.v-app textarea, .qwreindeer .v-window input, .qwreindeer .v-window select, .qwreindeer .v-window button, .qwreindeer .v-window textarea, .qwreindeer .v-popupview-popup input, .qwreindeer .v-popupview-popup select, .qwreindeer .v-popupview-popup button, .qwreindeer .v-popupview-popup textarea, .qwreindeer .v-filterselect-suggestpopup, .qwreindeer .v-datefield-popup, .qwreindeer .v-contextmenu, .qwreindeer .v-Notification, .qwreindeer .v-menubar-submenu, .qwreindeer .v-drag-element, .qwreindeer .v-table-header-drag {
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	color: #222;
+}
+
+.qwreindeer.v-app .black, .qwreindeer .v-window-black, .qwreindeer .v-window .black, .qwreindeer .v-popupview-popup .black {
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.qwreindeer .v-errorindicator {
+	width: 13px;
+	height: 15px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.qwreindeer .v-tooltip {
+	background-color: #fffcdd;
+	border: 1px solid #b8b295;
+	font-size: 11px;
+	color: #222;
+}
+
+.qwreindeer .v-tooltip-text {
+	padding: 2px 4px;
+}
+
+.qwreindeer .v-tooltip .v-errormessage {
+	padding: 3px 4px;
+	background: #ffecc6;
+	color: #b74100;
+	border: none;
+	border-top: 1px solid #fff3dc;
+}
+
+.qwreindeer .v-tooltip .v-errormessage h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ab3101;
+	margin: 2px 0 8px 0;
+}
+
+.qwreindeer .v-tooltip .v-errormessage h3 {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 1px 0 4px 0;
+}
+
+.qwreindeer .v-contextmenu {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem {
+	padding: 1px 12px 1px 8px;
+	height: 16px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem-selected {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.v-ie .qwreindeer .v-contextmenu .gwt-MenuItem-selected {
+	background-image: url(../reindeer/common/img/sel-bg.png);
+	background-position: left top;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem-selected div {
+	background: transparent;
+	cursor: default;
+}
+
+.portlet .qwreindeer.v-app {
+	background: transparent;
+}
+
+.portlet .qwreindeer.v-app .v-radiobutton input, .qwreindeer .portlet .v-window .v-radiobutton input, .qwreindeer .portlet .v-popupview-popup .v-radiobutton input, .portlet .qwreindeer.v-app .v-checkbox input, .qwreindeer .portlet .v-window .v-checkbox input, .qwreindeer .portlet .v-popupview-popup .v-checkbox input {
+	margin-right: 3px;
+	background: transparent;
+}
+
+.qwreindeer .v-datefield {
+	overflow: hidden;
+}
+
+.qwreindeer input.v-textfield-readonly:focus {
+	background-color: transparent;
+}
+
+.qwreindeer .v-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.qwreindeer .v-datefield-year .v-datefield-calendarpanel-prevmonth, .qwreindeer .v-datefield-year .v-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.qwreindeer .v-datefield-calendarpanel td {
+	vertical-align: top;
+}
+
+.qwreindeer td.v-datefield-calendarpanel-month {
+	height: 23px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer span.v-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	height: 16px;
+	padding: 3px 10px 0 10px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	text-shadow: #fff 0 1px 0;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.qwreindeer .v-datefield-year .v-datefield-calendarpanel-month {
+	width: 35px;
+}
+
+.qwreindeer .v-datefield-month .v-datefield-calendarpanel-month, .qwreindeer .v-datefield-day .v-datefield-calendarpanel-month, .qwreindeer .v-datefield-full .v-datefield-calendarpanel-month {
+	width: 124px;
+}
+
+.qwreindeer .v-datefield-month, .qwreindeer .v-datefield-day, .qwreindeer .v-datefield-full {
+	min-width: 240px;
+}
+
+.qwreindeer .v-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 24px;
+}
+
+.qwreindeer .v-datefield-year .v-datefield-calendarpanel {
+	width: 100px;
+}
+
+.qwreindeer td.v-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.qwreindeer td.v-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.qwreindeer .v-datefield-calendarpanel-prevyear button, .qwreindeer .v-datefield-calendarpanel-nextyear button, .qwreindeer .v-datefield-calendarpanel-prevmonth button, .qwreindeer .v-datefield-calendarpanel-nextmonth button {
+	width: 24px;
+	height: 23px;
+	border: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.v-ie .qwreindeer .v-datefield-calendarpanel-prevyear button, .v-ie .qwreindeer .v-datefield-calendarpanel-nextyear button, .v-ie .qwreindeer .v-datefield-calendarpanel-prevmonth button, .v-ie .qwreindeer .v-datefield-calendarpanel-nextmonth button {
+	text-indent: 0;
+	font-size: 1px;
+}
+
+.qwreindeer .v-datefield-calendarpanel-nextyear button {
+	background-position: left top;
+	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-datefield-calendarpanel-prevyear button:active, .v-ie .qwreindeer .v-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-datefield-calendarpanel-nextyear button:active, .v-ie .qwreindeer .v-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-datefield-calendarpanel-prevmonth, .qwreindeer .v-datefield-calendarpanel-nextmonth {
+	width: 24px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-datefield-calendarpanel-prevmonth button, .qwreindeer .v-datefield-calendarpanel-nextmonth button {
+	width: 100%;
+	height: 21px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
+	min-width: 24px;
+	margin-top: 1px;
+}
+
+.v-ie .qwreindeer .v-datefield-calendarpanel-prevmonth button, .v-ie .qwreindeer .v-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.qwreindeer .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .v-datefield-calendarpanel-prevmonth button:active, .v-ie .qwreindeer .v-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .v-datefield-calendarpanel-nextmonth button:active, .v-ie .qwreindeer .v-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .v-datefield-calendarpanel-body, .qwreindeer .v-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.qwreindeer .v-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.qwreindeer .v-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #eaeff1;
+	text-shadow: #3b4651 0 -1px 0;
+	vertical-align: top;
+	padding: 0;
+}
+
+.qwreindeer .v-datefield-calendarpanel-weeknumbers td {
+	width: 12.4%;
+}
+
+.qwreindeer .v-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	padding: 1px 5px 0 0;
+	height: 14px;
+	border-top: 1px solid #596775;
+}
+
+.qwreindeer .v-datefield-calendarpanel-weekdays .v-first {
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
+}
+
+.qwreindeer .v-datefield-calendarpanel-weekdays .v-last {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
+}
+
+.v-ie .qwreindeer .v-datefield-calendarpanel-weekdays td {
+	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
+	background-position: left top;
+}
+
+.v-ie .qwreindeer .v-datefield-calendarpanel .v-first {
+	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
+}
+
+.v-ie .qwreindeer .v-datefield-calendarpanel .v-last {
+	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
+}
+
+.qwreindeer .v-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 19px;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day, .qwreindeer .v-datefield-calendarpanel-weeknumber, .qwreindeer .v-datefield-calendarpanel-day-today {
+	padding: 2px 5px 2px 0;
+	display: block;
+	margin: 1px 0 0 5px;
+}
+
+.qwreindeer .v-datefield-calendarpanel-weeknumber {
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	font-size: 10.8px;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-today {
+	color: #4095d1;
+	border: none;
+}
+
+.qwreindeer .v-datefield-calendarpanel-day-selected {
+	background: #507ba3;
+	color: #fff;
+	text-shadow: #3b5b79 0 1px 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.qwreindeer .v-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.qwreindeer .v-datefield-popup {
+	background: #f8f8f9;
+	padding: 8px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.v-sa .qwreindeer .v-datefield-popup, .v-op .qwreindeer .v-datefield-popup {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+.qwreindeer .v-datefield-year > .v-datefield-textfield {
+	width: 4.5em;
+}
+
+.qwreindeer .v-datefield-month > .v-datefield-textfield {
+	width: 5.5em;
+}
+
+.qwreindeer .v-datefield-day > .v-datefield-textfield {
+	width: 6em;
+}
+
+.qwreindeer .v-datefield-full > .v-datefield-textfield {
+	width: 12.5em;
+}
+
+.qwreindeer .v-datefield-popupcalendar input.v-datefield-textfield {
+	border-right-width: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	height: 23px;
+}
+
+.qwreindeer .v-datefield.v-readonly input.v-datefield-textfield {
+	border-right-width: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.qwreindeer .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: normal;
+}
+
+.qwreindeer .v-datefield-popupcalendar .v-datefield-button {
+	width: 24px;
+	margin-right: -24px;
+	height: 23px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.qwreindeer .v-datefield-popupcalendar .v-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .black .v-datefield-popupcalendar .v-datefield-button {
+	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-datefield-popupcalendar .v-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black td.v-datefield-calendarpanel-month {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	height: 21px;
+}
+
+.qwreindeer .black span.v-datefield-calendarpanel-month {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	color: #c9ccce;
+	text-shadow: #000 0 -1px 0;
+	padding: 4px 10px 1px 10px;
+	margin-top: 0;
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-prevyear button, .qwreindeer .black .v-datefield-calendarpanel-nextyear button, .qwreindeer .black .v-datefield-calendarpanel-prevmonth button, .qwreindeer .black .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
+	height: 21px;
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-nextyear button {
+	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-prevyear button:active, .v-ie .qwreindeer .black .v-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-nextyear button:active, .v-ie .qwreindeer .black .v-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-prevmonth, .qwreindeer .black .v-datefield-calendarpanel-nextmonth {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-prevmonth button, .qwreindeer .black .v-datefield-calendarpanel-nextmonth button {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+	margin-top: 0;
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-prevmonth button:active, .v-ie .qwreindeer .black .v-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-nextmonth button:active, .v-ie .qwreindeer .black .v-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.v-ie .qwreindeer .black .v-datefield-calendarpanel-prevmonth button, .v-ie .qwreindeer .black .v-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-weekdays td {
+	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	color: #0a0b0b;
+	text-shadow: #5a5c5e 0 1px 0;
+}
+
+.qwreindeer .black .v-datefield-calendarpanel-weekdays strong {
+	border-top-color: #1b1c1d;
+}
+
+.qwreindeer .black .v-datefield-calendarpanel .v-first {
+	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
+}
+
+.qwreindeer .black .v-datefield-calendarpanel .v-last {
+	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-datefield-prompt .v-datefield-textfield {
+	color: #5f6366;
+}
+
+.qwreindeer .v-inline-datefield {
+	overflow: hidden;
+}
+
+.qwreindeer input.v-textfield-readonly:focus {
+	background-color: transparent;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.qwreindeer .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevmonth, .qwreindeer .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel td {
+	vertical-align: top;
+}
+
+.qwreindeer td.v-inline-datefield-calendarpanel-month {
+	height: 23px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer span.v-inline-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	height: 16px;
+	padding: 3px 10px 0 10px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	text-shadow: #fff 0 1px 0;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.qwreindeer .v-inline-datefield-year .v-inline-datefield-calendarpanel-month {
+	width: 35px;
+}
+
+.qwreindeer .v-inline-datefield-month .v-inline-datefield-calendarpanel-month, .qwreindeer .v-inline-datefield-day .v-inline-datefield-calendarpanel-month, .qwreindeer .v-inline-datefield-full .v-inline-datefield-calendarpanel-month {
+	width: 124px;
+}
+
+.qwreindeer .v-inline-datefield-month, .qwreindeer .v-inline-datefield-day, .qwreindeer .v-inline-datefield-full {
+	min-width: 240px;
+}
+
+.qwreindeer .v-inline-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 24px;
+}
+
+.qwreindeer .v-inline-datefield-year .v-inline-datefield-calendarpanel {
+	width: 100px;
+}
+
+.qwreindeer td.v-inline-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.qwreindeer td.v-inline-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-prevyear button, .qwreindeer .v-inline-datefield-calendarpanel-nextyear button, .qwreindeer .v-inline-datefield-calendarpanel-prevmonth button, .qwreindeer .v-inline-datefield-calendarpanel-nextmonth button {
+	width: 24px;
+	height: 23px;
+	border: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.v-ie .qwreindeer .v-inline-datefield-calendarpanel-prevyear button, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-nextyear button, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-nextmonth button {
+	text-indent: 0;
+	font-size: 1px;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-nextyear button {
+	background-position: left top;
+	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-prevmonth, .qwreindeer .v-inline-datefield-calendarpanel-nextmonth {
+	width: 24px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-prevmonth button, .qwreindeer .v-inline-datefield-calendarpanel-nextmonth button {
+	width: 100%;
+	height: 21px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
+	min-width: 24px;
+	margin-top: 1px;
+}
+
+.v-ie .qwreindeer .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .qwreindeer .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-body, .qwreindeer .v-inline-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #eaeff1;
+	text-shadow: #3b4651 0 -1px 0;
+	vertical-align: top;
+	padding: 0;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weeknumbers td {
+	width: 12.4%;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	padding: 1px 5px 0 0;
+	height: 14px;
+	border-top: 1px solid #596775;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weekdays .v-first {
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weekdays .v-last {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
+}
+
+.v-ie .qwreindeer .v-inline-datefield-calendarpanel-weekdays td {
+	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
+	background-position: left top;
+}
+
+.v-ie .qwreindeer .v-inline-datefield-calendarpanel .v-first {
+	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
+}
+
+.v-ie .qwreindeer .v-inline-datefield-calendarpanel .v-last {
+	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 19px;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day, .qwreindeer .v-inline-datefield-calendarpanel-weeknumber, .qwreindeer .v-inline-datefield-calendarpanel-day-today {
+	padding: 2px 5px 2px 0;
+	display: block;
+	margin: 1px 0 0 5px;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-weeknumber {
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	font-size: 10.8px;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-today {
+	color: #4095d1;
+	border: none;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-day-selected {
+	background: #507ba3;
+	color: #fff;
+	text-shadow: #3b5b79 0 1px 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.qwreindeer .v-inline-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.qwreindeer .v-inline-datefield-popup {
+	background: #f8f8f9;
+	padding: 8px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.v-sa .qwreindeer .v-inline-datefield-popup, .v-op .qwreindeer .v-inline-datefield-popup {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+.qwreindeer .v-inline-datefield-year > .v-inline-datefield-textfield {
+	width: 4.5em;
+}
+
+.qwreindeer .v-inline-datefield-month > .v-inline-datefield-textfield {
+	width: 5.5em;
+}
+
+.qwreindeer .v-inline-datefield-day > .v-inline-datefield-textfield {
+	width: 6em;
+}
+
+.qwreindeer .v-inline-datefield-full > .v-inline-datefield-textfield {
+	width: 12.5em;
+}
+
+.qwreindeer .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	border-right-width: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	height: 23px;
+}
+
+.qwreindeer .v-inline-datefield.v-readonly input.v-inline-datefield-textfield {
+	border-right-width: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.qwreindeer .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: normal;
+}
+
+.qwreindeer .v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	width: 24px;
+	margin-right: -24px;
+	height: 23px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.qwreindeer .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .black .v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black td.v-inline-datefield-calendarpanel-month {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	height: 21px;
+}
+
+.qwreindeer .black span.v-inline-datefield-calendarpanel-month {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	color: #c9ccce;
+	text-shadow: #000 0 -1px 0;
+	padding: 4px 10px 1px 10px;
+	margin-top: 0;
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-prevyear button, .qwreindeer .black .v-inline-datefield-calendarpanel-nextyear button, .qwreindeer .black .v-inline-datefield-calendarpanel-prevmonth button, .qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
+	height: 21px;
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-nextyear button {
+	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .qwreindeer .black .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .qwreindeer .black .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-prevmonth, .qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-prevmonth button, .qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth button {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+	margin-top: 0;
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .qwreindeer .black .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.v-ie .qwreindeer .black .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .qwreindeer .black .v-inline-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-weekdays td {
+	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	color: #0a0b0b;
+	text-shadow: #5a5c5e 0 1px 0;
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel-weekdays strong {
+	border-top-color: #1b1c1d;
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel .v-first {
+	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
+}
+
+.qwreindeer .black .v-inline-datefield-calendarpanel .v-last {
+	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
+}
+
+.qwreindeer .black .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #5f6366;
+}
+
+.qwreindeer .v-inline-datefield {
+	line-height: 14px;
+}
+
+.qwreindeer .v-formlayout-errorcell {
+	width: 13px;
+}
+
+.qwreindeer .v-formlayout-cell .v-errorindicator {
+	width: 13px;
+	height: 16px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.qwreindeer .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .qwreindeer .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 8px;
+}
+
+.qwreindeer .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .qwreindeer .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .qwreindeer .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 15px;
+}
+
+.qwreindeer .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .qwreindeer .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .qwreindeer .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 15px;
+}
+
+.qwreindeer .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 18px;
+}
+
+.qwreindeer .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 18px;
+}
+
+.qwreindeer .v-form-errormessage {
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 3px 2px;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	min-height: 20px;
+}
+
+.qwreindeer .v-form fieldset {
+	border: none;
+	border-top: 1px solid #babfc0;
+}
+
+.qwreindeer .v-form-nocaption fieldset {
+	border: none;
+}
+
+.qwreindeer .v-form-nocaption legend {
+	display: none;
+}
+
+.qwreindeer .v-form legend {
+	margin: 0 0 0 20px;
+	padding: 0 5px;
+	font-weight: bold;
+	color: #222;
+}
+
+.qwreindeer .black .v-form legend {
+	color: #e3e6e8;
+}
+
+.qwreindeer .v-label {
+	line-height: 18px;
+}
+
+.qwreindeer .white .black, .qwreindeer .blue .black {
+	color: #C9CCCE;
+	text-shadow: 0 0 1px #000;
+}
+
+.qwreindeer .black .v-label-h1, .qwreindeer .black .v-label-h2, .qwreindeer .black .v-caption-h1, .qwreindeer .black .v-caption-h2, .qwreindeer .white .black .v-label-h1, .qwreindeer .white .black .v-label-h2, .qwreindeer .white .black .v-caption-h1, .qwreindeer .white .black .v-caption-h2, .qwreindeer .blue .black .v-label-h1, .qwreindeer .blue .black .v-label-h2, .qwreindeer .blue .black .v-caption-h1, .qwreindeer .blue .black .v-caption-h2 {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.8) 0 2px 2px;
+}
+
+.qwreindeer .black .v-label-light, .qwreindeer .white .black .v-label-light {
+	color: #72787c;
+}
+
+.qwreindeer .black .v-label hr, .qwreindeer .white .black .v-label hr {
+	background: #0c0d0e;
+	color: #0c0d0e;
+	border-bottom-color: #292b2e;
+}
+
+.qwreindeer.v-app .white, .qwreindeer .v-window .white, .qwreindeer.v-app .blue, .qwreindeer .v-window .blue {
+	color: #222;
+	text-shadow: none;
+}
+
+.qwreindeer .blue .v-label-h1, .qwreindeer .blue .v-label-h2, .qwreindeer .blue .v-caption-h1, .qwreindeer .blue .v-caption-h2, .qwreindeer .white .blue .v-label-h1, .qwreindeer .white .blue .v-label-h2, .qwreindeer .white .blue .v-caption-h1, .qwreindeer .white .blue .v-caption-h2 {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
+}
+
+.qwreindeer .blue .v-label-light, .qwreindeer .white .blue .v-label-light {
+	color: #6e7c83;
+}
+
+.qwreindeer .blue .v-label hr, .qwreindeer .white .blue .v-label hr {
+	background: #a3bcc9;
+	color: #a3bcc9;
+	border-bottom-color: #cfe2eb;
+}
+
+.qwreindeer .v-label-h1, .qwreindeer .v-label-h2, .qwreindeer .v-caption-h1, .qwreindeer .v-caption-h2, .qwreindeer .white .v-label-h1, .qwreindeer .white .v-label-h2, .qwreindeer .white .v-caption-h1, .qwreindeer .white .v-caption-h2 {
+	font-family: Helvetica, Arial, "Lucida Grande", Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #44698b;
+	letter-spacing: -0.02em;
+	text-shadow: #fff 0 -1px 1px;
+}
+
+.qwreindeer .v-label-h2, .qwreindeer .v-caption-h2, .qwreindeer .white .v-label-h2, .qwreindeer .white .v-caption-h2 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.qwreindeer .v-label-light, .qwreindeer .white .v-label-light {
+	font-size: 11px;
+	line-height: 13px;
+	color: #707070;
+}
+
+.qwreindeer .v-label hr, .qwreindeer .white .v-label hr {
+	height: 2px;
+	overflow: hidden;
+	background: #dcdcdc;
+	color: #dcdcdc;
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.v-sa .qwreindeer .v-label hr, .v-ie8 .qwreindeer .v-label hr {
+	height: 1px;
+}
+
+.qwreindeer .v-table .v-label {
+	line-height: normal;
+}
+
+.qwreindeer .v-orderedlayout-margin-top, .qwreindeer .v-horizontallayout-margin-top, .qwreindeer .v-verticallayout-margin-top, .qwreindeer .v-layout.v-margin-top {
+	padding-top: 18px;
+}
+
+.qwreindeer .v-orderedlayout-margin-right, .qwreindeer .v-horizontallayout-margin-right, .qwreindeer .v-verticallayout-margin-right, .qwreindeer .v-layout.v-margin-right {
+	padding-right: 18px;
+}
+
+.qwreindeer .v-orderedlayout-margin-bottom, .qwreindeer .v-horizontallayout-margin-bottom, .qwreindeer .v-verticallayout-margin-bottom, .qwreindeer .v-layout.v-margin-bottom {
+	padding-bottom: 18px;
+}
+
+.qwreindeer .v-orderedlayout-margin-left, .qwreindeer .v-horizontallayout-margin-left, .qwreindeer .v-verticallayout-margin-left, .qwreindeer .v-layout.v-margin-left {
+	padding-left: 18px;
+}
+
+.qwreindeer .v-orderedlayout-spacing-on, .qwreindeer .v-horizontallayout-spacing-on, .qwreindeer .v-verticallayout-spacing-on {
+	padding-top: 7px;
+	padding-left: 6px;
+}
+
+.qwreindeer .v-spacing {
+	height: 7px;
+	width: 6px;
+}
+
+.qwreindeer .v-verticallayout-blue, .qwreindeer .v-horizontallayout-blue, .qwreindeer .v-orderedlayout-blue, .qwreindeer .v-gridlayout-blue, .qwreindeer .v-csslayout-blue, .qwreindeer .v-formlayout-blue, .qwreindeer .v-absolutelayout-blue, .qwreindeer .v-splitpanel-vertical-blue, .qwreindeer .v-splitpanel-horizontal-blue {
+	background-color: #bcd3de;
+}
+
+.qwreindeer .v-panel-content > div.blue {
+	background-color: #bcd3de;
+}
+
+.qwreindeer .v-verticallayout-white, .qwreindeer .v-horizontallayout-white, .qwreindeer .v-orderedlayout-white, .qwreindeer .v-gridlayout-white, .qwreindeer .v-csslayout-white, .qwreindeer .v-formlayout-white, .qwreindeer .v-absolutelayout-white, .qwreindeer .v-splitpanel-vertical-white, .qwreindeer .v-splitpanel-horizontal-white {
+	background-color: #fff;
+	color: #222;
+}
+
+.qwreindeer .v-panel-content > div.white {
+	background-color: #fff;
+	color: #222;
+}
+
+.qwreindeer .v-verticallayout-black, .qwreindeer .v-horizontallayout-black, .qwreindeer .v-orderedlayout-black, .qwreindeer .v-gridlayout-black, .qwreindeer .v-csslayout-black, .qwreindeer .v-formlayout-black, .qwreindeer .v-absolutelayout-black, .qwreindeer .v-splitpanel-vertical-black, .qwreindeer .v-splitpanel-horizontal-black {
+	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
+}
+
+.qwreindeer .v-panel-content > div.black {
+	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
+}
+
+.qwreindeer .v-link a:link span {
+	color: #1b699f;
+}
+
+.qwreindeer .v-link a:visited span {
+	color: #5c7485;
+}
+
+.qwreindeer .v-link a:hover span {
+	color: #2483c4;
+}
+
+.qwreindeer .v-menubar {
+	height: 23px;
+	background: #323336 repeat-x;
+	background-image: url(../reindeer/menubar/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #d1d3d6;
+	text-shadow: rgba(0, 0, 0, 0.9) 0 1px 0;
+	padding: 0 8px;
+}
+
+.qwreindeer .v-menubar .v-menubar-menuitem {
+	padding: 3px 8px;
+	height: 17px;
+	line-height: 16px;
+}
+
+.qwreindeer .v-menubar .v-menubar-menuitem:hover {
+	color: #fff;
+}
+
+.qwreindeer .v-menubar-submenu {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem {
+	padding: 1px 26px 1px 10px;
+	line-height: 16px;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+}
+
+.qwreindeer .v-menubar .v-menubar-menuitem-selected, .qwreindeer .v-menubar-submenu .v-menubar-menuitem-selected {
+	background: #4d749f repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: 0 1px 0 #3b5a7a;
+}
+
+.qwreindeer .v-menubar .v-menubar-menuitem-selected {
+	background-image: url(../reindeer/menubar/img/menu-sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px  */
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-submenu-indicator {
+	background: transparent url(../reindeer/menubar/img/submenu-icon.png) no-repeat right 70%;
+	width: 26px;
+	height: 16px;
+	text-indent: -9999px;
+	font-size: 10.8px;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-selected .v-menubar-submenu-indicator {
+	background-image: url(../reindeer/menubar/img/submenu-icon-hover.png);
+}
+
+.qwreindeer .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.qwreindeer .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/checked.png) no-repeat left;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-unchecked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/unchecked.png) no-repeat left;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-selected-checked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/checked-selected.png) no-repeat left;
+}
+
+.qwreindeer .v-menubar-submenu .v-menubar-menuitem-selected-unchecked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/unchecked-selected.png) no-repeat left;
+}
+
+.qwreindeer .v-Notification {
+	color: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 16px;
+	background: #c8ccd0;
+	font-weight: bold;
+}
+
+.v-ie9 .qwreindeer .v-Notification H1, .v-ie10 .qwreindeer .v-Notification H1 {
+	font-weight: bold;
+}
+
+.qwreindeer .v-Notification p {
+	line-height: 1.3;
+}
+
+.qwreindeer .v-Notification-warning {
+	background: #fdf3b5;
+	color: #ca9a61;
+	border: 3px solid #fee3af;
+}
+
+.qwreindeer .v-Notification-error {
+	background: #b40000 url(../reindeer/notification/img/error-close.png) no-repeat right top;
+	border: 3px solid #ca3030;
+}
+
+.qwreindeer .v-Notification-tray {
+	margin: 0 5px 5px 0;
+	background: #3b3c3e;
+	border: 2px solid #585b5c;
+	padding: 0.8em 0.9em;
+}
+
+.qwreindeer .v-Notification-tray h1 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.qwreindeer .v-Notification-tray p {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.qwreindeer .v-Notification-system {
+	background-color: #b40000;
+}
+
+.qwreindeer .blue .v-panel-caption, .qwreindeer .blue .v-panel-nocaption, .qwreindeer .blue .v-panel-content {
+	border-color: #a8bcc5;
+}
+
+.qwreindeer .v-panel-caption, .qwreindeer .v-panel-nocaption, .qwreindeer .white .v-panel-caption, .qwreindeer .white .v-panel-nocaption {
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 16px;
+}
+
+.v-webkit .qwreindeer .v-panel-caption, .v-webkit .qwreindeer .v-panel-nocaption, .v-gecko .qwreindeer .v-panel-caption, .v-gecko .qwreindeer .v-panel-nocaption, .v-ie9 .qwreindeer .v-panel-caption, .v-ie9 .qwreindeer .v-panel-nocaption, .v-ie10 .qwreindeer .v-panel-caption, .v-ie10 .qwreindeer .v-panel-nocaption {
+	border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.v-webkit .qwreindeer .v-panel-content, .v-gecko .qwreindeer .v-panel-content, .v-ie9 .qwreindeer .v-panel-content, .v-ie10 .qwreindeer .v-panel-content {
+	border-top-color: rgba(0, 0, 0, 0.07);
+}
+
+.v-webkit .qwreindeer .v-panel-deco, .v-gecko .qwreindeer .v-panel-deco, .v-ie9 .qwreindeer .v-panel-deco, .v-ie10 .qwreindeer .v-panel-deco {
+	border-top-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.qwreindeer .v-panel-caption {
+	padding-bottom: 2px;
+}
+
+.qwreindeer .v-panel-content, .qwreindeer .white .v-panel-content {
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	border-top: none;
+}
+
+.qwreindeer .blue .v-panel-deco {
+	border-color: #92a3ac;
+	background: #adc2cd;
+}
+
+.qwreindeer .v-panel-deco, .qwreindeer .white .v-panel-deco {
+	height: 1px;
+	border-top: 1px solid #bebebe;
+	background: #e2e2e2;
+	overflow: hidden;
+}
+
+.qwreindeer .v-panel-caption .v-errorindicator {
+	height: 16px;
+	width: 13px;
+	background: url(../reindeer/common/icons/error.png) no-repeat 50%;
+	display: inline;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.qwreindeer .v-panel-light .v-panel-caption-light, .qwreindeer .v-panel-light .v-panel-nocaption-light {
+	border: none;
+}
+
+.qwreindeer .v-panel-light .v-panel-content-light {
+	border: none;
+	background: transparent;
+}
+
+.qwreindeer .v-panel-light .v-panel-deco-light {
+	height: 0;
+	border: none;
+}
+
+.qwreindeer .v-popupview {
+	color: #1b699f;
+}
+
+.qwreindeer .v-popupview:hover {
+	color: #2483c4;
+}
+
+.qwreindeer .v-popupview-popup {
+	background: #fff;
+	padding: 3px;
+}
+
+.qwreindeer .v-progressbar-wrapper {
+	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
+	border: 1px solid #bfbfbf;
+}
+
+.qwreindeer .v-disabled .v-progressbar-wrapper {
+	background-image: url(../reindeer/progressindicator/img/disabled.gif);
+}
+
+.qwreindeer .v-progressbar-indicator {
+	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
+}
+
+.qwreindeer .v-progressindicator-wrapper {
+	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
+	border: 1px solid #bfbfbf;
+}
+
+.qwreindeer .v-disabled .v-progressindicator-wrapper {
+	background-image: url(../reindeer/progressindicator/img/disabled.gif);
+}
+
+.qwreindeer .v-progressindicator-indicator {
+	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
+}
+
+.qwreindeer .v-filterselect {
+	height: 24px;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/select/img/left.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+	padding-left: 2px;
+	padding-right: 25px;
+}
+
+.qwreindeer.v-app .v-filterselect-input, .qwreindeer .v-window .v-filterselect-input, .qwreindeer .v-popupview-popup .v-filterselect-input {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/select/img/center.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+	border: none;
+	height: 24px;
+}
+
+.qwreindeer.v-app input.v-filterselect-input, .qwreindeer .v-window input.v-filterselect-input, .qwreindeer .v-popupview-popup input.v-filterselect-input {
+	padding: 4px 0 4px 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.qwreindeer .v-filterselect-prompt .v-filterselect-input {
+	font-style: normal;
+}
+
+.qwreindeer .v-filterselect-input:focus {
+	outline: none;
+}
+
+.qwreindeer .v-filterselect-focus {
+	background-image: url(../reindeer/select/img/left-focus.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .v-filterselect-focus .v-filterselect-input {
+	background-image: url(../reindeer/select/img/center-focus.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-filterselect-button {
+	overflow: hidden;
+	width: 25px;
+	height: 24px;
+	background-position: 0 0;
+	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals ; sprite-margin-bottom: 1px */
+	cursor: default;
+	margin-right: -25px;
+}
+
+.qwreindeer .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/right-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-filterselect-focus .v-filterselect-button {
+	background-image: url(../reindeer/select/img/right-focus.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right-focus-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-filterselect-focus .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/right-focus-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-disabled .v-filterselect-button:hover, .qwreindeer .v-readonly .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-filterselect-suggestpopup {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-filterselect-suggestmenu {
+	margin: 4px 0;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem {
+	padding: 1px 8px;
+	height: 16px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+}
+
+.qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.qwreindeer .v-filterselect-nextpage, .qwreindeer .v-filterselect-nextpage-off, .qwreindeer .v-filterselect-prevpage-off, .qwreindeer .v-filterselect-prevpage {
+	height: 11px;
+	width: 100%;
+	background: transparent;
+	margin-bottom: -4px;
+}
+
+.qwreindeer .v-filterselect-nextpage, .qwreindeer .v-filterselect-nextpage-off {
+	margin: -4px 0 0;
+}
+
+.qwreindeer .v-filterselect-nextpage:hover {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-down-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-filterselect-prevpage:hover {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-up-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-filterselect-nextpage:active {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-down-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-filterselect-prevpage:active {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-up-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-filterselect-nextpage-off span, .qwreindeer .v-filterselect-prevpage-off span {
+	display: none;
+}
+
+.qwreindeer .v-filterselect-nextpage span, .qwreindeer .v-filterselect-prevpage span {
+	display: block;
+	height: 11px;
+	width: 100%;
+	overflow: hidden;
+	text-indent: -99999px;
+	background: transparent no-repeat center 3px;
+	background-image: url(../reindeer/select/img/arrow-down.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.qwreindeer .v-filterselect-prevpage span {
+	background-image: url(../reindeer/select/img/arrow-up.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.qwreindeer .v-filterselect-nextpage:hover span {
+	background-image: url(../reindeer/select/img/arrow-down-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.qwreindeer .v-filterselect-prevpage:hover span {
+	background-image: url(../reindeer/select/img/arrow-up-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.qwreindeer .v-filterselect-status {
+	text-shadow: #e9eaeb 0 1px 0;
+	font-size: 11px;
+	line-height: normal;
+	width: 100%;
+	padding: 3px 0;
+	height: 11px;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/status-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .qwreindeer .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: transparent url(../reindeer/common/img/sel-bg.png) repeat-x;
+}
+
+.v-ie .qwreindeer .v-filterselect-nextpage:hover {
+	background: transparent url(../reindeer/select/img/page-down-hover.png) repeat-x;
+}
+
+.v-ie .qwreindeer .v-filterselect-prevpage:hover {
+	background: transparent url(../reindeer/select/img/page-up-hover.png) repeat-x;
+}
+
+.v-ie .qwreindeer .v-filterselect-prevpage span {
+	background: transparent url(../reindeer/select/img/arrow-up.png) no-repeat center 3px;
+}
+
+.v-ie .qwreindeer .v-filterselect-nextpage span {
+	background: transparent url(../reindeer/select/img/arrow-down.png) no-repeat center 3px;
+}
+
+.v-ie .qwreindeer .v-filterselect-prevpage:hover span {
+	background: transparent url(../reindeer/select/img/arrow-up-hover.png) no-repeat center 3px;
+}
+
+.v-ie .qwreindeer .v-filterselect-nextpage:hover span {
+	background: transparent url(../reindeer/select/img/arrow-down-hover.png) no-repeat center 3px;
+}
+
+.v-ie .qwreindeer .v-filterselect-status {
+	background: transparent url(../reindeer/select/img/status-bg.png) repeat-x;
+}
+
+.qwreindeer .v-filterselect .v-icon {
+	width: 16px;
+	position: relative;
+}
+
+.qwreindeer .v-filterselect .v-icon + .v-filterselect-input {
+	margin-left: -16px;
+	padding-left: 18px;
+}
+
+.qwreindeer .black .v-filterselect {
+	background-image: url(../reindeer/select/img/black/left-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer.v-app .black .v-filterselect-input, .qwreindeer .v-window .black .v-filterselect-input, .qwreindeer .v-window-black .v-filterselect-input, .qwreindeer .v-popupview-popup .black .v-filterselect-input {
+	color: #c9ccce;
+	background-image: url(../reindeer/select/img/black/center-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-focus {
+	background-image: url(../reindeer/select/img/black/left-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-focus .v-filterselect-input {
+	background-image: url(../reindeer/select/img/black/center-black-focus.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-button {
+	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/black/right-black-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-focus .v-filterselect-button {
+	background-image: url(../reindeer/select/img/black/right-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black-focus-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-focus .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/black/right-black-focus-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-disabled .v-filterselect-button:hover, .qwreindeer .black .v-readonly .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.qwreindeer .black .v-filterselect-prompt .v-filterselect-input {
+	color: #5f6366;
+}
+
+.qwreindeer .black .v-select select, .qwreindeer .black .v-select-twincol select {
+	border-color: #38393a;
+	border-top-color: #2c2d2e;
+	border-bottom-color: #3e3f3f;
+	background: #151717;
+	color: #c9ccce;
+}
+
+.qwreindeer .v-slider {
+	border-top: 1px solid #9a9c9e;
+	border-bottom: 1px solid #bdbfc1;
+	margin: 4px 0;
+}
+
+.qwreindeer .v-slider-base {
+	height: 1px;
+	background: #e0e2e2;
+	border-top: 1px solid #adb0b1;
+	border-left: 1px solid #a0a3a6;
+	border-right: 1px solid #a0a3a6;
+}
+
+.qwreindeer .v-slider-handle {
+	background: transparent;
+	background-image: url(../reindeer/slider/img/knob.png);/** sprite-ref: verticals */
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+}
+
+.qwreindeer .v-slider-handle-active {
+	background-image: url(../reindeer/slider/img/knob-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-slider-vertical {
+	width: 2px;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #9a9c9e;
+	border-right: 1px solid #bdbfc1;
+}
+
+.qwreindeer .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-left: 1px solid #adb0b1;
+	border-right: none;
+	border-top: 1px solid #adb0b1;
+	border-bottom: 1px solid #adb0b1;
+}
+
+.qwreindeer .v-slider-vertical .v-slider-handle {
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+}
+
+.qwreindeer .v-splitpanel-hsplitter, .qwreindeer .v-splitpanel-hsplitter-locked {
+	width: 7px;
+	background-repeat: repeat-y;
+	background-image: url(../reindeer/splitpanel/img/hor-bg.png);/** sprite-ref: horizontals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-splitpanel-hsplitter div {
+	width: 7px;
+	height: 100%;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../reindeer/splitpanel/img/hor-handle.png);/** sprite-ref: horizontals; sprite-alignment: center */
+}
+
+.qwreindeer .v-splitpanel-vsplitter, .qwreindeer .v-splitpanel-vsplitter-locked {
+	height: 7px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/splitpanel/img/ver-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-splitpanel-vsplitter div {
+	height: 7px;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../reindeer/splitpanel/img/ver-handle.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.qwreindeer .blue .v-splitpanel-hsplitter-small, .qwreindeer .blue .v-splitpanel-hsplitter-small-locked {
+	background: #7c8a91;
+}
+
+.qwreindeer .black .v-splitpanel-hsplitter-small, .qwreindeer .black .v-splitpanel-hsplitter-small-locked {
+	background: #4e5253;
+}
+
+.qwreindeer .v-splitpanel-hsplitter-small, .qwreindeer .v-splitpanel-hsplitter-small-locked, .qwreindeer .white .v-splitpanel-hsplitter-small, .qwreindeer .white .v-splitpanel-hsplitter-small-locked {
+	width: 1px;
+	background: #949698;
+}
+
+.qwreindeer .v-splitpanel-vsplitter-small, .qwreindeer .v-splitpanel-vsplitter-small-locked, .qwreindeer .white .v-splitpanel-vsplitter-small, .qwreindeer .white .v-splitpanel-vsplitter-small-locked {
+	height: 1px;
+	background: #949698;
+}
+
+.qwreindeer .v-splitpanel-hsplitter-small div {
+	width: 5px;
+	margin-left: -2px;
+	background: transparent;
+}
+
+.qwreindeer .v-splitpanel-vsplitter-small div {
+	height: 5px;
+	margin-top: -2px;
+	background: transparent;
+}
+
+.qwreindeer .blue .v-table-header-wrap {
+	border-color: #92a2aa;
+}
+
+.qwreindeer .blue .v-table-body {
+	border-color: #92a2aa;
+	border-top-color: #c2c3c4;
+}
+
+.qwreindeer .v-table-header-wrap, .qwreindeer .white .v-table-header-wrap, .qwreindeer .v-table-footer-wrap, .qwreindeer .white .v-table-footer-wrap, .qwreindeer .v-table-header-drag {
+	border-color: #c2c3c4;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/table/img/header-bg-light.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	height: 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: #f3f5f8 0 1px 0;
+	line-height: normal;
+}
+
+.qwreindeer .v-table-footer-wrap, .qwreindeer .white .v-table-footer-wrap {
+	text-transform: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.qwreindeer .v-table-footer td, .qwreindeer .white .v-table-footer td {
+	border-color: #c2c3c4;
+}
+
+.qwreindeer .v-table-footer-container {
+	padding-right: 7px;
+}
+
+.qwreindeer .v-table-header, .qwreindeer .v-table-footer, .qwreindeer .v-table-footer table {
+	height: 20px;
+}
+
+.qwreindeer .v-table-caption-container, .qwreindeer .v-table-header-drag {
+	padding-top: 4px;
+	padding-right: 4px;
+}
+
+.qwreindeer .v-table-caption-container .v-icon, .qwreindeer .v-table-header-drag .v-icon {
+	height: 16px;
+	margin: -4px 3px 0 0;
+	vertical-align: middle;
+}
+
+.v-ie .qwreindeer .v-table-caption-container .v-icon, .v-ie .qwreindeer .v-table-header-drag .v-icon {
+	margin-top: -3px;
+}
+
+.qwreindeer .v-table-resizer {
+	height: 20px;
+	width: 2px;
+	background: transparent;
+	border-right: 1px solid #c2c3c4;
+}
+
+.qwreindeer .v-table-sort-indicator {
+	background: transparent;
+	width: 0px;
+	height: 20px;
+}
+
+.qwreindeer .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent no-repeat right 7px;
+	background-image: url(../reindeer/table/img/asc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+	width: 16px;
+}
+
+.qwreindeer .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent no-repeat right 7px;
+	background-image: url(../reindeer/table/img/desc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+	width: 16px;
+}
+
+.qwreindeer .v-table-body, .qwreindeer .white .v-table-body {
+	border-color: #c2c3c4;
+	background: #fff;
+}
+
+.qwreindeer .v-table-cell-content {
+	padding-top: 0;
+	border-right-color: #d3d4d5;
+	vertical-align: top;
+}
+
+.qwreindeer .v-table-cell-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.qwreindeer .v-table-row-odd {
+	background: #eff0f1;
+}
+
+.qwreindeer .v-table-generated-row {
+	background: #dcdee0;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: #f3f5f8 0 1px 0;
+	line-height: normal;
+}
+
+.qwreindeer .v-table-generated-row .v-table-cell-wrapper {
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+.qwreindeer .v-table-cell-content:last-child {
+	border-right-color: transparent;
+}
+
+.qwreindeer .v-table .v-selected, .qwreindeer .black .v-table .v-selected {
+	background: #4d749f url(../reindeer/common/img/sel-bg.png) repeat-x;
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.qwreindeer .v-table .v-selected .v-table-cell-content {
+	border-right-color: #466c90;
+}
+
+.qwreindeer .v-table-column-selector {
+	width: 16px;
+	height: 20px;
+	margin-top: -20px;
+	background: transparent no-repeat;
+	background-image: url(../reindeer/table/img/col-sel-light.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-light-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-table-focus-slot-left {
+	border-left: 1px solid #222;
+	margin-bottom: -20px;
+	width: auto;
+}
+
+.qwreindeer .v-table-focus-slot-right {
+	border-right-color: #222;
+	margin-right: 0;
+}
+
+.qwreindeer .v-table-header-drag {
+	padding-left: 6px;
+	height: 16px;
+}
+
+.qwreindeer .v-table-header-drag img {
+	height: 16px;
+	margin: -3px 3px 0 0;
+}
+
+.qwreindeer .v-table-scrollposition {
+	width: auto;
+	background: transparent;
+	border: none;
+}
+
+.qwreindeer .v-table-scrollposition span {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/table/img/scroll-indic-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	border: 1px solid #939494;
+	border: none;
+	border-radius-bottomleft: 4px;
+	border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	height: 13px;
+	padding: 4px 30px;
+	white-space: nowrap;
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	top: 1px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+}
+
+.qwreindeer .v-table-borderless .v-table-scrollposition span {
+	top: 0;
+}
+
+.qwreindeer .v-contextmenu .v-on, .qwreindeer .v-contextmenu .v-off {
+	display: inline-block;
+	zoom: 1;
+	background: transparent no-repeat 0 4px;
+	background-image: url(../reindeer/common/icons/bullet.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 4px */
+	padding-left: 12px;
+	padding-right: 4px;
+}
+
+.qwreindeer .v-contextmenu .v-off {
+	background-image: none;
+	color: #666;
+}
+
+.qwreindeer .v-contextmenu .gwt-MenuItem-selected .v-on {
+	background-image: url(../reindeer/common/icons/bullet-white.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 5px */
+}
+
+.qwreindeer .v-table-strong .v-table-header-wrap, .qwreindeer .v-table-strong .v-table-header-drag {
+	border-color: #2b3033;
+	border-top-color: #2b3033;
+	background-image: url(../reindeer/table/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #e7e9ea;
+	text-shadow: #000 0 -1px 0;
+}
+
+.qwreindeer .v-table-strong .v-table-body {
+	border-top-color: #2b3033;
+}
+
+.qwreindeer .v-table-strong .v-table-resizer {
+	border-right-color: #1c1f21;
+}
+
+.qwreindeer .v-table-strong .v-table-header-cell-asc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.qwreindeer .v-table-strong .v-table-header-cell-desc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.qwreindeer .v-table-strong .v-table-column-selector {
+	background-image: url(../reindeer/table/img/col-sel.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-table-strong .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-table-strong .v-table-focus-slot-left, .qwreindeer .v-table-strong .v-table-focus-slot-right {
+	border-color: #9ca1a5;
+}
+
+.qwreindeer .black .v-table-header-wrap, .qwreindeer .black .v-table-header-drag {
+	border-color: #252729;
+	background-image: url(../reindeer/table/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	color: #e7eaee;
+	text-shadow: #000 0 -1px 0;
+}
+
+.qwreindeer .black .v-table-resizer {
+	border-right-color: #252729;
+}
+
+.qwreindeer .black .v-table-header-cell-asc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.qwreindeer .black .v-table-header-cell-desc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.qwreindeer .black .v-table-column-selector {
+	background-image: url(../reindeer/table/img/col-sel-black.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .black .v-table-focus-slot-left, .qwreindeer .black .v-table-focus-slot-right {
+	border-color: #9ca1a5;
+}
+
+.qwreindeer .black .v-table-body {
+	border-color: #252729;
+	background: transparent;
+}
+
+.qwreindeer .black .v-table-cell-content {
+	border-right-color: #252729;
+	border-bottom: 1px solid #252729;
+}
+
+.qwreindeer .black .v-table-cell-wrapper {
+	padding-bottom: 2px;
+}
+
+.qwreindeer .black .v-table-row-odd {
+	background: transparent;
+}
+
+.qwreindeer .black .v-table .v-selected .v-table-cell-content {
+	border-bottom: 1px solid #4d749f;
+}
+
+.qwreindeer .v-table-borderless .v-table-header-wrap, .qwreindeer .v-table-borderless .v-table-body {
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-tabitemcell, .qwreindeer .v-tabsheet-spacertd {
+	height: 32px;
+}
+
+.qwreindeer .v-tabsheet-tabitemcell {
+	background: no-repeat;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-left.png);/** sprite-ref: verticals */
+	padding-left: 3px;
+}
+
+.qwreindeer .v-tabsheet-tabitemcell-first {
+	padding-left: 10px;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitem, .qwreindeer .v-tabsheet-spacertd div {
+	border: none;
+	height: 32px;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	padding: 0;
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+}
+
+.qwreindeer .v-tabsheet-tabitem .v-caption {
+	border: none;
+	height: 23px;
+	background: no-repeat right top;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+	padding: 9px 8px 0 6px;
+}
+
+.qwreindeer .v-tabsheet-tabitem .v-caption-closable {
+	padding-right: 0;
+	padding-left: 17px;
+}
+
+.qwreindeer .v-tabsheet-tabitem .v-captiontext {
+	height: 16px;
+	line-height: 16px;
+	vertical-align: baseline;
+}
+
+.qwreindeer .v-tabsheet-caption-close {
+	float: right;
+	width: 19px;
+	height: 18px;
+	margin: -1px -1px 0;
+	padding-left: 2px;
+	background: transparent;
+	background-image: url(../reindeer/tabsheet/img/close-btn.png);/** sprite-ref: verticals */
+	cursor: default;
+	text-indent: -999px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.v-ff .qwreindeer .v-tabsheet-caption-close {
+	margin-top: -17px;
+}
+
+.v-ff .qwreindeer .v-tabsheet-caption-close:only-child {
+	margin-top: -1px;
+}
+
+.qwreindeer .v-tabsheet-caption-close:hover {
+	background-image: url(../reindeer/tabsheet/img/close-btn-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-caption-close:active {
+	background-image: url(../reindeer/tabsheet/img/close-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitemcell-selected {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-left-sel.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitemcell-selected-first {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #232930;
+}
+
+.qwreindeer .v-tabsheet-tabitem-selected .v-caption {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.qwreindeer .v-tabsheet-spacertd div {
+	margin-right: 4px;
+}
+
+.qwreindeer .v-tabsheet-spacertd {
+	background: transparent no-repeat right top;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-spacer-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.qwreindeer .blue .v-tabsheet-content {
+	border-color: #a8bcc5;
+}
+
+.qwreindeer .v-tabsheet-content, .qwreindeer .white .v-tabsheet-content {
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	border-top: none;
+	color: #222;
+	text-shadow: none;
+}
+
+.qwreindeer .v-tabsheet-tabsheetpanel {
+	background: #fff;
+}
+
+.v-sa .qwreindeer .v-tabsheet-content {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.qwreindeer .blue .v-tabsheet-deco {
+	border-color: #92a3ac;
+	background: #adc2cd;
+}
+
+.qwreindeer .v-tabsheet-deco, .qwreindeer .white .v-tabsheet-deco {
+	height: 1px;
+	border-top: 1px solid #bebebe;
+	background: #e2e2e2;
+	overflow: hidden;
+}
+
+.v-sa .qwreindeer .v-tabsheet-deco {
+	border-top-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.qwreindeer .v-tabsheet-tabs .v-icon, .qwreindeer .v-tabsheet-tabs .v-captiontext, .qwreindeer .v-tabsheet-tabs .v-errorindicator {
+	display: inline;
+	float: none;
+}
+
+.v-sa .qwreindeer .v-tabsheet-tabs .v-captiontext {
+	display: inline-block;
+}
+
+.v-sa .qwreindeer .v-tabsheet-tabs .v-icon {
+	vertical-align: top;
+}
+
+.qwreindeer .v-tabsheet-tabs .v-icon {
+	width: 16px !important;
+	height: 16px !important;
+}
+
+.qwreindeer .v-tabsheet-tabs .v-errorindicator {
+	display: inline-block;
+	width: 13px;
+	height: 16px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.v-ie .qwreindeer .v-tabsheet-tabs .v-errorindicator {
+	zoom: 1;
+	display: inline-block;
+}
+
+.qwreindeer .v-tabsheet-scroller {
+	height: 31px;
+	margin-top: -31px;
+	padding: 0 3px 0 4px;
+	border-right: 1px solid #c2c2c2;
+	border-left: 1px solid #cfcfcf;
+	position: relative;
+	float: right;
+	background: transparent url(../reindeer/tabsheet/img/framed/tab-bg.png) repeat-x left -1px;
+	width: 36px;
+}
+
+.qwreindeer .v-tabsheet-scroller button {
+	margin-top: 7px;
+}
+
+.qwreindeer .v-tabsheet-scrollerPrev, .qwreindeer .v-tabsheet-scrollerNext, .qwreindeer .v-tabsheet-scrollerPrev-disabled, .qwreindeer .v-tabsheet-scrollerNext-disabled {
+	border: none;
+	background: transparent;
+	background-image: url(../reindeer/tabsheet/img/tab-prev.png);/** sprite-ref: verticals */
+	width: 18px;
+	height: 17px;
+	overflow: hidden;
+}
+
+.qwreindeer .v-tabsheet-scroller button::-moz-focus-inner {
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-scrollerNext {
+	background-image: url(../reindeer/tabsheet/img/tab-next.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-scrollerPrev:active {
+	background-image: url(../reindeer/tabsheet/img/tab-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-scrollerNext:active {
+	background-image: url(../reindeer/tabsheet/img/tab-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-scrollerPrev-disabled, .qwreindeer .v-tabsheet-scrollerPrev-disabled:active {
+	background-image: url(../reindeer/tabsheet/img/tab-prev-disabled.png);/** sprite-ref: verticals */
+	opacity: 1;
+	filter: none;
+}
+
+.qwreindeer .v-tabsheet-scrollerNext-disabled, .qwreindeer .v-tabsheet-scrollerNext-disabled:active {
+	background-image: url(../reindeer/tabsheet/img/tab-next-disabled.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+	opacity: 1;
+	filter: none;
+}
+
+.qwreindeer .v-tabsheet-borderless .v-tabsheet-tabitemcell-first {
+	padding-left: 7px;
+	background: url(../reindeer/tabsheet/img/framed/tab-first-left.png) no-repeat -3px 0;
+}
+
+.qwreindeer .v-tabsheet-borderless .v-tabsheet-tabitemcell-selected-first {
+	background: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png) no-repeat -3px 0;
+}
+
+.qwreindeer .v-tabsheet-borderless .v-tabsheet-spacertd div {
+	margin-right: 0;
+}
+
+.qwreindeer .v-tabsheet-borderless .v-tabsheet-spacertd {
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-borderless .v-tabsheet-content {
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-borderless .v-tabsheet-deco {
+	height: 0;
+	border-top: none;
+}
+
+.qwreindeer .blue .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .qwreindeer .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .qwreindeer .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	border-color: #7c8a91;
+}
+
+.qwreindeer .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
+	color: #7c8a91;
+}
+
+.qwreindeer .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #BCD3DE;
+	background: #778d98;
+}
+
+.qwreindeer .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #4f6874;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .qwreindeer .white .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div {
+	border-bottom: 1px solid #bfbfbf;
+	height: auto;
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell, .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-spacertd {
+	height: auto;
+	background: transparent;
+	padding-left: 0;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .qwreindeer .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem {
+	border: none;
+	border-bottom: 1px solid #bfbfbf;
+	color: #4d748f;
+	padding: 0;
+	height: auto;
+	background: transparent;
+	text-shadow: none;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption {
+	padding: 5px 16px;
+	height: auto;
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell-selected {
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected, .qwreindeer .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	background: transparent;
+	border: 1px solid #bfbfbf;
+	border-bottom: none;
+	color: #222;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption {
+	background: transparent;
+	padding: 4px 15px 6px 15px;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption-closable, .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption-closable {
+	padding-right: 6px;
+}
+
+.qwreindeer .v-tabsheet-content-minimal, .qwreindeer .white .v-tabsheet-content-minimal {
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-content-minimal .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-deco-minimal, .qwreindeer .white .v-tabsheet-deco-minimal {
+	height: 0;
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller {
+	margin-top: -20px;
+	height: 17px;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller button {
+	margin-top: 0;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-caption-close, .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	text-indent: 0;
+	background: transparent;
+	margin-left: 3px;
+	margin-right: -3px;
+	padding: 0;
+	color: #999;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.v-ie9 .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie9 .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie9 .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active, .v-ie10 .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie10 .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie10 .qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active {
+	margin-left: 2.5px;
+	margin-top: 1px;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .qwreindeer .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+.qwreindeer .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active, .qwreindeer .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #777;
+}
+
+.qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	border-color: #3e4044;
+	color: #6a7f89;
+}
+
+.qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	color: #c9ccce;
+}
+
+.qwreindeer .black .v-tabsheet-content-minimal, .qwreindeer .black .v-tabsheet-content-bar {
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
+	color: #72787c;
+}
+
+.qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #1d2021;
+	background: #4d5154;
+}
+
+.qwreindeer .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #626669;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell, .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
+	height: 20px;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-left.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-first {
+	padding-left: 6px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem, .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-spacertd div {
+	height: 20px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	margin: 0;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption {
+	font-size: 11px;
+	height: 18px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+	padding: 2px 12px 0 10px;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption-closable, .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption-closable {
+	padding-right: 8px;
+	padding-left: 14px;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close, .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover, .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
+	text-indent: 0;
+	background: transparent;
+	margin-left: 3px;
+	margin-right: -3px;
+	padding: 1px 0 0 1px;
+	color: #3c3c3c;
+	width: 13px;
+	height: 13px;
+	line-height: 12px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
+	margin-top: 1px;
+}
+
+.v-ff .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
+	margin-top: -14px;
+}
+
+.v-ie9 .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie9 .qwreindeer .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close, .v-ie10 .qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie10 .qwreindeer .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close {
+	margin-top: -14px;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover {
+	background: #bfbfbf;
+	-webkit-box-shadow: 0 1px 0 #fff;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
+	background: #a9a9a9;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	color: #404142;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
+	background: #5e666e;
+	color: #fff;
+	text-shadow: 0 -1px 0 #222;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
+	background: #404142;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-left-sel.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected-first {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left-sel.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #232930;
+}
+
+.qwreindeer .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.qwreindeer .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller {
+	margin-top: -20px;
+	height: 19px;
+	border-right: none;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller button {
+	margin-top: 1px;
+}
+
+.qwreindeer .v-tabsheet-content-bar, .qwreindeer .white .v-tabsheet-content-bar {
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-content-bar .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.qwreindeer .v-tabsheet-deco-bar, .qwreindeer .white .v-tabsheet-deco-bar {
+	height: 0;
+	border: none;
+}
+
+.qwreindeer .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem .v-tabsheet-caption-close, .qwreindeer .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.qwreindeer .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected .v-tabsheet-caption-close, .qwreindeer .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.qwreindeer .v-tabsheet-tabs-hover-closable .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.qwreindeer .v-tabsheet-tabs-hover-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.qwreindeer .blue .v-textfield, .qwreindeer .blue .v-textarea {
+	border-color: #92a2aa;
+	border-top-color: #7c8a90;
+	border-bottom-color: #a1b3bc;
+}
+
+.qwreindeer .v-textfield, .qwreindeer .v-textarea, .qwreindeer .white .v-textfield, .qwreindeer .white .v-textarea {
+	border: 1px solid #bcbdbe;
+	border-top-color: #a2a3a4;
+	border-bottom-color: #d2d3d4;
+	background: #fff;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/textfield/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+	height: 23px;
+	line-height: normal;
+}
+
+.qwreindeer .v-textarea, .qwreindeer .white .v-textarea {
+	background-image: none;
+	height: auto;
+}
+
+.qwreindeer.v-app input.v-textfield, .qwreindeer .v-window input.v-textfield, .qwreindeer.v-app textarea.v-textarea, .qwreindeer .v-window textarea.v-textarea {
+	padding: 3px 3px 4px;
+}
+
+.qwreindeer.v-app input.v-textfield.v-widget, .qwreindeer .v-window input.v-textfield.v-widget {
+	height: 24px;
+}
+
+.qwreindeer.v-app .v-textfield-focus, .qwreindeer .v-window .v-textfield-focus, .qwreindeer .v-popupview-popup .v-textfield-focus, .qwreindeer.v-app .v-textarea-focus, .qwreindeer .v-window .v-textarea-focus, .qwreindeer .v-popupview-popup .v-textarea-focus {
+	border-color: #5b97d0;
+	border-top-color: #4f83b4;
+	border-bottom-color: #5ca0df;
+	outline: none;
+	background-color: #fff;
+}
+
+.qwreindeer input.v-textfield-prompt, .qwreindeer textarea.v-textarea-prompt {
+	font-style: normal;
+	color: #999;
+}
+
+.qwreindeer.v-app input.v-textfield-small {
+	font-size: 11px;
+	line-height: normal;
+	height: auto;
+	padding: 2px;
+}
+
+.qwreindeer.v-app textarea.v-textarea-small {
+	font-size: 11px;
+}
+
+.qwreindeer.v-app .v-table input.v-textfield.v-widget, .qwreindeer .v-window .v-table input.v-textfield.v-widget {
+	padding: 1px 2px;
+	height: auto;
+	line-height: normal;
+}
+
+.qwreindeer .v-table-cell-wrapper > input.v-textfield {
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+
+.qwreindeer .black .v-textfield, .qwreindeer .black .v-textarea {
+	border-color: #38393a;
+	border-top-color: #2c2d2e;
+	border-bottom-color: #3e3f3f;
+	background: #151717;
+	background-image: url(../reindeer/textfield/img/bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.qwreindeer .black .v-textarea {
+	background-image: none;
+}
+
+.qwreindeer.v-app .black .v-textfield-focus, .qwreindeer .v-window-black .v-textfield-focus, .qwreindeer .v-window .black .v-textfield-focus, .qwreindeer .v-popupview-popup .black .v-textfield-focus, .qwreindeer.v-app .black .v-textarea-focus, .qwreindeer .v-window-black .v-textarea-focus, .qwreindeer .v-window .black .v-textarea-focus, .qwreindeer .v-popupview-popup .black .v-textarea-focus {
+	border-color: #4b7192;
+	border-top-color: #3b5a75;
+	border-bottom-color: #507596;
+	background-color: #151717;
+}
+
+.qwreindeer .black input.v-textfield-prompt {
+	color: #5f6366;
+}
+
+.qwreindeer input.v-textfield-readonly, .qwreindeer .black input.v-textfield-readonly, .qwreindeer textarea.v-textarea-readonly, .qwreindeer .black textarea.v-textarea-readonly {
+	border: none;
+	background: transparent;
+}
+
+.qwreindeer .v-tree-node {
+	background: transparent url(../reindeer/tree/img/arrows.png) no-repeat 6px -10px;
+}
+
+.qwreindeer .v-tree-node-expanded {
+	background-position: -7px 5px;
+}
+
+.qwreindeer .v-tree-node-caption {
+	margin-left: 16px;
+	padding-bottom: 1px;
+}
+
+.qwreindeer .v-tree-node span {
+	padding: 1px 2px;
+	display: inline-block;
+}
+
+.qwreindeer .v-tree-node-selected span {
+	background: #4d749f repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);
+	color: #fff;
+	padding: 1px 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	text-shadow: #2b425a 0 1px 0;
+	display: inline-block;
+}
+
+.qwreindeer .v-tree-node-children {
+	padding-left: 16px;
+}
+
+.qwreindeer .v-tree-node-caption.v-tree-node-focused span {
+	padding-left: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.qwreindeer .v-tree-node-focused span {
+	border: 1px dotted black;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-top {
+	background-position: 6px -11px;
+}
+
+.qwreindeer .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -7px 4px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-drag-top, .qwreindeer .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.qwreindeer .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.qwreindeer .v-window {
+	background: transparent;
+	border: 1px solid #808386;
+}
+
+.qwreindeer .v-window-wrap {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.v-sa .qwreindeer .v-window-wrap, .v-op .qwreindeer .v-window-wrap {
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.qwreindeer .v-window-outerheader {
+	padding: 12px 52px 0 14px;
+	height: 37px;
+	background: black repeat-x;
+	background-image: url(../reindeer/window/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-window-header {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	color: #fff;
+	text-shadow: #000 0 -1px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+}
+
+.qwreindeer .v-window-error .v-window-header {
+	padding-left: 13px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 0 50%;
+}
+
+.qwreindeer .v-window-resizebox {
+	width: 15px;
+	height: 15px;
+	cursor: se-resize;
+	background: transparent;
+	background-image: url(../reindeer/window/img/resize.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-footer {
+	background-color: white;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/window/img/footer-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	height: 15px;
+}
+
+.qwreindeer .v-window-closebox {
+	top: 11px;
+	right: 9px;
+	width: 15px;
+	height: 16px;
+	background: transparent;
+	background-image: url(../reindeer/window/img/close.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/close-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/close-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-maximizebox, .qwreindeer .v-window-restorebox {
+	top: 11px;
+	right: 27px;
+	width: 15px;
+	height: 16px;
+	background: transparent;
+}
+
+.qwreindeer .v-window-maximizebox, .qwreindeer .v-window-maximizebox:hover, .qwreindeer .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/maximize.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-restorebox, .qwreindeer .v-window-restorebox:hover, .qwreindeer .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/restore.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-contents {
+	background: #fff;
+}
+
+.qwreindeer .v-window-modalitycurtain {
+	background: #56595b;
+}
+
+.qwreindeer .v-window-light .v-window-outerheader {
+	background: transparent;
+	padding: 15px 52px 0 18px;
+}
+
+.qwreindeer .v-window-light .v-window-header {
+	font-size: 16px;
+	color: #292e34;
+	text-shadow: none;
+}
+
+.qwreindeer .v-window-light .v-window-resizebox {
+	width: 12px;
+	height: 12px;
+	background-image: url(../reindeer/window/img/light/resize.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-footer {
+	background: transparent;
+	height: 12px;
+}
+
+.qwreindeer .v-window-light .v-window-closebox {
+	right: 1px;
+	top: 17px;
+	width: 19px;
+	height: 15px;
+	background-image: url(../reindeer/window/img/light/close.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/light/close-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/light/close-pressed.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-maximizebox {
+	top: 17px;
+	background-image: url(../reindeer/window/img/light/maximize.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-maximizebox:hover {
+	background-image: url(../reindeer/window/img/light/maximize-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/light/maximize-active.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-restorebox {
+	top: 17px;
+	background-image: url(../reindeer/window/img/light/restore.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-restorebox:hover {
+	background-image: url(../reindeer/window/img/light/restore-hover.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/light/restore-active.png);/** sprite-ref: verticals */
+}
+
+.qwreindeer .v-window-light .v-window-contents {
+	background: transparent;
+}
+
+.qwreindeer .v-window-light .v-window-wrap {
+	background: #f7f7f8 repeat-x;
+	background-image: url(../reindeer/window/img/light/content-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .v-window-black {
+	border-radius: 8px;
+}
+
+.qwreindeer .v-window-black .v-window-wrap {
+	border-color: #2e3030;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	overflow: hidden;
+}
+
+.v-sa .qwreindeer .v-window-black .v-window-wrap, .v-op .qwreindeer .v-window-black .v-window-wrap {
+	border-color: rgba(0, 0, 0, 0.8);
+}
+
+.qwreindeer .v-window-black .v-window-wrap {
+	background-color: #1d2021;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.v-sa .qwreindeer .v-window-black .v-window-wrap, .v-op .qwreindeer .v-window-black .v-window-wrap {
+	background-color: rgba(29, 32, 33, 0.9);
+}
+
+.qwreindeer .v-window-black .v-window-outerheader {
+	height: 29px;
+	padding: 7px 14px;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/window/img/black/header-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	text-align: center;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-topleft: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	overflow: hidden;
+	border: none;
+}
+
+.qwreindeer .v-window-black .v-window-header {
+	font-size: 12px;
+	font-weight: normal;
+	color: #dddfe1;
+}
+
+.qwreindeer .v-window-black .v-window-closebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/close.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/black/close-hover.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/black/close-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-footer {
+	background: transparent;
+	border: none;
+	height: 14px;
+}
+
+.qwreindeer .v-window-black .v-window-resizebox {
+	background: transparent no-repeat;
+	background-image: url(../reindeer/window/img/black/resize.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 4px */
+	width: 14px;
+	height: 14px;
+}
+
+.qwreindeer .v-window-black .v-window-maximizebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/maximize.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-maximizebox:hover {
+	background-image: url(../reindeer/window/img/black/maximize-hover.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/black/maximize-active.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-restorebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/restore.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-restorebox:hover {
+	background-image: url(../reindeer/window/img/black/restore-hover.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/black/restore-active.png);/** sprite-ref: black-verticals */
+}
+
+.qwreindeer .v-window-black .v-window-contents {
+	border: none;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/window/img/black/content-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.qwreindeer .qwreindeer.v-app {
+	background: yellow;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: yellow;
+	background-image: url("images/main-bg.jpg");
+	background-origin: padding-box;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	background-size: auto auto;
+}
+
+.v-table-cell-content-failure div, .v-table-cell-content-success div, .v-table-cell-content-hide div{
+	display:none;
+}
+
+.v-table-cell-content-failure {
+    color: red;
+    background-image: url("icons/24x24/1352398106_exclamation-circle-frame_red.png");
+    background-repeat: no-repeat;
+    background-position:50% 0;
+}
+
+.v-table-cell-content-success {
+    color: green;
+    background-image: url("icons/24x24/1352398424_button-check_green.png");
+    background-repeat: no-repeat;
+    background-position:50% 0;
+}	
+
+.button_help{
+	background-image: url("icons/24x24/1352398302_question-balloon_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+
+.button_csv_export{
+	background-image: url("icons/24x24/1352398487_floppy-disk_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+
+.button_right{
+	background-image: url("icons/24x24/1353157787_navigation-right-frame_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+.button_right_end{
+	background-image: url("icons/24x24/1353157845_button-end_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+.button_left{
+	background-image: url("icons/24x24/1353157799_navigation-left-frame_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+.button_left_begin{
+	background-image: url("icons/24x24/1353157845_button-begin_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}

@@ -1,0 +1,79 @@
+@import "../reindeer/reindeer.scss";
+
+@mixin qwreindeer {
+
+  @include reindeer;
+
+$color : yellow;
+    
+.qwreindeer.v-app {    
+	    background: $color;
+		background-attachment: scroll;
+	    background-clip: border-box;
+	    background-color: $color;
+	    background-image: url("images/main-bg.jpg");;
+	    background-origin: padding-box;
+	    background-position: 0 0;
+	    background-repeat: repeat-x;
+	    background-size: auto auto;
+	}
+	
+	
+.v-table-cell-content-failure div, .v-table-cell-content-success div, .v-table-cell-content-hide div{
+	display:none;
+}
+
+.v-table-cell-content-failure {
+    color: red;
+    background-image: url("icons/24x24/1352398106_exclamation-circle-frame_red.png");
+    background-repeat: no-repeat;
+    background-position:50% 0;
+}
+
+.v-table-cell-content-success {
+    color: green;
+    background-image: url("icons/24x24/1352398424_button-check_green.png");
+    background-repeat: no-repeat;
+    background-position:50% 0;
+}	
+	
+.button_help{
+	background-image: url("icons/24x24/1352398302_question-balloon_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+
+.button_csv_export{
+	background-image: url("icons/24x24/1352398487_floppy-disk_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+
+.button_right{
+	background-image: url("icons/24x24/1353157787_navigation-right-frame_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+.button_right_end{
+	background-image: url("icons/24x24/1353157845_button-end_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+.button_left{
+	background-image: url("icons/24x24/1353157799_navigation-left-frame_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+.button_left_begin{
+	background-image: url("icons/24x24/1353157845_button-begin_blue.png") !important;
+	background-position: left 0px !important;
+	height: 24px !important;
+	width: 26px !important;
+}
+	
+}
