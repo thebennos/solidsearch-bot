@@ -4,23 +4,9 @@ h2. A full scalable web search engine combining the power of PostgreSQL, Elastic
 
 h3. "http://www.solidsearch.org":http://www.solidsearch.org
 
-Solidsearch is a scalable web search engine. Features include:
+Solidsearch is a scalable web search engine. See features here:
 
-* Distributed web crawling (Bot)
-** Powerful sql based web page and domain analysis
-** Analyze and rate quality for each document of a domain
-** Also designed to handle big sites  
-** Adaptive crawling speed
-** Restful API
-** Small memory and CPU footprint
-* Crawler / index management (Manager)
-** Elasticsearch search index management and control
-** Control of multiple crawler instances
-** Aggregate and import crawling data to Elasticsearch
-** Configure crawling and update behaviour
-* User search engine representation (Eearchhead)
-** Mapping of user requests to search index
-** Delivering SERPs based on search query to user
+http://www.solidsearch.org/features/
 
 h2. Getting Started
 
@@ -48,11 +34,11 @@ Set "Enable indexing" > Crawling will start immediately.
 
 You can see the status of crawling-job on the "Dashboard" panel.
 
-Bot uses very safety crawling speed which does not bring any server in trouble. 
+Solidsearch bot uses very safety crawling speed which does not bring any server in trouble. 
 
-Bot also decreases crawling speed automatically if site is getting slower.
+It  also decreases crawling speed automatically if site is getting slower.
 
-Due to the vary safety speed you will need to wait some time until crawling is finished.
+Due to the safety crawling speed you will need to wait some time until crawling is finished.
 
 Bot needs to complete a whole crawling, before documents are available by searchhead.
 
