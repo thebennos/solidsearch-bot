@@ -28,11 +28,7 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/QualitywatchUI/target/classes" sourcepath="/QualitywatchUI/src/main">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/classes"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="/QualitywatchUI/target/classes" sourcepath="/QualitywatchUI/src/main"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/solidsearch-shared.jar" sourcepath="/Shared/src/main/java"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
