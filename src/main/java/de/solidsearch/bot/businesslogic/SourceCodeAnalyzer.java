@@ -615,15 +615,21 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 
 					// avoid to short text samples for dc detection
 					if (nodeText.length() > minLength)
-					{
+					{						
 						relevantOnpageTextDCDetection.append(nodeText);
+						
+						// for security detecting sentence end... to avoid problems in readingLevel-detection 
+						if (!nodeText.endsWith(".") && !nodeText.endsWith("!") && !nodeText.endsWith("?"))
+						{
+							relevantOnpageTextDCDetection.append(".");
+						}
 					}
 				}
 			}
 
 			parentURL = checkIfRelevantImagesAvailable(doc, parentURL);
 
-			parentURL = analyzeOnpageText(relevantOnpageTextDCDetection, doc.text(), parentURL);
+			parentURL = analyzeOnpageText(relevantOnpageTextDCDetection.toString(), parentURL);
 		}
 		catch (Exception e)
 		{
@@ -943,30 +949,30 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		return url;
 	}
 
-	private URL analyzeOnpageText(StringBuffer relevantOnpageTextDCDetection, String onPageTextFull, URL parentURL)
+	private URL analyzeOnpageText(String relevantOnpageText, URL parentURL)
 	{
 
 		// mark as low content by default...
 		parentURL.setContentHashcode(null);
 
 		// check if text has less than 320 chars...
-		if (relevantOnpageTextDCDetection.length() > 320)
+		if (relevantOnpageText.length() > 320)
 		{
 			// for performance: if text is long enough skip word and sentence detection
-			if (relevantOnpageTextDCDetection.length() > 3500)
+			if (relevantOnpageText.length() > 3500)
 			{
-				parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageTextDCDetection.toString()));
+				parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageText.toString()));
 			}
 			else
 			{
 				// check if text has less than 55 words...
 				final int countOfWords = 55;
-				if (relevantOnpageTextDCDetection.toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
+				if (relevantOnpageText.toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
 				{
 					// check if text has less than 3 sentences...
-					if (sentencesAvailableInText(relevantOnpageTextDCDetection.toString(), 3))
+					if (sentencesAvailableInText(relevantOnpageText.toString(), 3))
 					{
-						parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageTextDCDetection.toString()));
+						parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageText.toString()));
 					}
 				}
 			}
@@ -979,32 +985,41 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		{
 			// only extract keywords if canonical is not pointing to another URL
 			if (parentURL.getCanonicalTag().equalsIgnoreCase(parentURL.getURLName()) || parentURL.getCanonicalTag().length() == 0)
-			{
+			{		
 				// avoid analyzing text with less input... (low content)
-				if (onPageTextFull.length() > 50)
+				if (relevantOnpageText.length() > 50)
 				{
-					if (onPageTextFull.length() > 400000)
+					ReadingLevelAnalyzer rl = new ReadingLevelAnalyzer();
+					
+					// performance: for keyword detection and readinglevel, cut text to a meaningful length...
+					if (relevantOnpageText.length() > 20000)
 					{
-						onPageTextFull = onPageTextFull.substring(0, 400000);
-						logger.warn("Found very long text. Cut text to 400.000 chars for security: " + parentURL.getURLName());
+						StringBuffer reducedText = new StringBuffer(relevantOnpageText.substring(0, 20000));
+						reducedText.append(".");
+						
+						extractAndWeightKeywords(reducedText.toString(), parentURL);
+						parentURL.setReadingLevel(rl.getReadingLevel(reducedText.toString()));
+						
+						if (relevantOnpageText.length() > 400000)
+						{
+							relevantOnpageText = relevantOnpageText.substring(0, 400000);
+							logger.warn("Found very long text. Cut text to 400.000 chars for security: " + parentURL.getURLName());
+						}
 					}
+					else
+					{
+						extractAndWeightKeywords(relevantOnpageText, parentURL);
+						parentURL.setReadingLevel(rl.getReadingLevel(relevantOnpageText));
+					}
+					
 					// important for db and elasticsearch security
-					onPageTextFull = removeInvalidChars(onPageTextFull);
+					relevantOnpageText = removeInvalidChars(relevantOnpageText);
 				}
 				else
 				{
-					onPageTextFull = "";
+					relevantOnpageText = "";
 				}
-				parentURL.setOnPageText(onPageTextFull);
-
-				// performance: for keyword detection and readinglevel, cut text to a meaningful length...
-				if (onPageTextFull.length() > 25000)
-					onPageTextFull = onPageTextFull.substring(0, 25000);
-
-				extractAndWeightKeywords(onPageTextFull, parentURL);
-
-				ReadingLevelAnalyzer rl = new ReadingLevelAnalyzer();
-				parentURL.setReadingLevel(rl.getReadingLevel(onPageTextFull));
+				parentURL.setOnPageText(relevantOnpageText);
 			}
 		}
 
