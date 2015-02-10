@@ -284,6 +284,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		Document doc = Jsoup.parse(sourceCode);
 
 		StringBuffer relevantOnpageTextDCDetection = new StringBuffer();
+		StringBuffer relevantOnpageText = new StringBuffer();
 
 		boolean foundH1Headline = false;
 		boolean foundH2Headline = false;
@@ -590,8 +591,18 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 				{
 					int minLength = 165;
 
+					if (node.tagName().equalsIgnoreCase("div") || 
+							node.tagName().equalsIgnoreCase("p"))
+					{
+						String text = node.text();
+					
+						if (text.length() > 40)
+						{
+							relevantOnpageText.append(text);
+						}
+					}
+
 					String styles = node.attr("style").toLowerCase();
-					//
 					/**
 					 * check for inline-css which controls visibility
 					 * 
@@ -607,7 +618,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 							continue;
 						}
 					}
-
+					
 					String nodeText = node.ownText();
 
 					// not implemented now
@@ -617,7 +628,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					if (nodeText.length() > minLength)
 					{						
 						relevantOnpageTextDCDetection.append(nodeText);
-						
+
 						// for security detecting sentence end... to avoid problems in readingLevel-detection 
 						if (!nodeText.endsWith(".") && !nodeText.endsWith("!") && !nodeText.endsWith("?"))
 						{
@@ -629,7 +640,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 
 			parentURL = checkIfRelevantImagesAvailable(doc, parentURL);
 
-			parentURL = analyzeOnpageText(relevantOnpageTextDCDetection.toString(), parentURL);
+			parentURL = analyzeOnpageText(relevantOnpageTextDCDetection.toString(),relevantOnpageText.toString(), parentURL);
 		}
 		catch (Exception e)
 		{
@@ -949,7 +960,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		return url;
 	}
 
-	private URL analyzeOnpageText(String relevantOnpageText, URL parentURL)
+	private URL analyzeOnpageText(String relevantOnpageText, String onpageText, URL parentURL)
 	{
 
 		// mark as low content by default...
@@ -987,7 +998,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 			if (parentURL.getCanonicalTag().equalsIgnoreCase(parentURL.getURLName()) || parentURL.getCanonicalTag().length() == 0)
 			{		
 				// avoid analyzing text with less input... (low content)
-				if (relevantOnpageText.length() > 50)
+				if (onpageText.length() > 50)
 				{
 					ReadingLevelAnalyzer rl = new ReadingLevelAnalyzer();
 					
@@ -999,12 +1010,6 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 						
 						extractAndWeightKeywords(reducedText.toString(), parentURL);
 						parentURL.setReadingLevel(rl.getReadingLevel(reducedText.toString()));
-						
-						if (relevantOnpageText.length() > 400000)
-						{
-							relevantOnpageText = relevantOnpageText.substring(0, 400000);
-							logger.warn("Found very long text. Cut text to 400.000 chars for security: " + parentURL.getURLName());
-						}
 					}
 					else
 					{
@@ -1012,14 +1017,20 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 						parentURL.setReadingLevel(rl.getReadingLevel(relevantOnpageText));
 					}
 					
+					if (onpageText.length() > 400000)
+					{
+						onpageText = onpageText.substring(0, 400000);
+						logger.warn("Found very long text. Cut text to 400.000 chars for security: " + parentURL.getURLName());
+					}
+					
 					// important for db and elasticsearch security
-					relevantOnpageText = removeInvalidChars(relevantOnpageText);
+					onpageText = removeInvalidChars(onpageText);
 				}
 				else
 				{
-					relevantOnpageText = "";
+					onpageText = "";
 				}
-				parentURL.setOnPageText(relevantOnpageText);
+				parentURL.setOnPageText(onpageText);
 			}
 		}
 
