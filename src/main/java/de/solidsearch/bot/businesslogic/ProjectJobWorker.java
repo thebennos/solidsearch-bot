@@ -422,9 +422,9 @@ public class ProjectJobWorker
 					project.setDisabledByError(true);
 					logger.warn("Domain entry shows strange response code : " + responseCode + " ProjectId: " + project.getProjectId() + " project: " + project.getProjectName() + " , URL: " + project.getRootDomainToCrawl());
 				}
-				else if (responseCode == 0)
+				else
 				{
-					// timeout: do nothing and try again later...
+					// timeout or else: do nothing and try again later...
 					projectWasStarted = false;
 
 					errorCount++;
