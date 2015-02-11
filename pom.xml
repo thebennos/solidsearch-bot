@@ -8,10 +8,11 @@
 	<name>Qualitywatch Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 		<spring.version>3.2.13.RELEASE</spring.version>
 		<spring.security.version>3.2.5.RELEASE</spring.security.version>
 		<vaadin.version>7.3.7</vaadin.version>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<repositories>
 		<repository>
