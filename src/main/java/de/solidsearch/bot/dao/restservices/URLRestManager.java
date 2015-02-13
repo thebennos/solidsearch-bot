@@ -56,7 +56,7 @@ public class URLRestManager implements Serializable
 			session = sessionFactory.openSession();
 			StringBuffer queryString = new StringBuffer();
 						
-			queryString.append("select urlname as uri, foundtimestamp, canonicalTag, httpstatuscode, cast('").append(entry.getValue().getTimeInMillis()).append("' as bigint) as lastcrawledtimestamp,contenthashcode,backgroundid,qualityscore,spamscore,readinglevel,varietytopicscore,adscripts,relevantimages,responsetime,pagesize,pageRank,qwlocale,onpagetext,title,metadescription,topicKeywordOneTerm as topicKeyword, metarobotsindex as robotsIndex,duplicateTitle,duplicateMetaDescription,duplicateContent,trailingSlashIssue,timeout,pagination,dcprimary from URL_").append(entry.getKey()).append(" where externalLink=false AND foundtimestamp > ").append(fromTimestamp).append(" order by foundtimestamp asc limit 1000");
+			queryString.append("select urlname as uri, foundtimestamp, canonicalTag, httpstatuscode, cast('").append(entry.getValue().getTimeInMillis()).append("' as bigint) as lastcrawledtimestamp,contenthashcode,backgroundid,qualityscore,spamscore,readinglevel,varietytopicscore,adscripts,relevantimages,responsetime,pagesize,pageRank,qwlocale,onpagetext,title,metadescription,topicKeywordOneTerm as topicKeyword, metarobotsindex as robotsIndex,duplicateTitle,duplicateMetaDescription,duplicateContent,trailingSlashIssue,timeout,pagination,dcprimary from URL_").append(entry.getKey()).append(" where externalLink=false AND foundtimestamp > ").append(fromTimestamp).append(" order by foundtimestamp asc limit 500");
 			SQLQuery query = session.createSQLQuery(queryString.toString());
 			addScalars(query);
 			query.setResultTransformer(Transformers.aliasToBean(SharedDocument.class));
