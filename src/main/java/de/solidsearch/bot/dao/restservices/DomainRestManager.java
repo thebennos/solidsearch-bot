@@ -52,7 +52,7 @@ public class DomainRestManager implements Serializable
 			session = sessionFactory.openSession();
 			StringBuffer queryString = new StringBuffer();
 						
-			queryString.append("select resultFromTimestampMills,qualityScore,totalLinks,internalURLs,internalNoindexURLs,internalIndexURLs,externalURLs,externalURLsDifferentDomains,crawledURLs,clientErrorURLs,timeoutURLs,redirectionURLs,serverErrorURLs,avgResponseTimeMills, 0 as medianResponseTimeMills,avgPageSize,totalCountOfRelevantKeywords,totalCountOfKeywords,readinglevel as avgReadingLevel,domainBrandName from projectsummary where projectid=").append(project.getProjectId()).append(" order by resultfromtimestampmills desc limit 1");
+			queryString.append("select resultFromTimestampMills,qualityScore,totalLinks,internalURLs,internalNoindexURLs,internalIndexURLs,externalURLs,externalURLsDifferentDomains,crawledURLs,clientErrorURLs,timeoutURLs,redirectionURLs,serverErrorURLs,avgResponseTimeMills, 0 as medianResponseTimeMills,avgPageSize,totalCountOfRelevantKeywords,totalCountOfKeywords,readinglevel as avgReadingLevel,domainBrandName,homeDocument from projectsummary where projectid=").append(project.getProjectId()).append(" order by resultfromtimestampmills desc limit 1");
 			SQLQuery query = session.createSQLQuery(queryString.toString());
 			addScalars(query);
 			query.setResultTransformer(Transformers.aliasToBean(SharedDomain.class));
@@ -91,5 +91,6 @@ public class DomainRestManager implements Serializable
 		query.addScalar("totalCountOfKeywords", LongType.INSTANCE);
 		query.addScalar("avgReadingLevel", DoubleType.INSTANCE);
 		query.addScalar("domainBrandName", StringType.INSTANCE);
+		query.addScalar("homeDocument", StringType.INSTANCE);
 	}
 }

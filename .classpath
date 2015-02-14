@@ -29,6 +29,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/QualitywatchUI/target/classes" sourcepath="/QualitywatchUI/src/main"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/solidsearch-shared.jar" sourcepath="/Shared/src/main/java"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/solidsearch-shared.jar" sourcepath="/solidsearch-shared"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

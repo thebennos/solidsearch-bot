@@ -144,12 +144,15 @@ public class ProjectSummary  implements Serializable
     
     private long gzipIssues = 0;
     
-    @Column(name = "domainBrandName", length = 255)
+    @Column(columnDefinition = "text")
     private String domainBrandName = "";
     
     private long keywordOrientationShortTermURLs = 0;
     
     private long keywordOrientationTwoTermsURLs = 0;
+    
+    @Column(columnDefinition = "text")
+    private String homeDocument = "";
     
 	public ProjectSummary()
 	{
@@ -707,5 +710,15 @@ public class ProjectSummary  implements Serializable
 	public void setKeywordOrientationTwoTermsURLs(long keywordOrientationTwoTermsURLs)
 	{
 		this.keywordOrientationTwoTermsURLs = keywordOrientationTwoTermsURLs;
+	}
+
+	public String getHomeDocument()
+	{
+		return homeDocument;
+	}
+
+	public void setHomeDocument(String homeDocument)
+	{
+		this.homeDocument = homeDocument;
 	}
 }

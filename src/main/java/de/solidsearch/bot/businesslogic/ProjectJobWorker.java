@@ -208,9 +208,20 @@ public class ProjectJobWorker
 				errorCount = project.getErrorCount();
 
 				// detect prefered protocol and trailing-slash version...
+				String entryURL = da.testAndSetEntryURLBasesOnRootDomain(project.getRootDomainToCrawlWithoutProtocol());
+				
+				summary.setHomeDocument(entryURL);
+				
 				if (project.isRemoteProject())
 				{
-					project = da.testAndSetEntryURLBasesOnRootDomain(project);
+					// if remote-project change entry if necessary
+					project.setUrlOfDomainToCrawl(entryURL);
+					
+					// change protocol if necessary
+					if (entryURL.startsWith("https"))
+						project.setRootDomainToCrawl("https://" + project.getRootDomainToCrawlWithoutProtocol());
+					else
+						project.setRootDomainToCrawl("http://" + project.getRootDomainToCrawlWithoutProtocol());
 				}
 				
 				// fist at all set brand-name...

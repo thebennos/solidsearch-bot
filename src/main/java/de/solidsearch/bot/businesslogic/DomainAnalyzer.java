@@ -430,29 +430,32 @@ public class DomainAnalyzer
 	}
 
 	/**
-	 * Method requests domain of rootDomainToCrawlWithoutProtocol field with HTTP protocol and edit
-	 * fields rootDomainToCrawl and urlOfDomainToCrawl based on response.
-	 * @param p Project
-	 * @return updated project
+	 * Method requests domain with HTTP protocol and edit
+	 * returns how the entry is given by webmaster.
+	 * @param domain string
+	 * @return entry url
 	 */
-	public Project testAndSetEntryURLBasesOnRootDomain(Project p) throws Exception
+	public String testAndSetEntryURLBasesOnRootDomain(String domain) throws Exception
 	{
-		String httpURL = "http://" + p.getRootDomainToCrawlWithoutProtocol();
+		String httpURL = "http://" + domain;
 		HttpResponse response = getResponseForURL(httpURL);
 
-		if (response == null)
-			throw new RuntimeException("Could not connect to domain: " + p.getRootDomainToCrawlWithoutProtocol() + ", please check network or proxy settings.");
-		
-		p.setRootDomainToCrawl(httpURL);
-		p.setUrlOfDomainToCrawl(httpURL);
-
+		if (response == null || response.getStatusLine().getStatusCode() > 302)
+			throw new RuntimeException("Could not connect to domain: " + domain + ", please check network or proxy settings.");
+	
 		if (response.getStatusLine().getStatusCode() == 301)
 		{
-			p.setRootDomainToCrawl(response.getLastHeader("Location").getValue());
-			p.setUrlOfDomainToCrawl(response.getLastHeader("Location").getValue());
+			String url = response.getLastHeader("Location").getValue();
+			
+			if (url.startsWith("/"))
+			{
+				// relative redirect
+				url = "http://" + domain + url;
+			}
+			return url;
 		}
 
-		return p;
+		return httpURL;
 	}
 
 	public HttpResponse getResponseForURL(String url)
