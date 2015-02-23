@@ -441,7 +441,14 @@ public class DomainAnalyzer
 		HttpResponse response = getResponseForURL(httpURL);
 
 		if (response == null || response.getStatusLine().getStatusCode() > 302)
-			throw new RuntimeException("Could not connect to domain: " + domain + ", please check network or proxy settings.");
+		{
+			int status = -1;
+			if (response != null)
+			{
+				status = response.getStatusLine().getStatusCode();
+			}
+			throw new RuntimeException("Could not connect to domain: " + domain + ", status: " + status + ", please check network or proxy settings.");
+		}
 	
 		if (response.getStatusLine().getStatusCode() == 301)
 		{
