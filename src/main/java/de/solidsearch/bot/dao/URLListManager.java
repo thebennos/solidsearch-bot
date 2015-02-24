@@ -472,13 +472,22 @@ public class URLListManager extends URLManager implements Serializable
 		if (newURL.getCanonicalTagHashcode() != null && newURL.getCanonicalTagHashcode() != null)
 		{
 			if (!newURL.getCanonicalTagHashcode().equals(oldURL.getCanonicalTagHashcode()))
-				changeCode = changeCode | URLField.ONPAGETEXT.getVector();
+				changeCode = changeCode | URLField.CANONICALTAG.getVector();
 		}
 		else if ((newURL.getCanonicalTagHashcode() == null && oldURL.getCanonicalTagHashcode() != null) || (newURL.getCanonicalTagHashcode() != null && oldURL.getCanonicalTagHashcode() == null))
 		{
+			changeCode = changeCode | URLField.CANONICALTAG.getVector();
+		}
+		if (newURL.getContentHashcode() != null && newURL.getContentHashcode() != null)
+		{
+			if (!newURL.getContentHashcode().equals(oldURL.getContentHashcode()))
+				changeCode = changeCode | URLField.ONPAGETEXT.getVector();
+		}
+		else if ((newURL.getContentHashcode() == null && oldURL.getContentHashcode() != null) || (newURL.getContentHashcode() != null && oldURL.getContentHashcode() == null))
+		{
 			changeCode = changeCode | URLField.ONPAGETEXT.getVector();
 		}
-
+		
 		if (newURL.getMetaRobotsIndex() != oldURL.getMetaRobotsIndex())
 			changeCode = changeCode | URLField.INDEXNOINDEX.getVector();
 		if (!newURL.getTopicKeywordOneTerm().equals(newURL.getTopicKeywordOneTerm()) || !newURL.getTopicKeywordTwoTerms().equals(newURL.getTopicKeywordTwoTerms()))
