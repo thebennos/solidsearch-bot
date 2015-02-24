@@ -197,7 +197,7 @@ public class ListJobWorker extends ProjectJobWorker
 			if (changedUrls != null)
 				anyChanges = true;
 			
-			warnMessages.remove(ProjectInfo.CRAWLINGISRUNNING);
+			warnMessages.remove((Integer)ProjectInfo.CRAWLINGISRUNNING.getInfoMessageCode());
 			project.setInfoMessageCodes(warnMessages);
 			
 			project.setRunning(false);
