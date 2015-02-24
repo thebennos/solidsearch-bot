@@ -472,6 +472,8 @@ public class DomainAnalyzer
 		HttpResponse response = null;
 		try
 		{
+			Thread.sleep(100);
+			
 			httpget = new HttpGet(url);
 			httpget.setHeader("User-Agent", project.getBotUserAgent());
 			httpget.setHeader("Accept-Encoding", "gzip");
@@ -485,6 +487,8 @@ public class DomainAnalyzer
 			
 			response = projectWorker.getHttpClient().execute(httpget, new BasicHttpContext());
 			entity = response.getEntity();
+			
+			Thread.sleep(100);
 		}
 		catch (Exception e)
 		{
@@ -492,6 +496,8 @@ public class DomainAnalyzer
 			{
 				httpget.abort();
 			}
+			logger.warn(e.getMessage());
+			
 			return null;
 		}
 		finally
