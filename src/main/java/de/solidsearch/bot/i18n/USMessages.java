@@ -387,6 +387,7 @@ public class USMessages extends ListResourceBundle implements Serializable
 	public static final String ChangeInListCrawling = generateId();
 	public static final String RobotsTxt = generateId();
 	public static final String ReallyDeleteList = generateId();
+	public static final String ReallyOverwriteAll = generateId();
 	public static final String DeleteList = generateId();
 	
 	public static String generateId()

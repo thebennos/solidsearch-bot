@@ -317,7 +317,6 @@ public class URLListManager extends URLManager implements Serializable
 			if (session != null)
 				session.close();
 		}
-
 	}
 	
 	/**
@@ -375,6 +374,35 @@ public class URLListManager extends URLManager implements Serializable
 		catch (Exception e)
 		{
 			logger.error("Exception in deleteProtocolRecords() " + e.getMessage());
+			e.printStackTrace();
+		}
+		finally
+		{
+			if (session != null)
+				session.close();
+		}
+	}
+	
+	public void setOverwriteFlagForAllRecords()
+	{
+		Session session = null;
+		try
+		{
+			session = sessionFactory.openSession();
+			
+			StringBuffer sql = new StringBuffer();
+			
+			sql.append("update URLList_").append(getProjectId()).append(" set overwriteFlag = true");
+
+			SQLQuery query = session.createSQLQuery(sql.toString());
+			
+			query.executeUpdate();
+			session.flush();
+			
+		}
+		catch (Exception e)
+		{
+			logger.error("Exception in setOverwriteFlagForAllRecords() " + e.getMessage());
 			e.printStackTrace();
 		}
 		finally
@@ -478,12 +506,12 @@ public class URLListManager extends URLManager implements Serializable
 		{
 			changeCode = changeCode | URLField.CANONICALTAG.getVector();
 		}
-		if (newURL.getContentHashcode() != null && newURL.getContentHashcode() != null)
+		if (newURL.getOnPageText() != null && newURL.getOnPageText() != null)
 		{
-			if (!newURL.getContentHashcode().equals(oldURL.getContentHashcode()))
+			if (!newURL.getOnPageText().equalsIgnoreCase(oldURL.getOnPageText()))
 				changeCode = changeCode | URLField.ONPAGETEXT.getVector();
 		}
-		else if ((newURL.getContentHashcode() == null && oldURL.getContentHashcode() != null) || (newURL.getContentHashcode() != null && oldURL.getContentHashcode() == null))
+		else if ((newURL.getOnPageText() == null && oldURL.getOnPageText() != null) || (newURL.getOnPageText() != null && oldURL.getOnPageText() == null))
 		{
 			changeCode = changeCode | URLField.ONPAGETEXT.getVector();
 		}

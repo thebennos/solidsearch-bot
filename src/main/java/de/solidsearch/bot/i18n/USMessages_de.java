@@ -392,6 +392,7 @@ public class USMessages_de extends USMessages {
     	{ChangeInListCrawling, "Veränderung beim List-Crawling festgestellt."},
     	{RobotsTxt, "robots.txt geblockt"},
     	{ReallyDeleteList, "<img align=\"middle\" src=\"" + bundle.getString("application.icon.path.medium") + "1352398106_exclamation-circle-frame_red.png \">Sollen wirklich alle Daten der Liste gelöscht werden?"},
+    	{ReallyOverwriteAll , "<img align=\"middle\" src=\"" + bundle.getString("application.icon.path.medium") + "1352398106_exclamation-circle-frame_red.png \">Sollen wirklich alle Daten überschrieben werden?"},
     	{DeleteList, "Liste löschen"}
     };
 }

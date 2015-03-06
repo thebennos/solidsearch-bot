@@ -1005,7 +1005,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		parentURL.setContentHashcode(null);
 
 		// check if text has less than 320 chars...
-		if (relevantOnpageTextDC.length() > 320)
+		if (parentURL.getOnPageText().length() > 320)
 		{
 			// for performance: if text is long enough skip word and sentence detection
 			if (relevantOnpageTextDC.length() > 3500)
@@ -1016,7 +1016,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 			{
 				// check if text has less than 55 words...
 				final int countOfWords = 55;
-				if (relevantOnpageTextDC.toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
+				if (parentURL.getOnPageText().toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
 				{
 					// check if text has less than 3 sentences...
 					if (sentencesAvailableInText(relevantOnpageTextDC.toString(), 3))
@@ -1041,9 +1041,9 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					ReadingLevelAnalyzer rl = new ReadingLevelAnalyzer();
 					
 					// performance: for keyword detection and readinglevel, cut text to a meaningful length...
-					if (relevantOnpageTextDC.length() > 20000)
+					if (parentURL.getOnPageText().length() > 20000)
 					{
-						StringBuffer reducedText = new StringBuffer(relevantOnpageTextDC.substring(0, 20000));
+						StringBuffer reducedText = new StringBuffer(parentURL.getOnPageText().substring(0, 20000));
 						reducedText.append(".");
 						
 						extractAndWeightKeywords(reducedText.toString(), parentURL);
@@ -1051,8 +1051,8 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					}
 					else
 					{
-						extractAndWeightKeywords(relevantOnpageTextDC, parentURL);
-						parentURL.setReadingLevel(rl.getReadingLevel(relevantOnpageTextDC));
+						extractAndWeightKeywords(parentURL.getOnPageText(), parentURL);
+						parentURL.setReadingLevel(rl.getReadingLevel(parentURL.getOnPageText()));
 					}
 					
 					if (parentURL.getOnPageText().length() > 400000)

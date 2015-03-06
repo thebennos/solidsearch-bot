@@ -390,6 +390,7 @@ public class USMessages_en extends USMessages {
     	{ChangeInListCrawling, "Changes during list-crawling detected."},
     	{RobotsTxt, "robots.txt blocked"},
     	{ReallyDeleteList, "<img align=\"middle\" src=\"" + bundle.getString("application.icon.path.medium") + "1352398106_exclamation-circle-frame_red.png \">Do you really want to delete all data of this list?"},
+    	{ReallyOverwriteAll , "<img align=\"middle\" src=\"" + bundle.getString("application.icon.path.medium") + "1352398106_exclamation-circle-frame_red.png \">Do you really want to overwrite all data of this list?"},
     	{DeleteList, "Delete list"}
 
     };
