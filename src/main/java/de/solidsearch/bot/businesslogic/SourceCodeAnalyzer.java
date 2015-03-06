@@ -13,6 +13,11 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.zip.GZIPInputStream;
 
@@ -79,6 +84,8 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 	private short blogScore = 0;
 
 	private short lexiconScore = 0;
+	
+	private Map<Integer,String> textMap = new HashMap<Integer,String>();
 
 	public SourceCodeAnalyzer(ProjectJobWorker projectWorker, URL urlToAnlyze, AtomicInteger runningThreadCounter)
 	{
@@ -282,9 +289,8 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		}
 
 		Document doc = Jsoup.parse(sourceCode);
-
+		
 		StringBuffer relevantOnpageTextDCDetection = new StringBuffer();
-		StringBuffer relevantOnpageText = new StringBuffer();
 
 		boolean foundH1Headline = false;
 		boolean foundH2Headline = false;
@@ -311,7 +317,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					footer = false;
 
 				Element node = elements.get(i);
-
+				
 				if (node.tagName().equalsIgnoreCase("html"))
 				{
 					String lang = node.attr("lang").toLowerCase();
@@ -594,11 +600,12 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					if (node.tagName().equalsIgnoreCase("div") || 
 							node.tagName().equalsIgnoreCase("p"))
 					{
+						// Gets the combined text of this element and all its children.
 						String text = node.text();
 					
 						if (text.length() > 40)
 						{
-							relevantOnpageText.append(text);
+							organizeOnpageTextMap(i, text);
 						}
 					}
 
@@ -619,6 +626,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 						}
 					}
 					
+					// Gets the text owned by this element only; does not get the combined text of all children.
 					String nodeText = node.ownText();
 
 					// not implemented now
@@ -637,10 +645,12 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					}
 				}
 			}
-
 			parentURL = checkIfRelevantImagesAvailable(doc, parentURL);
 
-			parentURL = analyzeOnpageText(relevantOnpageTextDCDetection.toString(),relevantOnpageText.toString(), parentURL);
+			parentURL.setOnPageText(extractRelevantOnpageTextFragement());
+			
+			parentURL = analyzeOnpageText(relevantOnpageTextDCDetection.toString(), parentURL);
+			
 		}
 		catch (Exception e)
 		{
@@ -959,31 +969,59 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		}
 		return url;
 	}
-
-	private URL analyzeOnpageText(String relevantOnpageText, String onpageText, URL parentURL)
+	
+	private String extractRelevantOnpageTextFragement()
 	{
+		SortedSet<Integer> keys = new TreeSet<Integer>(textMap.keySet());
+		
+		String text = textMap.get(keys.first());
+		long maxLength = text.length();
 
+		int i = 0;
+		for (Integer key : keys) { 
+			if (keys.size() == 1)
+			{
+				text = textMap.get(key);
+			}
+			
+			if (i != 0)
+			{
+				if (textMap.get(key).length() <= maxLength  && textMap.get(key).length() > (maxLength * 0.58f))
+				{
+					if (textMap.get(key).length() <= text.length())
+					{
+							text = textMap.get(key);
+					}
+				}
+			}
+			i++;
+		}
+		return text;
+	}
+
+	private URL analyzeOnpageText(String relevantOnpageTextDC, URL parentURL)
+	{
 		// mark as low content by default...
 		parentURL.setContentHashcode(null);
 
 		// check if text has less than 320 chars...
-		if (relevantOnpageText.length() > 320)
+		if (relevantOnpageTextDC.length() > 320)
 		{
 			// for performance: if text is long enough skip word and sentence detection
-			if (relevantOnpageText.length() > 3500)
+			if (relevantOnpageTextDC.length() > 3500)
 			{
-				parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageText.toString()));
+				parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageTextDC.toString()));
 			}
 			else
 			{
 				// check if text has less than 55 words...
 				final int countOfWords = 55;
-				if (relevantOnpageText.toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
+				if (relevantOnpageTextDC.toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
 				{
 					// check if text has less than 3 sentences...
-					if (sentencesAvailableInText(relevantOnpageText.toString(), 3))
+					if (sentencesAvailableInText(relevantOnpageTextDC.toString(), 3))
 					{
-						parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageText.toString()));
+						parentURL.setContentHashcode(worker.getHashTool().generateHashCode(relevantOnpageTextDC.toString()));
 					}
 				}
 			}
@@ -998,14 +1036,14 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 			if (parentURL.getCanonicalTag().equalsIgnoreCase(parentURL.getURLName()) || parentURL.getCanonicalTag().length() == 0)
 			{		
 				// avoid analyzing text with less input... (low content)
-				if (onpageText.length() > 50)
+				if (parentURL.getOnPageText().length() > 50)
 				{
 					ReadingLevelAnalyzer rl = new ReadingLevelAnalyzer();
 					
 					// performance: for keyword detection and readinglevel, cut text to a meaningful length...
-					if (relevantOnpageText.length() > 20000)
+					if (relevantOnpageTextDC.length() > 20000)
 					{
-						StringBuffer reducedText = new StringBuffer(relevantOnpageText.substring(0, 20000));
+						StringBuffer reducedText = new StringBuffer(relevantOnpageTextDC.substring(0, 20000));
 						reducedText.append(".");
 						
 						extractAndWeightKeywords(reducedText.toString(), parentURL);
@@ -1013,24 +1051,23 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					}
 					else
 					{
-						extractAndWeightKeywords(relevantOnpageText, parentURL);
-						parentURL.setReadingLevel(rl.getReadingLevel(relevantOnpageText));
+						extractAndWeightKeywords(relevantOnpageTextDC, parentURL);
+						parentURL.setReadingLevel(rl.getReadingLevel(relevantOnpageTextDC));
 					}
 					
-					if (onpageText.length() > 400000)
+					if (parentURL.getOnPageText().length() > 400000)
 					{
-						onpageText = onpageText.substring(0, 400000);
+						parentURL.setOnPageText(parentURL.getOnPageText().substring(0, 400000));
 						logger.warn("Found very long text. Cut text to 400.000 chars for security: " + parentURL.getURLName());
 					}
 					
 					// important for db and elasticsearch security
-					onpageText = removeInvalidChars(onpageText);
+					parentURL.setOnPageText(removeInvalidChars(parentURL.getOnPageText()));
 				}
 				else
 				{
-					onpageText = "";
+					parentURL.setOnPageText("");
 				}
-				parentURL.setOnPageText(onpageText);
 			}
 		}
 
@@ -1538,6 +1575,45 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		}
 	}
 
+	public void organizeOnpageTextMap(int divPosition, String text)
+	{
+		if (textMap.size() < 10)
+		{		
+			textMap.put(divPosition, text);
+		}	
+		else
+		{
+		    Iterator<Entry<Integer, String>> it = textMap.entrySet().iterator();
+		    
+		    long textLength = text.length();
+		    Map.Entry<Integer, String> keyValueToRemove = null;
+		    
+		    while (it.hasNext()) 
+		    {
+		    	Map.Entry<Integer, String> keyValue = (Map.Entry<Integer, String>)it.next();
+		    	
+		    	if (keyValue.getValue().length() < textLength)
+		    	{
+		    		textLength = keyValue.getValue().length();
+		    		keyValueToRemove = keyValue;
+		    	}
+		    	else if (textLength == keyValue.getValue().length())
+		    	{
+		    		if (keyValue.getKey() > divPosition)
+		    			keyValueToRemove = keyValue;
+		    		else
+		    			continue;
+		    	}
+		    }
+		    
+		    if (keyValueToRemove != null)
+		    {
+			    textMap.remove(keyValueToRemove.getKey());
+			    textMap.put(divPosition, text);
+		    }
+		}		
+	}
+	
 	public boolean sentencesAvailableInText(String text, int countOfSentences)
 	{
 		// \\p{Lu} means matching uppercase chars in any language (also cyrillic, like [A-Z] for german)
