@@ -1004,8 +1004,8 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 		// mark as low content by default...
 		parentURL.setContentHashcode(null);
 
-		// check if text has less than 320 chars...
-		if (parentURL.getOnPageText().length() > 320)
+		// check if text has more than 320 chars...
+		if (relevantOnpageTextDC.length() > 320)
 		{
 			// for performance: if text is long enough skip word and sentence detection
 			if (relevantOnpageTextDC.length() > 3500)
@@ -1016,7 +1016,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 			{
 				// check if text has less than 55 words...
 				final int countOfWords = 55;
-				if (parentURL.getOnPageText().toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
+				if (relevantOnpageTextDC.toString().split("\\s+", (countOfWords + 2)).length >= countOfWords)
 				{
 					// check if text has less than 3 sentences...
 					if (sentencesAvailableInText(relevantOnpageTextDC.toString(), 3))
@@ -1036,7 +1036,7 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 			if (parentURL.getCanonicalTag().equalsIgnoreCase(parentURL.getURLName()) || parentURL.getCanonicalTag().length() == 0)
 			{		
 				// avoid analyzing text with less input... (low content)
-				if (parentURL.getOnPageText().length() > 50)
+				if (parentURL.getContentHashcode() != null)
 				{
 					ReadingLevelAnalyzer rl = new ReadingLevelAnalyzer();
 					
