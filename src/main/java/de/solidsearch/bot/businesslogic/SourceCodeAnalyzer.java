@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.SortedSet;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.zip.GZIPInputStream;
@@ -972,6 +973,8 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 	
 	private String extractRelevantOnpageTextFragement()
 	{
+		if (textMap.size() <= 0) return "";
+		
 		SortedSet<Integer> keys = new TreeSet<Integer>(textMap.keySet());
 		
 		String text = textMap.get(keys.first());

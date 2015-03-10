@@ -1048,8 +1048,8 @@ public class ProjectJobWorker
 			}
 		} }, new SecureRandom());
 
-		SSLSocketFactory sf = new SSLSocketFactory(sslContext);
-
+		SSLSocketFactory sf = new SSLSocketFactory(sslContext, SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+		
 		SchemeRegistry schemeRegistry = new SchemeRegistry();
 		schemeRegistry.register(new Scheme("http", 80, PlainSocketFactory.getSocketFactory()));
 		schemeRegistry.register(new Scheme("https", 443, sf));
