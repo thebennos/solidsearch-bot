@@ -169,6 +169,8 @@ public class URL implements Serializable, Cloneable
 	
 	private boolean blockedByRobotsTxt = false;
 	
+	private String relevantOnPageText = "";
+	
 	public URL()
 	{
 
@@ -985,6 +987,16 @@ public class URL implements Serializable, Cloneable
 	public void setBlockedByRobotsTxt(boolean blockedByRobotsTxt)
 	{
 		this.blockedByRobotsTxt = blockedByRobotsTxt;
+	}
+	
+	public String getRelevantOnPageText()
+	{
+		return relevantOnPageText;
+	}
+
+	public void setRelevantOnPageText(String relevantOnPageText)
+	{
+		this.relevantOnPageText = relevantOnPageText;
 	}
 
 	@Override

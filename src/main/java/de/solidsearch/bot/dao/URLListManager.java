@@ -506,12 +506,12 @@ public class URLListManager extends URLManager implements Serializable
 		{
 			changeCode = changeCode | URLField.CANONICALTAG.getVector();
 		}
-		if (newURL.getOnPageText() != null && newURL.getOnPageText() != null)
+		if (newURL.getRelevantOnPageText() != null && newURL.getRelevantOnPageText() != null)
 		{
-			if (!newURL.getOnPageText().equalsIgnoreCase(oldURL.getOnPageText()))
+			if (!newURL.getRelevantOnPageText().equalsIgnoreCase(oldURL.getRelevantOnPageText()))
 				changeCode = changeCode | URLField.ONPAGETEXT.getVector();
 		}
-		else if ((newURL.getOnPageText() == null && oldURL.getOnPageText() != null) || (newURL.getOnPageText() != null && oldURL.getOnPageText() == null))
+		else if ((newURL.getRelevantOnPageText() == null && oldURL.getRelevantOnPageText() != null) || (newURL.getRelevantOnPageText() != null && oldURL.getRelevantOnPageText() == null))
 		{
 			changeCode = changeCode | URLField.ONPAGETEXT.getVector();
 		}

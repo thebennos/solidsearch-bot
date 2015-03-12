@@ -128,7 +128,8 @@ public class URLManager implements Serializable
 			+ "changeCode=?,"
 			+ "overwriteFlag=?,"
 			+ "protocolRecord=?,"
-			+ "blockedByRobotsTxt=?";
+			+ "blockedByRobotsTxt=?,"
+			+ "relevantOnPageText=?";
 
 	protected final String tableRows = " (id char(40) not null, " +
 	"parentId char(40) not null, " +
@@ -204,7 +205,8 @@ public class URLManager implements Serializable
 	"changeCode integer not null," +
 	"overwriteFlag boolean not null," +
 	"protocolRecord boolean not null," +
-	"blockedByRobotsTxt boolean not null)";
+	"blockedByRobotsTxt boolean not null, " + 
+	"relevantOnPageText text)";
 
 	protected final String insertRows = " (id," + 
 	"parentId, " + 
@@ -280,7 +282,8 @@ public class URLManager implements Serializable
 	"changeCode," +
 	"overwriteFlag," +
 	"protocolRecord," +
-	"blockedByRobotsTxt)";
+	"blockedByRobotsTxt," +
+	"relevantOnPageText)";
 
 	private String sqlParameter = getSQLParameterList();
 
@@ -1793,6 +1796,7 @@ public class URLManager implements Serializable
 		query.addScalar("changeCode", IntegerType.INSTANCE);
 		query.addScalar("overwriteFlag", BooleanType.INSTANCE);
 		query.addScalar("protocolRecord", BooleanType.INSTANCE);
+		query.addScalar("relevantOnPageText", StringType.INSTANCE);
 	}
 
 	private String getUpdateInternalLinksSQL(long followLinksToThisPage, long nofollowLinksToThisPage, String urlHash, long partitionKey)
@@ -1960,6 +1964,7 @@ public class URLManager implements Serializable
 		query.setParameter(i++, entry.isOverwriteFlag());
 		query.setParameter(i++, entry.isProtocolRecord());
 		query.setParameter(i++, entry.isBlockedByRobotsTxt());
+		query.setParameter(i++, entry.getRelevantOnPageText());
 		
 		return i;
 	}
@@ -1974,7 +1979,7 @@ public class URLManager implements Serializable
 
 		for (int i = 0; i <= fields; i++)
 		{
-			if (i >= fields - 23 && i < fields - 22)
+			if (i >= fields - 24 && i < fields - 23)
 				sqlParameter.append("(setweight(to_tsvector(cast('simple' AS regconfig),cast(coalesce(?,'') AS text)), 'A') || setweight(to_tsvector(cast('simple' AS regconfig),cast(coalesce(?,'') AS text)), 'B') || setweight(to_tsvector(cast('simple' AS regconfig),cast(coalesce(?,'') AS text)), 'C') || setweight(to_tsvector(cast('simple' AS regconfig),cast(coalesce(?,'') AS text)), 'D') || setweight(to_tsvector(cast('simple' AS regconfig),cast(coalesce(?,'') AS text)), 'D'))");
 			else
 				sqlParameter.append("?");
