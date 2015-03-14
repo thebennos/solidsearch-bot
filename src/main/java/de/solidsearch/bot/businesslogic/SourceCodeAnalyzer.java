@@ -317,50 +317,51 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 					footer = false;
 
 				Element node = elements.get(i);
-
+				
 				if (node.tagName().equalsIgnoreCase("html"))
 				{
-					String lang = node.attr("lang").toLowerCase();
-
-					if (lang.contains("de"))
+					String lang = node.attr("lang");
+					
+					if (lang != null)
 					{
-						parentURL.setQwLocale(QWLocale.GERMAN);
-					}
-					else if (lang.contains("fr"))
-					{
-						parentURL.setQwLocale(QWLocale.FRENCH);
-					}
-					else if (lang.contains("nl"))
-					{
-						parentURL.setQwLocale(QWLocale.DUTCH);
-					}
-					else if (lang.contains("it"))
-					{
-						parentURL.setQwLocale(QWLocale.ITALIAN);
-					}
-					else if (lang.contains("ru") || lang.contains("kz"))
-					{
-						parentURL.setQwLocale(QWLocale.RUSSIAN);
-					}
-					else if (lang.contains("en"))
-					{
-						parentURL.setQwLocale(QWLocale.ENGLISH);
-					}
-					else if (lang.contains("en"))
-					{
-						parentURL.setQwLocale(QWLocale.ENGLISH);
-					}
-					else if (lang.contains("se"))
-					{
-						parentURL.setQwLocale(QWLocale.SWEDISH);
-					}
-					else if (lang.contains("br"))
-					{
-						parentURL.setQwLocale(QWLocale.PORTUGUESE);
-					}
-					else if (lang.contains("tr"))
-					{
-						parentURL.setQwLocale(QWLocale.TURKISH);
+						lang = lang.toLowerCase();
+						
+						if (lang.contains("de"))
+						{
+							parentURL.setQwLocale(QWLocale.GERMAN);
+						}
+						else if (lang.contains("fr"))
+						{
+							parentURL.setQwLocale(QWLocale.FRENCH);
+						}
+						else if (lang.contains("nl"))
+						{
+							parentURL.setQwLocale(QWLocale.DUTCH);
+						}
+						else if (lang.contains("it"))
+						{
+							parentURL.setQwLocale(QWLocale.ITALIAN);
+						}
+						else if (lang.contains("ru") || lang.contains("kz"))
+						{
+							parentURL.setQwLocale(QWLocale.RUSSIAN);
+						}
+						else if (lang.contains("en"))
+						{
+							parentURL.setQwLocale(QWLocale.ENGLISH);
+						}
+						else if (lang.contains("se"))
+						{
+							parentURL.setQwLocale(QWLocale.SWEDISH);
+						}
+						else if (lang.contains("br"))
+						{
+							parentURL.setQwLocale(QWLocale.PORTUGUESE);
+						}
+						else if (lang.contains("tr"))
+						{
+							parentURL.setQwLocale(QWLocale.TURKISH);
+						}
 					}
 				}
 				else if (node.tagName().equalsIgnoreCase("title"))
@@ -379,36 +380,46 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 						if (name.equalsIgnoreCase("description"))
 						{
 							String description = node.attr("content");
-							// avoid storing to long text
-							if (description.length() > 500)
-								description = description.substring(0, 499);
-							parentURL.setMetaDescription(removeInvalidChars(description.trim()));
+							
+							if (description != null)
+							{
+								// avoid storing to long text
+								if (description.length() > 500)
+									description = description.substring(0, 499);
+								parentURL.setMetaDescription(removeInvalidChars(description.trim()));
+							}
 						}
 						else if (name.equalsIgnoreCase("robots"))
 						{
 							String metaRobots = node.attr("content");
 
-							if (metaRobots.toLowerCase().contains("nofollow"))
+							if (metaRobots != null)
 							{
-								parentURL.setMetaRobotsFollow(false);
-							}
-
-							if (metaRobots.toLowerCase().contains("noindex"))
-							{
-								parentURL.setMetaRobotsIndex(false);
+								if (metaRobots.toLowerCase().contains("nofollow"))
+								{
+									parentURL.setMetaRobotsFollow(false);
+								}
+	
+								if (metaRobots.toLowerCase().contains("noindex"))
+								{
+									parentURL.setMetaRobotsIndex(false);
+								}
 							}
 						}
 						else if (name.equalsIgnoreCase("generator"))
 						{
 							String type = node.attr("content");
 
-							if (type.toLowerCase().contains("vbulletin"))
+							if (type != null)
 							{
-								forumScore = 100;
-							}
-							else if (type.toLowerCase().contains("wordpress") || type.toLowerCase().contains("woo framework") || type.toLowerCase().contains("blogger"))
-							{
-								blogScore = 100;
+								if (type.toLowerCase().contains("vbulletin"))
+								{
+									forumScore = 100;
+								}
+								else if (type.toLowerCase().contains("wordpress") || type.toLowerCase().contains("woo framework") || type.toLowerCase().contains("blogger"))
+								{
+									blogScore = 100;
+								}
 							}
 						}
 					}
@@ -502,63 +513,66 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 
 						if (link != null)
 						{
-
 							String rel = node.attr("rel");
-							String anchorText = node.text();
-
-							try
+							
+							if (rel != null)
 							{
-								URL newUrlChild = new URL();
+								String anchorText = node.text();
 
-								if (rel != null)
+								try
 								{
-									if (rel.toLowerCase().contains("nofollow"))
+									URL newUrlChild = new URL();
+	
+									if (rel != null)
 									{
-										newUrlChild.setRelNofollow(true);
-									}
-									else if (rel.toLowerCase().contains("canonical"))
-									{
-										String canonicalTag = link.trim();
-
-										canonicalTag = urlRelativToAbsoluteCheck(canonicalTag, parentURL.getURLName());
-
-										parentURL.setCanonicalTag(canonicalTag);
-										parentURL.setCanonicalTagHashcode(worker.getHashTool().generateHashCode(canonicalTag));
-										if (parentURL.getURLName().equals(canonicalTag))
-											continue;
-									}
-									else if (rel.toLowerCase().contains("pingback"))
-									{
-										// is wordpress?
-										if (link.trim().toLowerCase().contains("xmlrpc.php"))
+										if (rel.toLowerCase().contains("nofollow"))
 										{
-											blogScore = 100;
+											newUrlChild.setRelNofollow(true);
+										}
+										else if (rel.toLowerCase().contains("canonical"))
+										{
+											String canonicalTag = link.trim();
+	
+											canonicalTag = urlRelativToAbsoluteCheck(canonicalTag, parentURL.getURLName());
+	
+											parentURL.setCanonicalTag(canonicalTag);
+											parentURL.setCanonicalTagHashcode(worker.getHashTool().generateHashCode(canonicalTag));
+											if (parentURL.getURLName().equals(canonicalTag))
+												continue;
+										}
+										else if (rel.toLowerCase().contains("pingback"))
+										{
+											// is wordpress?
+											if (link.trim().toLowerCase().contains("xmlrpc.php"))
+											{
+												blogScore = 100;
+											}
+										}
+										else if (rel.toLowerCase().contains("next"))
+										{
+											newUrlChild.setPagination(true);
 										}
 									}
-									else if (rel.toLowerCase().contains("next"))
+	
+									newUrlChild.setPagination(checkIfPaginationURL(link));
+	
+									if (anchorText.length() > 300)
+										anchorText = anchorText.substring(0, 299);
+	
+									newUrlChild.setURLName(link);
+									newUrlChild.setParentId(parentURL.getId());
+									newUrlChild.setFirstFoundAnchorTextToThisURL(anchorText);
+	
+									if (!ignoreNewURLs)
 									{
-										newUrlChild.setPagination(true);
+										categorizeAndSaveNewURL(newUrlChild, parentURL.getURLName());
 									}
 								}
-
-								newUrlChild.setPagination(checkIfPaginationURL(link));
-
-								if (anchorText.length() > 300)
-									anchorText = anchorText.substring(0, 299);
-
-								newUrlChild.setURLName(link);
-								newUrlChild.setParentId(parentURL.getId());
-								newUrlChild.setFirstFoundAnchorTextToThisURL(anchorText);
-
-								if (!ignoreNewURLs)
+								catch (Exception e)
 								{
-									categorizeAndSaveNewURL(newUrlChild, parentURL.getURLName());
+									logger.error("Exception during parsing :" + link + " " + e.getMessage());
+									e.printStackTrace();
 								}
-							}
-							catch (Exception e)
-							{
-								logger.error("Exception during parsing :" + link + " " + e.getMessage());
-								e.printStackTrace();
 							}
 						}
 						else
@@ -567,24 +581,26 @@ public class SourceCodeAnalyzer implements Serializable, Runnable
 							continue;
 						}
 					}
-					else
-					{
-
-					}
 				}
 				else if (node.tagName().equalsIgnoreCase("img"))
 				{
 					// put only above the fold images to map...
 					if (aboveTheFold)
 					{
-						String styles = node.attr("style").toLowerCase();
-						if (styles != null && styles.length() > 5)
+						String styles = node.attr("style");
+						
+						if (styles != null)
 						{
-							// remove whitspaces
-							styles = styles.replace(" ", "");
-							if (styles.contains("display:none"))
+							styles = styles.toLowerCase();
+							
+							if (styles != null && styles.length() > 5)
 							{
-								continue;
+								// remove whitspaces
+								styles = styles.replace(" ", "");
+								if (styles.contains("display:none"))
+								{
+									continue;
+								}
 							}
 						}
 						images.put(node, i);
